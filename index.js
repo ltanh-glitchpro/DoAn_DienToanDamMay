@@ -17,8 +17,7 @@ var taikhoanRouter = require("./routers/taikhoan");
 var novelRouter = require("./routers/novel");
 var chuongRouter = require("./routers/chuong");
 
-var uri =
- 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
+var uri = process.env.MONGO_URI;
 const port = process.env.PORT || 3000;
 
 mongoose.connection.on("error", (err) => {
@@ -138,7 +137,8 @@ mongoose
   .connect(uri)
   .then(() => {
     console.log("MongoDB connected successfully, starting server...");
-    app.listen(port, () => {
+    // Thêm "0.0.0.0" vào đây để Render cho phép truy cập từ bên ngoài
+    app.listen(port, "0.0.0.0", () => {
       console.log(`Server is running on port ${port}`);
     });
   })
