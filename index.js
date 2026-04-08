@@ -17,7 +17,7 @@ var taikhoanRouter = require("./routers/taikhoan");
 var novelRouter = require("./routers/novel");
 var chuongRouter = require("./routers/chuong");
 
-var uri = process.env.MONGO_URI;
+var uri = 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
 const port = process.env.PORT || 3000;
 
 mongoose.connection.on("error", (err) => {
