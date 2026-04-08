@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= chuong.Novel.TieuDe %> - <%= chuong.TieuDe %></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <style>
+    body {
+      background-color: #fbe9e7; /* dịu hơn */
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #d35400;
+      margin-top: 30px;
+    }
+
+    .chapter-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #4e342e;
+      margin: 10px 0 20px 0;
+    }
+
+    .novel-image {
+      display: block;
+      margin: 0 auto 25px auto;
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    }
+
+    .story-content {
+      background-color: #fff2e8;
+      padding: 30px;
+      margin: 0 auto 40px auto;
+      max-width: 900px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    }
+
+    .chapter-nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-buttons a {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #ff7043;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+
+    .floating-buttons a:hover {
+      background-color: #e64a19;
+    }
+
+    /* Nút chương trước / chương sau màu giống tiêu đề */
+    .btn-outline-primary {
+      color: #d35400;
+      border-color: #d35400;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #d35400;
+      color: white;
+      border-color: #d35400;
+    }
+
+    .btn-outline-secondary {
+      font-weight: 600;
+    }
+
+    .form-select {
+      /* giữ mặc định */
+    }
+
+    body.theme-dark {
+      background-color: #101a29;
+      color: #eaf2ff;
+    }
+
+    body.theme-dark .title {
+      color: #ffad6b;
+    }
+
+    body.theme-dark .chapter-title {
+      color: #dce8ff;
+    }
+
+    body.theme-dark .story-content {
+      background-color: #1d2c3f;
+      color: #e7efff;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.35);
+    }
+
+    body.theme-dark .form-select {
+      background-color: #142233;
+      color: #e7efff;
+      border-color: #334963;
+    }
+
+    body.theme-dark .btn-outline-primary {
+      color: #ffb884;
+      border-color: #ffb884;
+    }
+
+    body.theme-dark .btn-outline-primary:hover {
+      background-color: #ff9d56;
+      color: #1d2633;
+      border-color: #ff9d56;
+    }
+  </style>
+</head>
+<body>
+  <%- include('includes/navbar') %>
+
+  <div class="container">
+    <!-- Tiêu đề truyện -->
+    <h1 class="title"><%= chuong.Novel.TieuDe %></h1>
+
+    <!-- Tiêu đề chương -->
+    <div class="chapter-title"><%= chuong.TieuDe %></div>
+
+    <!-- Ảnh truyện -->
+    <% if (chuong.Novel.AnhDaiDien) { %>
+      <img src="<%= chuong.Novel.AnhDaiDien %>" alt="Ảnh truyện" class="novel-image" />
+    <% } %>
+
+    <!-- Nội dung chương -->
+    <div class="story-content">
+      <%- chuong.NoiDung %>
+    </div>
+
+    <!-- Thanh chuyển chương -->
+    <div class="chapter-nav">
+      <% if (prevChap) { %>
+        <a href="/chuong/chitiet/<%= prevChap._id %>" class="btn btn-outline-primary">
+          <i class="bi bi-chevron-left"></i> Chương trước
+        </a>
+      <% } else { %>
+        <button class="btn btn-outline-secondary" disabled>
+          <i class="bi bi-chevron-left"></i> Chương trước
+        </button>
+      <% } %>
+
+      <select class="form-select w-auto" onchange="window.location.href = '/chuong/chitiet/' + this.value;">
+        <% allChap.forEach(chapter => { %>
+          <option value="<%= chapter._id %>" <%= chapter._id.toString() === chuong._id.toString() ? 'selected' : '' %>>
+            <%= chapter.TieuDe %>
+          </option>
+        <% }) %>
+      </select>
+
+      <% if (nextChap) { %>
+        <a href="/chuong/chitiet/<%= nextChap._id %>" class="btn btn-outline-primary">
+          Chương kế <i class="bi bi-chevron-right"></i>
+        </a>
+      <% } else { %>
+        <button class="btn btn-outline-secondary" disabled>
+          Chương kế <i class="bi bi-chevron-right"></i>
+        </button>
+      <% } %>
+    </div>
+  </div>
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Lên đầu trang">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+    <a href="/" title="Về trang chủ">
+      <i class="bi bi-house"></i>
+    </a>
+  </div>
+
+  <%- include('includes/footer') %>
+  <%- include('includes/javascript') %>
+</body>
+</html>

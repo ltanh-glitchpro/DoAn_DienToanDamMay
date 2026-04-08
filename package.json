@@ -1,0 +1,26 @@
+{
+	"name": "trangtin",
+	"version": "1.0.0",
+	"description": "Trang tin điện tử Node JS + MongoDB",
+	"main": "index.js",
+	"scripts": {
+		"test": "nodemon index.js",
+		"seed:theloai": "node seeds/seedTheloai.js",
+		"seed:compass": "node seeds/generate_compass_ready.js"
+	},
+	"author": "FIT - AGU",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^3.0.2",
+		"body-parser": "^2.2.2",
+		"connect-mongo": "^5.1.0",
+		"dotenv": "^17.4.1",
+		"ejs": "^3.1.10",
+		"express": "^4.21.2",
+		"express-session": "^1.18.1",
+		"mongoose": "^8.15.1",
+		"multer": "^1.4.5-lts.1",
+		"nodemailer": "^7.0.3",
+		"nodemon": "^3.1.0"
+	}
+}

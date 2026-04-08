@@ -1,0 +1,74 @@
+[
+  {
+    "_id": {
+      "$oid": "66a200000000000000000001"
+    },
+    "HoVaTen": "Lê Tuấn Anh",
+    "Email": "admin@trangtruyenchu.vn",
+    "HinhAnh": "1775576043926-569794817.jpg",
+    "TenDangNhap": "admin",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "admin",
+    "KichHoat": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a200000000000000000002"
+    },
+    "HoVaTen": "Nguyễn Minh Khang",
+    "Email": "minhkhang@gmail.com",
+    "HinhAnh": "1775576149877-81798662.jpg",
+    "TenDangNhap": "minhkhang",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "user",
+    "KichHoat": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a200000000000000000003"
+    },
+    "HoVaTen": "Trần Thu Hà",
+    "Email": "thuha@gmail.com",
+    "HinhAnh": "1775632509240-575826184.jpg",
+    "TenDangNhap": "thuha",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "user",
+    "KichHoat": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a200000000000000000004"
+    },
+    "HoVaTen": "Phạm Gia Huy",
+    "Email": "giahuy@gmail.com",
+    "HinhAnh": "1775640274865-702183378.jpg",
+    "TenDangNhap": "giahuy",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "user",
+    "KichHoat": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a200000000000000000005"
+    },
+    "HoVaTen": "Đặng Ngọc Lan",
+    "Email": "ngoclan@gmail.com",
+    "HinhAnh": "1775576043926-569794817.jpg",
+    "TenDangNhap": "ngoclan",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "user",
+    "KichHoat": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a200000000000000000006"
+    },
+    "HoVaTen": "Võ Quốc Thịnh",
+    "Email": "quocthinh@gmail.com",
+    "HinhAnh": "1775576149877-81798662.jpg",
+    "TenDangNhap": "quocthinh",
+    "MatKhau": "$2b$10$uRfk3S/Q5ZEsZpeP2KKbrui1GHr8.5CgYBqbLYNOykbMsaJT2cSL6",
+    "QuyenHan": "user",
+    "KichHoat": 1
+  }
+]

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title><%= title %></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	<style>
+		.card-custom {
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+
+		.card-custom:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.badge-hot {
+			background-color: #f44336;
+			color: white;
+		}
+
+		.badge-new {
+			background-color: #4caf50;
+			color: white;
+		}
+
+		.card-title a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.card-title a:hover {
+			color: #000;
+			text-decoration: none;
+		}
+
+		a.text-decoration-none.text-dark:hover {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		/* Giới hạn chiều cao ảnh */
+		.card-img-top {
+			max-height: 150px;
+			object-fit: cover;
+		}
+
+		.home-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 2.2fr) minmax(290px, 1fr);
+			gap: 20px;
+		}
+
+		.top-box {
+			background: #fff;
+			border: 1px solid #e7e7e7;
+			border-radius: 10px;
+			padding: 14px;
+			position: sticky;
+			top: 12px;
+		}
+
+		.sidebar-banner {
+			margin-top: 16px;
+			border-radius: 14px;
+			overflow: hidden;
+			height: 800px;
+			min-height: 220px;
+			background-image: linear-gradient(180deg, rgba(12, 18, 28, 0.18), rgba(12, 18, 28, 0.38)), url('/images/uploads/background.jpg');
+			background-size: 108%;
+			background-position: center center;
+			box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+			border: 1px solid #e7e7e7;
+			animation: bannerFloat 14s ease-in-out infinite alternate;
+			transition: transform 0.35s ease, box-shadow 0.35s ease;
+		}
+
+		.sidebar-banner:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+		}
+
+		@keyframes bannerFloat {
+			0% {
+				background-position: 50% 0%;
+				background-size: 108%;
+			}
+			50% {
+				background-position: 52% 50%;
+				background-size: 112%;
+			}
+			100% {
+				background-position: 48% 100%;
+				background-size: 108%;
+			}
+		}
+
+		.sidebar-banner-inner {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			padding: 12px 14px;
+			color: #fff;
+			background: linear-gradient(180deg, rgba(12, 18, 28, 0.16) 0%, rgba(12, 18, 28, 0.58) 100%);
+		}
+
+		.sidebar-banner-kicker {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			width: fit-content;
+			padding: 6px 10px;
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.18);
+			backdrop-filter: blur(4px);
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.sidebar-banner-title {
+			font-size: 0.95rem;
+			font-weight: 800;
+			line-height: 1.35;
+			margin-bottom: 4px;
+		}
+
+		.sidebar-banner-text {
+			font-size: 0.82rem;
+			line-height: 1.35;
+			opacity: 0.95;
+		}
+
+		body.theme-dark .sidebar-banner {
+			border-color: var(--site-border);
+			box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.sidebar-banner {
+				animation: none;
+			}
+		}
+
+		.top-box-title {
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: #d06a2f;
+			margin-bottom: 12px;
+		}
+
+		.top-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.top-item {
+			display: flex;
+			gap: 10px;
+			align-items: flex-start;
+			padding: 8px 0;
+			border-bottom: 1px dashed #ececec;
+		}
+
+		.top-item:last-child {
+			border-bottom: none;
+		}
+
+		.top-rank {
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			background: #e4e4e4;
+			color: #444;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 700;
+			flex-shrink: 0;
+		}
+
+		.top-rank.hot {
+			background: #f0b448;
+			color: #1b1b1b;
+		}
+
+		.top-item a {
+			text-decoration: none;
+			color: #222;
+		}
+
+		.top-item a:hover {
+			color: #d06a2f;
+		}
+
+		.top-title {
+			font-size: 1.03rem;
+			line-height: 1.3;
+			font-weight: 600;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			line-clamp: 1;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		.top-meta {
+			font-size: 0.95rem;
+			color: #747474;
+		}
+
+		.top-pagination {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin-top: 10px;
+			flex-wrap: wrap;
+		}
+
+		.top-page-link {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 40px;
+			height: 40px;
+			padding: 0 10px;
+			border-radius: 4px;
+			text-decoration: none;
+			background: #ececec;
+			color: #666;
+			font-weight: 600;
+		}
+
+		.top-page-link.active {
+			background: #e58a52;
+			color: #fff;
+		}
+
+		.top-page-link:hover {
+			background: #d9d9d9;
+			color: #333;
+		}
+
+		.top-page-link.active:hover {
+			background: #e58a52;
+			color: #fff;
+		}
+
+		.top-page-link.is-disabled {
+			pointer-events: none;
+			opacity: 0.6;
+		}
+
+		.updates-section {
+			width: 100%;
+			margin-top: 24px;
+			border: 1px solid #e7e7e7;
+			border-radius: 14px;
+			overflow: hidden;
+			background: #fff;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+		}
+
+		.updates-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 12px;
+			padding: 14px 18px;
+			border-bottom: 1px solid #edf0f4;
+			background: linear-gradient(90deg, #f9fbff 0%, #ffffff 100%);
+		}
+
+		.updates-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin: 0;
+			font-size: 1.2rem;
+			font-weight: 800;
+			color: #1f2a44;
+		}
+
+		.updates-note {
+			font-size: 0.92rem;
+			color: #6d7685;
+		}
+
+		.update-item {
+			display: flex;
+			justify-content: space-between;
+			gap: 14px;
+			padding: 14px 18px;
+			text-decoration: none;
+			color: inherit;
+			border-top: 1px solid #f0f2f6;
+		}
+
+		.update-item:hover {
+			background: #f8fbff;
+		}
+
+		.update-main {
+			min-width: 0;
+		}
+
+		.update-novel-title {
+			font-size: 1.05rem;
+			font-weight: 700;
+			color: #0f172a;
+			margin-bottom: 4px;
+		}
+
+		.update-chapter-title {
+			font-size: 0.98rem;
+			font-weight: 600;
+			color: #d06a2f;
+			margin-bottom: 6px;
+		}
+
+		.update-meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px 16px;
+			font-size: 0.9rem;
+			color: #64748b;
+		}
+
+		.update-meta span {
+			display: inline-flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.update-action {
+			flex-shrink: 0;
+			align-self: center;
+			white-space: nowrap;
+			border-radius: 999px;
+			padding: 8px 14px;
+			background: #e8f4ee;
+			color: #11684b;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.update-action:hover {
+			background: #d9efe5;
+			color: #0e5b42;
+		}
+
+		body.theme-dark .updates-section {
+			background: #1a2636;
+			border-color: var(--site-border);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+		}
+
+		body.theme-dark .updates-header {
+			background: linear-gradient(90deg, #1f2b3c 0%, #182230 100%);
+			border-bottom-color: var(--site-border);
+		}
+
+		body.theme-dark .updates-title {
+			color: #edf4ff;
+		}
+
+		body.theme-dark .updates-note {
+			color: #9eb2c9;
+		}
+
+		body.theme-dark .update-item {
+			border-top-color: var(--site-border);
+		}
+
+		body.theme-dark .update-item:hover {
+			background: #243246;
+		}
+
+		body.theme-dark .update-novel-title {
+			color: #f0f5ff;
+		}
+
+		body.theme-dark .update-chapter-title {
+			color: #ffb884;
+		}
+
+		body.theme-dark .update-meta {
+			color: #b7c7d8;
+		}
+
+		body.theme-dark .update-action {
+			background: #25394d;
+			color: #b8f0d8;
+		}
+
+		body.theme-dark .update-action:hover {
+			background: #30475f;
+			color: #d6ffef;
+		}
+
+		.completed-section {
+			width: 100%;
+			margin-top: 24px;
+			border: 1px solid #e7e7e7;
+			border-radius: 14px;
+			overflow: hidden;
+			background: #fff;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+		}
+
+		.completed-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 12px;
+			padding: 14px 18px;
+			border-bottom: 1px solid #edf0f4;
+			background: linear-gradient(90deg, #f9fbff 0%, #ffffff 100%);
+		}
+
+		.completed-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin: 0;
+			font-size: 1.2rem;
+			font-weight: 800;
+			color: #1f2a44;
+		}
+
+		.completed-note {
+			font-size: 0.92rem;
+			color: #6d7685;
+		}
+
+		.completed-grid {
+			display: grid;
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+			gap: 14px;
+			padding: 16px;
+		}
+
+		.completed-item {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			border-radius: 12px;
+			overflow: hidden;
+			background: #f8fbff;
+			border: 1px solid #edf2f7;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.completed-item:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+		}
+
+		.completed-cover {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.completed-body {
+			padding: 12px 12px 14px;
+		}
+
+		.completed-novel-title {
+			font-size: 1rem;
+			font-weight: 700;
+			line-height: 1.35;
+			color: #0f172a;
+			margin-bottom: 6px;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		.completed-meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			font-size: 0.88rem;
+			color: #64748b;
+			align-items: center;
+		}
+
+		.completed-meta .done-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 5px;
+			padding: 4px 10px;
+			border-radius: 999px;
+			background: #e8f6ee;
+			color: #0f7a43;
+			font-weight: 700;
+		}
+
+		body.theme-dark .completed-section {
+			background: #1a2636;
+			border-color: var(--site-border);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+		}
+
+		body.theme-dark .completed-header {
+			background: linear-gradient(90deg, #1f2b3c 0%, #182230 100%);
+			border-bottom-color: var(--site-border);
+		}
+
+		body.theme-dark .completed-title {
+			color: #edf4ff;
+		}
+
+		body.theme-dark .completed-note {
+			color: #9eb2c9;
+		}
+
+		body.theme-dark .completed-item {
+			background: #213044;
+			border-color: var(--site-border);
+		}
+
+		body.theme-dark .completed-item:hover {
+			box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+		}
+
+		body.theme-dark .completed-novel-title {
+			color: #f0f5ff;
+		}
+
+		body.theme-dark .completed-meta {
+			color: #b7c7d8;
+		}
+
+		body.theme-dark .completed-meta .done-badge {
+			background: #25394d;
+			color: #b8f0d8;
+		}
+
+		.left-pagination-wrap {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+		}
+
+		@media (max-width: 991.98px) {
+			.home-layout {
+				grid-template-columns: 1fr;
+			}
+
+			.top-box {
+				position: static;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<%- include('includes/navbar') %>
+
+		<div class="home-layout">
+			<div>
+				<div class="row">
+					<% if (novel.length) { %>
+						<% novel.forEach(function (tr) { %>
+							<div class="col-md-6 col-xl-4 mb-4">
+								<a href="/novel/chitiet/<%= tr._id %>" class="text-decoration-none text-dark">
+									<div class="card h-100 border-0 shadow-sm card-custom">
+										<img src="<%- tr.HinhAnh %>" class="card-img-top" alt="<%= tr.TieuDe %>">
+
+										<div class="card-body">
+											<strong class="d-inline-block mb-2 text-primary">
+												<%= tr.TheLoai ? tr.TheLoai.tentheloai : 'Không xác định' %>
+											</strong>
+
+											<h5 class="card-title"><%= tr.TieuDe %></h5>
+
+											<div class="mb-1">
+												<% let label = ''; 
+													if (tr.LuotXem > 1000) {
+														label = 'Truyện Hot';
+													} else if (new Date(tr.NgayDang) > new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)) {
+														label = 'Mới Đăng';
+													}
+												%>
+												<% if (label) { %>
+													<span class="badge <%= label === 'Truyện Hot' ? 'badge-hot' : 'badge-new' %>">
+														<%= label %>
+													</span>
+												<% } %>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						<% }); %>
+					<% } %>
+				</div>
+
+				<div class="left-pagination-wrap">
+					<div class="top-pagination">
+						<% for (let i = 1; i <= Math.min(novelTotalPages, 3); i++) { %>
+							<a href="/?page=<%= i %>" class="top-page-link <%= i === novelPage ? 'active' : '' %>"><%= i %></a>
+						<% } %>
+
+						<% if (novelPage < novelTotalPages) { %>
+							<a href="/?page=<%= novelPage + 1 %>" class="top-page-link" aria-label="Trang sau">&#8250;</a>
+							<a href="/?page=<%= novelTotalPages %>" class="top-page-link">Cuối &raquo;</a>
+						<% } else { %>
+							<span class="top-page-link is-disabled" aria-disabled="true">&#8250;</span>
+							<span class="top-page-link is-disabled" aria-disabled="true">Cuối &raquo;</span>
+						<% } %>
+					</div>
+				</div>
+			</div>
+
+			<aside class="top-box">
+				<div class="top-box-title">TOP Truyện Đề Cử</div>
+
+				<ul class="top-list">
+					<% if (topDeCu && topDeCu.length) { %>
+						<% topDeCu.forEach(function(item, idx) { %>
+							<% const rank = idx + 1; %>
+							<li class="top-item">
+								<span class="top-rank <%= rank <= 3 ? 'hot' : '' %>"><%= rank %></span>
+								<div>
+									<a href="/novel/chitiet/<%= item._id %>">
+										<div class="top-title"><%= item.TieuDe %></div>
+										<div class="top-meta"><%= item.TheLoai ? item.TheLoai.tentheloai : 'Không xác định' %></div>
+									</a>
+								</div>
+							</li>
+						<% }); %>
+					<% } else { %>
+						<li class="text-muted">Chưa có dữ liệu đề cử.</li>
+					<% } %>
+				</ul>
+
+				<div class="sidebar-banner">
+					<div class="sidebar-banner-inner"></div>
+				</div>
+
+			</aside>
+		</div>
+
+		<div class="updates-section">
+			<div class="updates-header">
+				<h3 class="updates-title"><i class="bi bi-lightning-charge-fill text-success"></i> Mới cập nhật</h3>
+				<div class="updates-note">Chương mới đăng gần đây nhất từ hệ thống</div>
+			</div>
+
+			<% if (latestUpdates && latestUpdates.length) { %>
+				<% latestUpdates.forEach(function (chapter) { %>
+					<a href="/chuong/chitiet/<%= chapter._id %>" class="update-item">
+						<div class="update-main">
+							<div class="update-novel-title"><%= chapter.Novel ? chapter.Novel.TieuDe : 'Không xác định' %></div>
+							<div class="update-chapter-title"><%= chapter.TieuDe %></div>
+							<div class="update-meta">
+								<span><i class="bi bi-tag"></i> <%= chapter.Novel && chapter.Novel.TheLoai ? chapter.Novel.TheLoai.tentheloai : 'Không xác định' %></span>
+								<span><i class="bi bi-person"></i> <%= chapter.TaiKhoan ? chapter.TaiKhoan.HoVaTen : (chapter.Novel && chapter.Novel.TaiKhoan ? chapter.Novel.TaiKhoan.HoVaTen : 'Không xác định') %></span>
+								<span><i class="bi bi-clock"></i> <%= new Date(chapter.NgayDang).toLocaleString('vi-VN') %></span>
+							</div>
+						</div>
+						<span class="update-action">Đọc ngay</span>
+					</a>
+				<% }); %>
+			<% } else { %>
+				<div class="p-3 text-muted">Chưa có chương mới được cập nhật.</div>
+			<% } %>
+		</div>
+
+		<div class="completed-section">
+			<div class="completed-header">
+				<h3 class="completed-title"><i class="bi bi-check-circle-fill text-success"></i> Truyện đã hoàn thành</h3>
+				<div class="completed-note">Danh sách dựa trên trạng thái Hoàn thành do tác giả hoặc quản trị viên cập nhật</div>
+			</div>
+
+			<% if (completedNovels && completedNovels.length) { %>
+				<div class="completed-grid">
+					<% completedNovels.forEach(function (item) { %>
+						<a href="/novel/chitiet/<%= item._id %>" class="completed-item">
+							<img src="<%- item.HinhAnh %>" alt="<%= item.TieuDe %>" class="completed-cover" />
+							<div class="completed-body">
+								<div class="completed-novel-title"><%= item.TieuDe %></div>
+								<div class="completed-meta">
+									<span class="done-badge"><i class="bi bi-check2-circle"></i> Hoàn thành</span>
+									<span><i class="bi bi-tag"></i> <%= item.TheLoai ? item.TheLoai.tentheloai : 'Không xác định' %></span>
+									<span><i class="bi bi-journal-text"></i> <%= item.SoChuong || 0 %> chương</span>
+								</div>
+							</div>
+						</a>
+					<% }); %>
+				</div>
+			<% } else { %>
+				<div class="p-3 text-muted">Chưa có truyện hoàn thành để hiển thị.</div>
+			<% } %>
+		</div>
+
+		<%- include('includes/footer') %>
+	</div>
+
+	<%- include('includes/javascript') %>
+</body>
+</html>

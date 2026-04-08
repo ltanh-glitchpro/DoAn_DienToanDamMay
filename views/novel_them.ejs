@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title><%= title %></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+	<div class="container">
+		<%- include('includes/navbar') %>
+		
+		<div class="card mt-3">
+			<div class="card-header"><%= title %></div>
+			<div class="card-body">
+				<form action="/novel/them" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+					<div class="mb-3">
+						<label for="MaTheLoai" class="form-label">Thể loại</label>
+						<select class="form-select" id="MaTheLoai" name="MaTheLoai" required>
+							<option value="">-- Chọn --</option>
+							<% theloai.forEach(tl => { %>
+								<option value="<%= tl._id %>"><%= tl.tentheloai %></option>
+							<% }); %>
+						</select>
+					</div>
+					
+					<div class="mb-3">
+						<label for="TieuDe" class="form-label">Tiêu đề</label>
+						<input type="text" class="form-control" id="TieuDe" name="TieuDe" value="" required />
+					</div>
+					
+					<div class="mb-3">
+						<label for="HinhAnh">Hình ảnh:</label>
+						<input type="file"  class="form-control" name="HinhAnh" id="HinhAnh" value="" required >
+					</div>
+					<div class="mb-3">
+						<label for="TomTat" class="form-label">Tóm tắt truyện</label>
+						<textarea class="form-control" id="TomTat" name="TomTat" required></textarea>
+					</div>
+
+					<div class="mb-3">
+						<label for="TrangThai" class="form-label">Trạng thái truyện</label>
+						<select class="form-select" id="TrangThai" name="TrangThai">
+							<option value="0" selected>Đang ra</option>
+							<option value="1">Hoàn thành</option>
+						</select>
+					</div>
+					
+					<button type="submit" class="btn btn-primary"><i class="bi bi-cloud-arrow-up"></i> Đăng truyện</button>
+				</form>
+			</div>
+		</div>
+		
+		<%- include('includes/footer') %>
+	</div>
+	
+	<%- include('includes/javascript') %>
+	<script src="https://cdn.ckeditor.com/4.18.0/full/ckeditor.js"></script>
+	<script>
+		CKEDITOR.replace('TomTat', {
+			customConfig: 'http://127.0.0.1:3000/js/config.js'
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title><%= title %></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+	<div class="container">
+		<%- include('includes/navbar') %>
+
+		<div class="card mt-3">
+			<div class="card-header"><%= title %></div>
+			<div class="card-body table-responsive">
+				<!-- Ô tìm kiếm -->
+				<div class="mb-3">
+					<input type="text" id="searchInput" class="form-control" placeholder="Tìm theo tên chương, tên truyện hoặc ngày đăng..." onkeyup="timKiemChuong()">
+				</div>
+				<a href="/chuong/them" class="btn btn-primary mb-2"><i class="bi bi-plus-lg"></i> Đăng chương</a>
+
+				<table class="table table-bordered table-hover table-sm mb-0" id="chuongTable">
+					<thead>
+						<tr>
+							<th width="5%">STT</th>
+							<th width="10%">Người đăng</th>
+							<th width="10%">Truyện</th>
+							<th width="10%">Tên Chương</th>
+							<th width="10%">Ngày đăng</th>
+							<th width="5%" title="Tình trạng kiểm duyệt?">Duyệt</th>
+							<th width="5%">Sửa</th>
+							<th width="5%">Xóa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% var stt = 1; %>
+						<% chuong.forEach(function(ch){ %>
+							<% if(ch.TaiKhoan._id == session.MaNguoiDung) { %>
+							<tr>
+								<td class="align-middle"><%= stt++ %></td>
+								<td class="align-middle small"><%= ch.TaiKhoan.HoVaTen %></td>
+								<td class="align-middle small">
+									<% if (ch.Novel && ch.Novel.TieuDe) { %>
+										<%= ch.Novel.TieuDe %>
+									<% } else { %>
+										Chưa có tên truyện
+									<% } %>
+								</td>
+								<td class="align-middle small"><%= ch.TieuDe %></td>
+								<td class="align-middle small"><%= new Date(ch.NgayDang.toISOString()).toLocaleString("vi-VN") %></td>
+								<td class="align-middle text-center">
+									<% if(ch.KiemDuyet == 1) { %>
+										<i class="bi bi-check-circle"></i>
+									<% } else { %>
+										<i class="bi bi-x-circle text-danger"></i>
+									<% } %>
+								</td>
+								<% if(ch.KiemDuyet == 1) { %>
+									<td class="align-middle text-center">
+										<a href="/chuong/sua/<%= ch._id %>">
+											<i class="bi bi-pencil-square"></i>
+										</a>
+									</td>
+									<td class="align-middle text-center">
+										<form action="/chuong/xoa/<%= ch._id %>" method="POST" onsubmit="return confirm('Bạn có muốn xóa bài viết <%= ch.TieuDe %> không?');" style="display:inline;">
+											<button type="submit" class="btn btn-link p-0 m-0" style="border: none;">
+												<i class="bi bi-trash text-danger"></i>
+											</button>
+										</form>
+									</td>
+								<% } else { %>
+									<td></td>
+									<td></td>
+								<% } %>
+							</tr>
+							<% } %>
+						<% }); %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<%- include('includes/footer') %>
+	</div>
+
+	<script>
+	// Hàm bỏ dấu tiếng Việt
+	function boDauTiengViet(str) {
+		return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "") // bỏ dấu
+			.replace(/đ/g, 'd').replace(/Đ/g, 'D'); // xử lý đ
+	}
+
+	function timKiemChuong() {
+		let input = boDauTiengViet(document.getElementById("searchInput").value.toLowerCase());
+		let rows = document.querySelectorAll("#chuongTable tbody tr");
+
+		rows.forEach(row => {
+			let tenChuong = boDauTiengViet(row.cells[3].innerText.toLowerCase());
+			let tenTruyen = boDauTiengViet(row.cells[2].innerText.toLowerCase());
+			let ngayDang = boDauTiengViet(row.cells[4].innerText.toLowerCase());
+
+			if (tenChuong.includes(input) || tenTruyen.includes(input) || ngayDang.includes(input)) {
+				row.style.display = "";
+			} else {
+				row.style.display = "none";
+			}
+		});
+	}
+</script>
+
+	<%- include('includes/javascript') %>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+# Bỏ qua thư mục chứa thư viện (Rất nặng, Vercel/Render sẽ tự động cài lại)
+node_modules/
+
+# Bỏ qua các file chứa biến môi trường (Mật khẩu, Database URI...)
+.env
+.env.local
+
+# Bỏ qua các file log rác của npm
+npm-debug.log*
+
+# (Tùy chọn) Bỏ qua thư mục ảnh upload từ user để tránh phình to bộ nhớ GitHub
+public/uploads/

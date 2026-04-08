@@ -1,0 +1,2042 @@
+[
+  {
+    "_id": {
+      "$oid": "66a400000000000000000001"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Mở mạch",
+    "NoiDung": "Lục Trần vẫn nghĩ buổi sáng ở Lạc Vân Thành sẽ trôi đi như bao ngày khác, cho tới khi một phong ấn cổ trong thư các của sơn môn bất ngờ nứt ra.\n\nTừ khoảnh khắc ấy, Phàm Nhân Tu Tiên bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến linh khí xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Lục Trần nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của linh khí là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-06T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000002"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Bước qua sơn môn",
+    "NoiDung": "Sau biến cố đầu, Lục Trần buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Lạc Vân Thành.\n\nMột dấu vết liên quan đến trận pháp xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trận pháp là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-06T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000003"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Kiếm tâm thức tỉnh",
+    "NoiDung": "Nhịp truyện ở Phàm Nhân Tu Tiên dồn lại khi Lục Trần chạm gần hơn đến sự thật nằm sau đan điền.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi kiếm ý và sơn môn cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của đan điền là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-06T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000004"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Mở mạch",
+    "NoiDung": "An Nhiên vẫn nghĩ buổi sáng ở Quận 4 sẽ trôi đi như bao ngày khác, cho tới khi một thanh kiếm không tên rơi khỏi vách đá lúc nửa đêm.\n\nTừ khoảnh khắc ấy, Đấu Phá Thương Khung bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến linh khí xuất hiện rất khẽ, nhưng đủ làm thay đổi cách An Nhiên nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của linh khí là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-04T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000005"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Bước qua sơn môn",
+    "NoiDung": "Sau biến cố đầu, An Nhiên buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Quận 4.\n\nMột dấu vết liên quan đến trận pháp xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trận pháp là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-04T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000006"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Kiếm tâm thức tỉnh",
+    "NoiDung": "Nhịp truyện ở Đấu Phá Thương Khung dồn lại khi An Nhiên chạm gần hơn đến sự thật nằm sau đan điền.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi kiếm ý và sơn môn cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của đan điền là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-04T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000007"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Mở mạch",
+    "NoiDung": "Minh Khang vẫn nghĩ buổi sáng ở khu tập thể An Bình sẽ trôi đi như bao ngày khác, cho tới khi một mảnh ngọc bội dẫn đường đến linh mạch bị quên lãng.\n\nTừ khoảnh khắc ấy, Võ Động Càn Khôn bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến linh khí xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Minh Khang nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của linh khí là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-03T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000008"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Bước qua sơn môn",
+    "NoiDung": "Sau biến cố đầu, Minh Khang buộc phải đi sâu hơn vào những gì đã bị giấu kín ở khu tập thể An Bình.\n\nMột dấu vết liên quan đến trận pháp xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trận pháp là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-03T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000009"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Kiếm tâm thức tỉnh",
+    "NoiDung": "Nhịp truyện ở Võ Động Càn Khôn dồn lại khi Minh Khang chạm gần hơn đến sự thật nằm sau đan điền.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi kiếm ý và sơn môn cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của đan điền là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-03T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000a"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Mở mạch",
+    "NoiDung": "Thu Hà vẫn nghĩ buổi sáng ở trạm kiểm soát số 7 sẽ trôi đi như bao ngày khác, cho tới khi lệnh ấn của trưởng lão cũ bật sáng ngay trong tay cậu.\n\nTừ khoảnh khắc ấy, Kiếm Tâm Trấn Thư Các bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến linh khí xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Thu Hà nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của linh khí là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-01T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000b"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Bước qua sơn môn",
+    "NoiDung": "Sau biến cố đầu, Thu Hà buộc phải đi sâu hơn vào những gì đã bị giấu kín ở trạm kiểm soát số 7.\n\nMột dấu vết liên quan đến trận pháp xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trận pháp là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-01T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000c"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Kiếm tâm thức tỉnh",
+    "NoiDung": "Nhịp truyện ở Kiếm Tâm Trấn Thư Các dồn lại khi Thu Hà chạm gần hơn đến sự thật nằm sau đan điền.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi kiếm ý và sơn môn cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của đan điền là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-04-01T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000d"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Mở mạch",
+    "NoiDung": "Gia Huy vẫn nghĩ buổi sáng ở Tửu quán ven sông sẽ trôi đi như bao ngày khác, cho tới khi một trận pháp bị bỏ hoang vẫn còn chạy sau mười năm.\n\nTừ khoảnh khắc ấy, Vực Sáng Trên Đỉnh Mây bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến linh khí xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Gia Huy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của linh khí là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-30T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000e"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Bước qua sơn môn",
+    "NoiDung": "Sau biến cố đầu, Gia Huy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Tửu quán ven sông.\n\nMột dấu vết liên quan đến trận pháp xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trận pháp là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-30T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000000f"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Kiếm tâm thức tỉnh",
+    "NoiDung": "Nhịp truyện ở Vực Sáng Trên Đỉnh Mây dồn lại khi Gia Huy chạm gần hơn đến sự thật nằm sau đan điền.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi kiếm ý và sơn môn cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của đan điền là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-30T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000010"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Dấu ấn đầu tiên",
+    "NoiDung": "Ngọc Lan vẫn nghĩ buổi sáng ở bệnh viện Mây Trắng sẽ trôi đi như bao ngày khác, cho tới khi cánh cửa sau căn gác trọ chỉ mở khi có sương.\n\nTừ khoảnh khắc ấy, Toàn Chức Pháp Sư bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến ấn chú xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Ngọc Lan nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ấn chú là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-28T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000011"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Hành lang trong mơ",
+    "NoiDung": "Sau biến cố đầu, Ngọc Lan buộc phải đi sâu hơn vào những gì đã bị giấu kín ở bệnh viện Mây Trắng.\n\nMột dấu vết liên quan đến cánh cửa xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cánh cửa là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-28T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000012"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Cánh cửa ký ức",
+    "NoiDung": "Nhịp truyện ở Toàn Chức Pháp Sư dồn lại khi Ngọc Lan chạm gần hơn đến sự thật nằm sau giấc mơ.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đèn dầu và mảnh gương cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của giấc mơ là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-28T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000013"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Dấu ấn đầu tiên",
+    "NoiDung": "Quang Minh vẫn nghĩ buổi sáng ở ga tàu cũ sẽ trôi đi như bao ngày khác, cho tới khi những trang nhật ký tự viết lại vào lúc 3 giờ 7 phút.\n\nTừ khoảnh khắc ấy, Nhật Ký Người Gác Đèn bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến ấn chú xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Quang Minh nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ấn chú là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-27T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000014"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Hành lang trong mơ",
+    "NoiDung": "Sau biến cố đầu, Quang Minh buộc phải đi sâu hơn vào những gì đã bị giấu kín ở ga tàu cũ.\n\nMột dấu vết liên quan đến cánh cửa xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cánh cửa là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-27T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000015"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Cánh cửa ký ức",
+    "NoiDung": "Nhịp truyện ở Nhật Ký Người Gác Đèn dồn lại khi Quang Minh chạm gần hơn đến sự thật nằm sau giấc mơ.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đèn dầu và mảnh gương cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của giấc mơ là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-27T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000016"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Dấu ấn đầu tiên",
+    "NoiDung": "Bảo Trân vẫn nghĩ buổi sáng ở thư viện tỉnh sẽ trôi đi như bao ngày khác, cho tới khi một con sông đổi màu mỗi lần tên người mất tích bị nhắc tới.\n\nTừ khoảnh khắc ấy, Hơi Thở Của Dòng Sông bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến ấn chú xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Bảo Trân nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ấn chú là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-25T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000017"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Hành lang trong mơ",
+    "NoiDung": "Sau biến cố đầu, Bảo Trân buộc phải đi sâu hơn vào những gì đã bị giấu kín ở thư viện tỉnh.\n\nMột dấu vết liên quan đến cánh cửa xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cánh cửa là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-25T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000018"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Cánh cửa ký ức",
+    "NoiDung": "Nhịp truyện ở Hơi Thở Của Dòng Sông dồn lại khi Bảo Trân chạm gần hơn đến sự thật nằm sau giấc mơ.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đèn dầu và mảnh gương cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của giấc mơ là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-25T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000019"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000009"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Dấu ấn đầu tiên",
+    "NoiDung": "Hạ Vy vẫn nghĩ buổi sáng ở chung cư 12B sẽ trôi đi như bao ngày khác, cho tới khi một bức thư đến từ khu rừng mà bản đồ không còn ghi.\n\nTừ khoảnh khắc ấy, Bức Thư Từ Khu Rừng Cũ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến ấn chú xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Hạ Vy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ấn chú là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-23T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001a"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000009"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Hành lang trong mơ",
+    "NoiDung": "Sau biến cố đầu, Hạ Vy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở chung cư 12B.\n\nMột dấu vết liên quan đến cánh cửa xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cánh cửa là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-23T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001b"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000009"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Cánh cửa ký ức",
+    "NoiDung": "Nhịp truyện ở Bức Thư Từ Khu Rừng Cũ dồn lại khi Hạ Vy chạm gần hơn đến sự thật nằm sau giấc mơ.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đèn dầu và mảnh gương cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của giấc mơ là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-23T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001c"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Dấu ấn đầu tiên",
+    "NoiDung": "Tấn Phong vẫn nghĩ buổi sáng ở làng ven biển sẽ trôi đi như bao ngày khác, cho tới khi bóng đèn dầu trong hành lang thắp sáng một ký ức không thuộc về ai.\n\nTừ khoảnh khắc ấy, Khi Cánh Cửa Mở Trong Sương bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến ấn chú xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Tấn Phong nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ấn chú là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-21T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001d"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Hành lang trong mơ",
+    "NoiDung": "Sau biến cố đầu, Tấn Phong buộc phải đi sâu hơn vào những gì đã bị giấu kín ở làng ven biển.\n\nMột dấu vết liên quan đến cánh cửa xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cánh cửa là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-21T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001e"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Cánh cửa ký ức",
+    "NoiDung": "Nhịp truyện ở Khi Cánh Cửa Mở Trong Sương dồn lại khi Tấn Phong chạm gần hơn đến sự thật nằm sau giấc mơ.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đèn dầu và mảnh gương cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của giấc mơ là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-21T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000001f"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Ca đêm đầu tiên",
+    "NoiDung": "Lục Trần vẫn nghĩ buổi sáng ở Lạc Vân Thành sẽ trôi đi như bao ngày khác, cho tới khi một cuộc gọi nhỡ từ số máy đã khóa suốt bảy năm.\n\nTừ khoảnh khắc ấy, Căn Hộ Số 1209 bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tin nhắn xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Lục Trần nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tin nhắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-20T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000020"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Mưa trên ô kính",
+    "NoiDung": "Sau biến cố đầu, Lục Trần buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Lạc Vân Thành.\n\nMột dấu vết liên quan đến thang máy xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của thang máy là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-20T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000021"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Ngã rẽ cũ",
+    "NoiDung": "Nhịp truyện ở Căn Hộ Số 1209 dồn lại khi Lục Trần chạm gần hơn đến sự thật nằm sau quán cà phê.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mưa đêm và đường vành đai cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quán cà phê là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-20T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000022"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Ca đêm đầu tiên",
+    "NoiDung": "An Nhiên vẫn nghĩ buổi sáng ở Quận 4 sẽ trôi đi như bao ngày khác, cho tới khi hồ sơ thuê căn hộ chứa tên người sống cùng anh trước khi mất tích.\n\nTừ khoảnh khắc ấy, Mùa Mưa Ở An Nhiên bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tin nhắn xuất hiện rất khẽ, nhưng đủ làm thay đổi cách An Nhiên nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tin nhắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-18T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000023"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Mưa trên ô kính",
+    "NoiDung": "Sau biến cố đầu, An Nhiên buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Quận 4.\n\nMột dấu vết liên quan đến thang máy xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của thang máy là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-18T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000024"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Ngã rẽ cũ",
+    "NoiDung": "Nhịp truyện ở Mùa Mưa Ở An Nhiên dồn lại khi An Nhiên chạm gần hơn đến sự thật nằm sau quán cà phê.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mưa đêm và đường vành đai cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quán cà phê là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-18T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000025"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Ca đêm đầu tiên",
+    "NoiDung": "Minh Khang vẫn nghĩ buổi sáng ở khu tập thể An Bình sẽ trôi đi như bao ngày khác, cho tới khi đường tàu điện ngầm dừng lại ở một ga không có trên sơ đồ.\n\nTừ khoảnh khắc ấy, Tháng Năm Ở Quận 4 bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tin nhắn xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Minh Khang nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tin nhắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-16T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000026"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Mưa trên ô kính",
+    "NoiDung": "Sau biến cố đầu, Minh Khang buộc phải đi sâu hơn vào những gì đã bị giấu kín ở khu tập thể An Bình.\n\nMột dấu vết liên quan đến thang máy xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của thang máy là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-16T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000027"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Ngã rẽ cũ",
+    "NoiDung": "Nhịp truyện ở Tháng Năm Ở Quận 4 dồn lại khi Minh Khang chạm gần hơn đến sự thật nằm sau quán cà phê.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mưa đêm và đường vành đai cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quán cà phê là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-16T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000028"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Ca đêm đầu tiên",
+    "NoiDung": "Thu Hà vẫn nghĩ buổi sáng ở trạm kiểm soát số 7 sẽ trôi đi như bao ngày khác, cho tới khi mưa kéo dài ba ngày khiến cả khu phố phải sống chậm lại.\n\nTừ khoảnh khắc ấy, Đường Về Thành Phố Cũ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tin nhắn xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Thu Hà nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tin nhắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-14T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000029"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Mưa trên ô kính",
+    "NoiDung": "Sau biến cố đầu, Thu Hà buộc phải đi sâu hơn vào những gì đã bị giấu kín ở trạm kiểm soát số 7.\n\nMột dấu vết liên quan đến thang máy xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của thang máy là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-14T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002a"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Ngã rẽ cũ",
+    "NoiDung": "Nhịp truyện ở Đường Về Thành Phố Cũ dồn lại khi Thu Hà chạm gần hơn đến sự thật nằm sau quán cà phê.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mưa đêm và đường vành đai cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quán cà phê là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-14T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002b"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Ca đêm đầu tiên",
+    "NoiDung": "Gia Huy vẫn nghĩ buổi sáng ở Tửu quán ven sông sẽ trôi đi như bao ngày khác, cho tới khi một bản hợp đồng cũ mở ra câu chuyện chưa kịp kết thúc.\n\nTừ khoảnh khắc ấy, Một Ngày Trên Tuyến Metro bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tin nhắn xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Gia Huy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tin nhắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-13T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002c"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Mưa trên ô kính",
+    "NoiDung": "Sau biến cố đầu, Gia Huy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Tửu quán ven sông.\n\nMột dấu vết liên quan đến thang máy xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của thang máy là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-13T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002d"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000000f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Ngã rẽ cũ",
+    "NoiDung": "Nhịp truyện ở Một Ngày Trên Tuyến Metro dồn lại khi Gia Huy chạm gần hơn đến sự thật nằm sau quán cà phê.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mưa đêm và đường vành đai cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quán cà phê là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-13T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002e"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000010"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Một lần gặp lại",
+    "NoiDung": "Ngọc Lan vẫn nghĩ buổi sáng ở bệnh viện Mây Trắng sẽ trôi đi như bao ngày khác, cho tới khi một lá thư bị kẹp trong cuốn sổ tay ở ga cuối.\n\nTừ khoảnh khắc ấy, Đêm Ở Phố Gió bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến lá thư xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Ngọc Lan nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lá thư là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-11T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000002f"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000010"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Bản nhạc còn dang dở",
+    "NoiDung": "Sau biến cố đầu, Ngọc Lan buộc phải đi sâu hơn vào những gì đã bị giấu kín ở bệnh viện Mây Trắng.\n\nMột dấu vết liên quan đến ga tàu xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ga tàu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-11T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000030"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000010"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Ngày em quay về",
+    "NoiDung": "Nhịp truyện ở Đêm Ở Phố Gió dồn lại khi Ngọc Lan chạm gần hơn đến sự thật nằm sau bản nhạc.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi ô cửa áp mái và mùa hạ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bản nhạc là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-11T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000031"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000011"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Một lần gặp lại",
+    "NoiDung": "Quang Minh vẫn nghĩ buổi sáng ở ga tàu cũ sẽ trôi đi như bao ngày khác, cho tới khi một bản nhạc cũ gợi lại lời hẹn chưa từng trọn.\n\nTừ khoảnh khắc ấy, Đồi Cỏ Và Những Lá Thư bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến lá thư xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Quang Minh nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lá thư là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-09T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000032"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000011"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Bản nhạc còn dang dở",
+    "NoiDung": "Sau biến cố đầu, Quang Minh buộc phải đi sâu hơn vào những gì đã bị giấu kín ở ga tàu cũ.\n\nMột dấu vết liên quan đến ga tàu xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ga tàu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-09T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000033"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000011"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Ngày em quay về",
+    "NoiDung": "Nhịp truyện ở Đồi Cỏ Và Những Lá Thư dồn lại khi Quang Minh chạm gần hơn đến sự thật nằm sau bản nhạc.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi ô cửa áp mái và mùa hạ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bản nhạc là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-09T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000034"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000012"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Một lần gặp lại",
+    "NoiDung": "Bảo Trân vẫn nghĩ buổi sáng ở thư viện tỉnh sẽ trôi đi như bao ngày khác, cho tới khi một lần gặp lại ở con dốc dẫn lên đồi cỏ.\n\nTừ khoảnh khắc ấy, Con Đường Của Bản Tình Ca bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến lá thư xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Bảo Trân nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lá thư là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-07T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000035"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000012"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Bản nhạc còn dang dở",
+    "NoiDung": "Sau biến cố đầu, Bảo Trân buộc phải đi sâu hơn vào những gì đã bị giấu kín ở thư viện tỉnh.\n\nMột dấu vết liên quan đến ga tàu xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ga tàu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-07T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000036"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000012"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Ngày em quay về",
+    "NoiDung": "Nhịp truyện ở Con Đường Của Bản Tình Ca dồn lại khi Bảo Trân chạm gần hơn đến sự thật nằm sau bản nhạc.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi ô cửa áp mái và mùa hạ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bản nhạc là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-07T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000037"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000013"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Một lần gặp lại",
+    "NoiDung": "Hạ Vy vẫn nghĩ buổi sáng ở chung cư 12B sẽ trôi đi như bao ngày khác, cho tới khi ô cửa áp mái nhìn xuống cả một thời thanh xuân.\n\nTừ khoảnh khắc ấy, Định Mệnh Trên Tầng Áp Mái bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến lá thư xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Hạ Vy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lá thư là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-06T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000038"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000013"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Bản nhạc còn dang dở",
+    "NoiDung": "Sau biến cố đầu, Hạ Vy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở chung cư 12B.\n\nMột dấu vết liên quan đến ga tàu xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ga tàu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-06T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000039"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000013"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Ngày em quay về",
+    "NoiDung": "Nhịp truyện ở Định Mệnh Trên Tầng Áp Mái dồn lại khi Hạ Vy chạm gần hơn đến sự thật nằm sau bản nhạc.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi ô cửa áp mái và mùa hạ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bản nhạc là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-06T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003a"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000014"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Một lần gặp lại",
+    "NoiDung": "Tấn Phong vẫn nghĩ buổi sáng ở làng ven biển sẽ trôi đi như bao ngày khác, cho tới khi mùa hè năm đó biến mất cùng một người chưa kịp nói lời tạm biệt.\n\nTừ khoảnh khắc ấy, Mùa Hè Sau Cơn Mất Tích bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến lá thư xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Tấn Phong nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lá thư là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-04T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003b"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000014"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Bản nhạc còn dang dở",
+    "NoiDung": "Sau biến cố đầu, Tấn Phong buộc phải đi sâu hơn vào những gì đã bị giấu kín ở làng ven biển.\n\nMột dấu vết liên quan đến ga tàu xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của ga tàu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-04T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003c"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000014"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Ngày em quay về",
+    "NoiDung": "Nhịp truyện ở Mùa Hè Sau Cơn Mất Tích dồn lại khi Tấn Phong chạm gần hơn đến sự thật nằm sau bản nhạc.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi ô cửa áp mái và mùa hạ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bản nhạc là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-04T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003d"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000015"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Hiện trường im lặng",
+    "NoiDung": "Lục Trần vẫn nghĩ buổi sáng ở Lạc Vân Thành sẽ trôi đi như bao ngày khác, cho tới khi camera an ninh ghi được một chiếc bóng không có mặt người.\n\nTừ khoảnh khắc ấy, Bóng Đêm Trên Phố Cũ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến camera xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Lục Trần nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của camera là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-02T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003e"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000015"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Dấu giày trong hành lang",
+    "NoiDung": "Sau biến cố đầu, Lục Trần buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Lạc Vân Thành.\n\nMột dấu vết liên quan đến dấu giày xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của dấu giày là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-02T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000003f"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000015"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Lời khai cuối cùng",
+    "NoiDung": "Nhịp truyện ở Bóng Đêm Trên Phố Cũ dồn lại khi Lục Trần chạm gần hơn đến sự thật nằm sau lời khai.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mật mã và hiện trường cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lời khai là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-03-02T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000040"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000016"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Hiện trường im lặng",
+    "NoiDung": "An Nhiên vẫn nghĩ buổi sáng ở Quận 4 sẽ trôi đi như bao ngày khác, cho tới khi dấu giày ngoài hành lang không khớp với ai trong danh sách.\n\nTừ khoảnh khắc ấy, Vụ Án Cây Cầu Sắt bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến camera xuất hiện rất khẽ, nhưng đủ làm thay đổi cách An Nhiên nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của camera là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-28T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000041"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000016"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Dấu giày trong hành lang",
+    "NoiDung": "Sau biến cố đầu, An Nhiên buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Quận 4.\n\nMột dấu vết liên quan đến dấu giày xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của dấu giày là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-28T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000042"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000016"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Lời khai cuối cùng",
+    "NoiDung": "Nhịp truyện ở Vụ Án Cây Cầu Sắt dồn lại khi An Nhiên chạm gần hơn đến sự thật nằm sau lời khai.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mật mã và hiện trường cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lời khai là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-28T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000043"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000017"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Hiện trường im lặng",
+    "NoiDung": "Minh Khang vẫn nghĩ buổi sáng ở khu tập thể An Bình sẽ trôi đi như bao ngày khác, cho tới khi hồ sơ vụ án bị xé mất đúng trang có chữ ký.\n\nTừ khoảnh khắc ấy, Tiếng Chuông Lúc 3 Giờ 7 bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến camera xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Minh Khang nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của camera là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-27T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000044"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000017"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Dấu giày trong hành lang",
+    "NoiDung": "Sau biến cố đầu, Minh Khang buộc phải đi sâu hơn vào những gì đã bị giấu kín ở khu tập thể An Bình.\n\nMột dấu vết liên quan đến dấu giày xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của dấu giày là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-27T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000045"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000017"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Lời khai cuối cùng",
+    "NoiDung": "Nhịp truyện ở Tiếng Chuông Lúc 3 Giờ 7 dồn lại khi Minh Khang chạm gần hơn đến sự thật nằm sau lời khai.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mật mã và hiện trường cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lời khai là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-27T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000046"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000018"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Hiện trường im lặng",
+    "NoiDung": "Thu Hà vẫn nghĩ buổi sáng ở trạm kiểm soát số 7 sẽ trôi đi như bao ngày khác, cho tới khi một chiếc chuông cũ reo đúng lúc không ai chạm vào.\n\nTừ khoảnh khắc ấy, Người Đứng Sau Ô Cửa Sổ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến camera xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Thu Hà nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của camera là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-25T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000047"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000018"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Dấu giày trong hành lang",
+    "NoiDung": "Sau biến cố đầu, Thu Hà buộc phải đi sâu hơn vào những gì đã bị giấu kín ở trạm kiểm soát số 7.\n\nMột dấu vết liên quan đến dấu giày xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của dấu giày là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-25T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000048"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000018"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Lời khai cuối cùng",
+    "NoiDung": "Nhịp truyện ở Người Đứng Sau Ô Cửa Sổ dồn lại khi Thu Hà chạm gần hơn đến sự thật nằm sau lời khai.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mật mã và hiện trường cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lời khai là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-25T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000049"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000019"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Hiện trường im lặng",
+    "NoiDung": "Gia Huy vẫn nghĩ buổi sáng ở Tửu quán ven sông sẽ trôi đi như bao ngày khác, cho tới khi mật mã trong bức tường hành lang dẫn đến căn phòng khóa trái.\n\nTừ khoảnh khắc ấy, Mật Mã Trên Hành Lang bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến camera xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Gia Huy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của camera là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-23T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004a"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000019"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Dấu giày trong hành lang",
+    "NoiDung": "Sau biến cố đầu, Gia Huy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Tửu quán ven sông.\n\nMột dấu vết liên quan đến dấu giày xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của dấu giày là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-23T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004b"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000019"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Lời khai cuối cùng",
+    "NoiDung": "Nhịp truyện ở Mật Mã Trên Hành Lang dồn lại khi Gia Huy chạm gần hơn đến sự thật nằm sau lời khai.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi mật mã và hiện trường cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của lời khai là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-23T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004c"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Đèn cảnh báo đỏ",
+    "NoiDung": "Ngọc Lan vẫn nghĩ buổi sáng ở bệnh viện Mây Trắng sẽ trôi đi như bao ngày khác, cho tới khi đèn báo của trạm y tế tắt đúng vào giờ sơ tán.\n\nTừ khoảnh khắc ấy, Thành Phố Không Đèn bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến radio xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Ngọc Lan nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của radio là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-21T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004d"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Tuyến sơ tán số 3",
+    "NoiDung": "Sau biến cố đầu, Ngọc Lan buộc phải đi sâu hơn vào những gì đã bị giấu kín ở bệnh viện Mây Trắng.\n\nMột dấu vết liên quan đến trạm điện xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trạm điện là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-21T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004e"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001a"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Bình minh sau bức tường",
+    "NoiDung": "Nhịp truyện ở Thành Phố Không Đèn dồn lại khi Ngọc Lan chạm gần hơn đến sự thật nằm sau cửa chắn.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi tuyến sơ tán và đèn báo đỏ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cửa chắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-21T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000004f"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Đèn cảnh báo đỏ",
+    "NoiDung": "Quang Minh vẫn nghĩ buổi sáng ở ga tàu cũ sẽ trôi đi như bao ngày khác, cho tới khi thành phố mất điện trong đêm đầu tiên của mùa mưa.\n\nTừ khoảnh khắc ấy, Ngày Cổng Bệnh Viện Đóng Lại bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến radio xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Quang Minh nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của radio là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-20T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000050"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Tuyến sơ tán số 3",
+    "NoiDung": "Sau biến cố đầu, Quang Minh buộc phải đi sâu hơn vào những gì đã bị giấu kín ở ga tàu cũ.\n\nMột dấu vết liên quan đến trạm điện xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trạm điện là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-20T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000051"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001b"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Bình minh sau bức tường",
+    "NoiDung": "Nhịp truyện ở Ngày Cổng Bệnh Viện Đóng Lại dồn lại khi Quang Minh chạm gần hơn đến sự thật nằm sau cửa chắn.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi tuyến sơ tán và đèn báo đỏ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cửa chắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-20T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000052"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Đèn cảnh báo đỏ",
+    "NoiDung": "Bảo Trân vẫn nghĩ buổi sáng ở thư viện tỉnh sẽ trôi đi như bao ngày khác, cho tới khi khu chợ bỏ hoang vẫn còn phát ra tín hiệu radio.\n\nTừ khoảnh khắc ấy, Trạm Dừng Cuối Cùng bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến radio xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Bảo Trân nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của radio là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-18T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000053"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Tuyến sơ tán số 3",
+    "NoiDung": "Sau biến cố đầu, Bảo Trân buộc phải đi sâu hơn vào những gì đã bị giấu kín ở thư viện tỉnh.\n\nMột dấu vết liên quan đến trạm điện xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trạm điện là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-18T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000054"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001c"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Bình minh sau bức tường",
+    "NoiDung": "Nhịp truyện ở Trạm Dừng Cuối Cùng dồn lại khi Bảo Trân chạm gần hơn đến sự thật nằm sau cửa chắn.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi tuyến sơ tán và đèn báo đỏ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cửa chắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-18T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000055"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Đèn cảnh báo đỏ",
+    "NoiDung": "Hạ Vy vẫn nghĩ buổi sáng ở chung cư 12B sẽ trôi đi như bao ngày khác, cho tới khi dòng sông đổi màu sau sự cố ở nhà máy.\n\nTừ khoảnh khắc ấy, Dòng Sông Không Trở Lại bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến radio xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Hạ Vy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của radio là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-16T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000056"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Tuyến sơ tán số 3",
+    "NoiDung": "Sau biến cố đầu, Hạ Vy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở chung cư 12B.\n\nMột dấu vết liên quan đến trạm điện xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trạm điện là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-16T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000057"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001d"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Bình minh sau bức tường",
+    "NoiDung": "Nhịp truyện ở Dòng Sông Không Trở Lại dồn lại khi Hạ Vy chạm gần hơn đến sự thật nằm sau cửa chắn.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi tuyến sơ tán và đèn báo đỏ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cửa chắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-16T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000058"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Đèn cảnh báo đỏ",
+    "NoiDung": "Tấn Phong vẫn nghĩ buổi sáng ở làng ven biển sẽ trôi đi như bao ngày khác, cho tới khi bức tường cách ly cuối cùng sắp bị thủng.\n\nTừ khoảnh khắc ấy, Đại Niết Bàn bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến radio xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Tấn Phong nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của radio là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-14T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000059"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Tuyến sơ tán số 3",
+    "NoiDung": "Sau biến cố đầu, Tấn Phong buộc phải đi sâu hơn vào những gì đã bị giấu kín ở làng ven biển.\n\nMột dấu vết liên quan đến trạm điện xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của trạm điện là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-14T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005a"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001e"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Bình minh sau bức tường",
+    "NoiDung": "Nhịp truyện ở Đại Niết Bàn dồn lại khi Tấn Phong chạm gần hơn đến sự thật nằm sau cửa chắn.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi tuyến sơ tán và đèn báo đỏ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của cửa chắn là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-14T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005b"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Tín hiệu ngoài quỹ đạo",
+    "NoiDung": "Lục Trần vẫn nghĩ buổi sáng ở Lạc Vân Thành sẽ trôi đi như bao ngày khác, cho tới khi tín hiệu ngoài quỹ đạo lặp lại cùng một chu kỳ bất thường.\n\nTừ khoảnh khắc ấy, Hành Tinh Mưa Đỏ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tín hiệu xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Lục Trần nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tín hiệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-13T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005c"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Khoang dữ liệu bị khóa",
+    "NoiDung": "Sau biến cố đầu, Lục Trần buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Lạc Vân Thành.\n\nMột dấu vết liên quan đến quỹ đạo xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quỹ đạo là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-13T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005d"
+    },
+    "Novel": {
+      "$oid": "66a30000000000000000001f"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Đường truyền cuối",
+    "NoiDung": "Nhịp truyện ở Hành Tinh Mưa Đỏ dồn lại khi Lục Trần chạm gần hơn đến sự thật nằm sau khoang dữ liệu.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi bản ghi và trung tâm điều khiển cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Lạc Vân Thành được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khoang dữ liệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Lục Trần hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-13T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005e"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000020"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Tín hiệu ngoài quỹ đạo",
+    "NoiDung": "An Nhiên vẫn nghĩ buổi sáng ở Quận 4 sẽ trôi đi như bao ngày khác, cho tới khi hành tinh mưa đỏ phát ra chuỗi dữ liệu không giải mã.\n\nTừ khoảnh khắc ấy, Sổ Tay Của Người Thu Gom Ký Ức bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tín hiệu xuất hiện rất khẽ, nhưng đủ làm thay đổi cách An Nhiên nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tín hiệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-11T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000005f"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000020"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Khoang dữ liệu bị khóa",
+    "NoiDung": "Sau biến cố đầu, An Nhiên buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Quận 4.\n\nMột dấu vết liên quan đến quỹ đạo xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quỹ đạo là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-11T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000060"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000020"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Đường truyền cuối",
+    "NoiDung": "Nhịp truyện ở Sổ Tay Của Người Thu Gom Ký Ức dồn lại khi An Nhiên chạm gần hơn đến sự thật nằm sau khoang dữ liệu.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi bản ghi và trung tâm điều khiển cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Quận 4 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khoang dữ liệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, An Nhiên hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-11T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000061"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000021"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Tín hiệu ngoài quỹ đạo",
+    "NoiDung": "Minh Khang vẫn nghĩ buổi sáng ở khu tập thể An Bình sẽ trôi đi như bao ngày khác, cho tới khi sổ tay nhớ lại những ký ức không thuộc về người viết.\n\nTừ khoảnh khắc ấy, Vùng Đất Chưa Tên bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tín hiệu xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Minh Khang nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tín hiệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-09T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000062"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000021"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Khoang dữ liệu bị khóa",
+    "NoiDung": "Sau biến cố đầu, Minh Khang buộc phải đi sâu hơn vào những gì đã bị giấu kín ở khu tập thể An Bình.\n\nMột dấu vết liên quan đến quỹ đạo xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quỹ đạo là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-09T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000063"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000021"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Đường truyền cuối",
+    "NoiDung": "Nhịp truyện ở Vùng Đất Chưa Tên dồn lại khi Minh Khang chạm gần hơn đến sự thật nằm sau khoang dữ liệu.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi bản ghi và trung tâm điều khiển cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của khu tập thể An Bình được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khoang dữ liệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Minh Khang hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-09T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000064"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000022"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Tín hiệu ngoài quỹ đạo",
+    "NoiDung": "Thu Hà vẫn nghĩ buổi sáng ở trạm kiểm soát số 7 sẽ trôi đi như bao ngày khác, cho tới khi tàu đêm đi qua một vùng đất chưa từng có trên bản đồ.\n\nTừ khoảnh khắc ấy, Tàu Đêm Đi Về Phía Nam bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tín hiệu xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Thu Hà nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tín hiệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-07T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000065"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000022"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Khoang dữ liệu bị khóa",
+    "NoiDung": "Sau biến cố đầu, Thu Hà buộc phải đi sâu hơn vào những gì đã bị giấu kín ở trạm kiểm soát số 7.\n\nMột dấu vết liên quan đến quỹ đạo xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quỹ đạo là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-07T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000066"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000022"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Đường truyền cuối",
+    "NoiDung": "Nhịp truyện ở Tàu Đêm Đi Về Phía Nam dồn lại khi Thu Hà chạm gần hơn đến sự thật nằm sau khoang dữ liệu.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi bản ghi và trung tâm điều khiển cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của trạm kiểm soát số 7 được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khoang dữ liệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Thu Hà hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-07T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000067"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000023"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 1: Tín hiệu ngoài quỹ đạo",
+    "NoiDung": "Gia Huy vẫn nghĩ buổi sáng ở Tửu quán ven sông sẽ trôi đi như bao ngày khác, cho tới khi bản ghi trung tâm báo lỗi ở mọi đường truyền cùng lúc.\n\nTừ khoảnh khắc ấy, Người Canh Giữ Tín Hiệu bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến tín hiệu xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Gia Huy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của tín hiệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-06T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000068"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000023"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 2: Khoang dữ liệu bị khóa",
+    "NoiDung": "Sau biến cố đầu, Gia Huy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở Tửu quán ven sông.\n\nMột dấu vết liên quan đến quỹ đạo xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của quỹ đạo là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-06T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000069"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000023"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Chương 3: Đường truyền cuối",
+    "NoiDung": "Nhịp truyện ở Người Canh Giữ Tín Hiệu dồn lại khi Gia Huy chạm gần hơn đến sự thật nằm sau khoang dữ liệu.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi bản ghi và trung tâm điều khiển cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của Tửu quán ven sông được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khoang dữ liệu là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Gia Huy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-06T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006a"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000024"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 1: Đêm ở khách điếm",
+    "NoiDung": "Ngọc Lan vẫn nghĩ buổi sáng ở bệnh viện Mây Trắng sẽ trôi đi như bao ngày khác, cho tới khi một chuôi kiếm cũ được đặt trên bàn rượu thay cho tiền.\n\nTừ khoảnh khắc ấy, Kiếm Khách Cuối Bến Đò bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến chuôi kiếm xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Ngọc Lan nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của chuôi kiếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-04T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006b"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000024"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 2: Dấu kiếm bên bến đò",
+    "NoiDung": "Sau biến cố đầu, Ngọc Lan buộc phải đi sâu hơn vào những gì đã bị giấu kín ở bệnh viện Mây Trắng.\n\nMột dấu vết liên quan đến khách điếm xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khách điếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-04T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006c"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000024"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Chương 3: Một chiêu giữa giang hồ",
+    "NoiDung": "Nhịp truyện ở Kiếm Khách Cuối Bến Đò dồn lại khi Ngọc Lan chạm gần hơn đến sự thật nằm sau bến đò.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đao phổ và giang hồ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của bệnh viện Mây Trắng được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bến đò là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Ngọc Lan hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-04T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006d"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000025"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 1: Đêm ở khách điếm",
+    "NoiDung": "Quang Minh vẫn nghĩ buổi sáng ở ga tàu cũ sẽ trôi đi như bao ngày khác, cho tới khi bến đò vắng người nhưng còn in dấu chân của một cao thủ.\n\nTừ khoảnh khắc ấy, Lưỡi Kiếm Trên Tuyết Mỏng bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến chuôi kiếm xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Quang Minh nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của chuôi kiếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-02T14:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006e"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000025"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 2: Dấu kiếm bên bến đò",
+    "NoiDung": "Sau biến cố đầu, Quang Minh buộc phải đi sâu hơn vào những gì đã bị giấu kín ở ga tàu cũ.\n\nMột dấu vết liên quan đến khách điếm xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khách điếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-02T15:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a40000000000000000006f"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000025"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Chương 3: Một chiêu giữa giang hồ",
+    "NoiDung": "Nhịp truyện ở Lưỡi Kiếm Trên Tuyết Mỏng dồn lại khi Quang Minh chạm gần hơn đến sự thật nằm sau bến đò.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đao phổ và giang hồ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của ga tàu cũ được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bến đò là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Quang Minh hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-02-02T15:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000070"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000026"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 1: Đêm ở khách điếm",
+    "NoiDung": "Bảo Trân vẫn nghĩ buổi sáng ở thư viện tỉnh sẽ trôi đi như bao ngày khác, cho tới khi đao phổ thất lạc quay về cùng một kẻ không muốn dính vào giang hồ.\n\nTừ khoảnh khắc ấy, Mười Năm Ở Tửu Quán bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến chuôi kiếm xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Bảo Trân nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của chuôi kiếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-31T20:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000071"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000026"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 2: Dấu kiếm bên bến đò",
+    "NoiDung": "Sau biến cố đầu, Bảo Trân buộc phải đi sâu hơn vào những gì đã bị giấu kín ở thư viện tỉnh.\n\nMột dấu vết liên quan đến khách điếm xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khách điếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-31T21:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000072"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000026"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Chương 3: Một chiêu giữa giang hồ",
+    "NoiDung": "Nhịp truyện ở Mười Năm Ở Tửu Quán dồn lại khi Bảo Trân chạm gần hơn đến sự thật nằm sau bến đò.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đao phổ và giang hồ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của thư viện tỉnh được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bến đò là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Bảo Trân hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-31T21:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000073"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000027"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 1: Đêm ở khách điếm",
+    "NoiDung": "Hạ Vy vẫn nghĩ buổi sáng ở chung cư 12B sẽ trôi đi như bao ngày khác, cho tới khi khách điếm ven núi bỗng có thêm một phòng không ai mở được.\n\nTừ khoảnh khắc ấy, Mưa Trên Đường Đao Phổ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến chuôi kiếm xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Hạ Vy nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của chuôi kiếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-30T02:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000074"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000027"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 2: Dấu kiếm bên bến đò",
+    "NoiDung": "Sau biến cố đầu, Hạ Vy buộc phải đi sâu hơn vào những gì đã bị giấu kín ở chung cư 12B.\n\nMột dấu vết liên quan đến khách điếm xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khách điếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-30T03:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000075"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000027"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Chương 3: Một chiêu giữa giang hồ",
+    "NoiDung": "Nhịp truyện ở Mưa Trên Đường Đao Phổ dồn lại khi Hạ Vy chạm gần hơn đến sự thật nằm sau bến đò.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đao phổ và giang hồ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của chung cư 12B được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bến đò là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Hạ Vy hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-30T03:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000076"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000028"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 1: Đêm ở khách điếm",
+    "NoiDung": "Tấn Phong vẫn nghĩ buổi sáng ở làng ven biển sẽ trôi đi như bao ngày khác, cho tới khi tiếng gió trên sườn núi mang theo tin về một cuộc đấu đã hẹn từ lâu.\n\nTừ khoảnh khắc ấy, Một Lần Ra Tay Ở Giang Hồ bắt đầu mở ra một nhịp kể chậm và chắc, để người đọc nhìn thấy điều gì đang bị che khuất ngay dưới bề mặt yên ả.\n\nChi tiết đầu tiên liên quan đến chuôi kiếm xuất hiện rất khẽ, nhưng đủ làm thay đổi cách Tấn Phong nhìn vào mọi thứ quanh mình.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của chuôi kiếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-28T08:35:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000077"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000028"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 2: Dấu kiếm bên bến đò",
+    "NoiDung": "Sau biến cố đầu, Tấn Phong buộc phải đi sâu hơn vào những gì đã bị giấu kín ở làng ven biển.\n\nMột dấu vết liên quan đến khách điếm xuất hiện đúng lúc mọi câu trả lời cũ bắt đầu tỏ ra không còn đáng tin.\n\nKhông ai trong khu vực muốn nói nhiều, nhưng từng mảnh thông tin rời rạc lại ghép thành một bức tranh khó bỏ qua.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của khách điếm là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-28T09:10:00.000Z"
+    },
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a400000000000000000078"
+    },
+    "Novel": {
+      "$oid": "66a300000000000000000028"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Chương 3: Một chiêu giữa giang hồ",
+    "NoiDung": "Nhịp truyện ở Một Lần Ra Tay Ở Giang Hồ dồn lại khi Tấn Phong chạm gần hơn đến sự thật nằm sau bến đò.\n\nMọi thứ trước đó dường như chỉ là phần nổi của một cấu trúc lớn hơn, nơi đao phổ và giang hồ cùng tồn tại trong thế cân bằng mong manh.\n\nChương này khép lại bằng một lựa chọn rõ ràng: hoặc tiếp tục bước tới, hoặc để bí mật ấy ngủ yên thêm một lần nữa.\n\nỞ đây, không khí của làng ven biển được giữ đủ lâu để người đọc cảm thấy từng thay đổi nhỏ nhất trong tâm lý nhân vật.\n\nSự xuất hiện của bến đò là nút thắt để đẩy câu chuyện sang lớp nghĩa tiếp theo, thay vì chỉ dừng lại ở một mô-típ quen thuộc.\n\nCuối chương, Tấn Phong hiểu rằng điều mình đang tìm không chỉ là đáp án, mà còn là cách sống tiếp sau khi sự thật được gọi tên.",
+    "NgayDang": {
+      "$date": "2026-01-28T09:45:00.000Z"
+    },
+    "KiemDuyet": 1
+  }
+]

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    <%= novel.TieuDe %>
+  </title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="/css/novel_chitiet.css" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f1e7 0%, #fdebd3 50%, #f7c59f 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4a4a4a;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    .container {
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(211, 84, 0, 0.25);
+      padding: 30px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .novel-genre {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #d35400;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-left: 5px solid #d35400;
+      padding-left: 10px;
+    }
+
+    .novel-chapters-list {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #fff7e6;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(211, 84, 0, 0.3);
+    }
+
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 20px;
+    }
+
+    .chapter-list {
+      margin-bottom: 12px;
+    }
+
+    .chapter-list a {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(211, 84, 0, 0.15);
+      color: #d35400;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .chapter-list a:hover {
+      background-color: #ffe0c1;
+      color: #e67e22;
+      transform: translateX(4px);
+    }
+
+    .chapter-list a i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    .chapter-pagination {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .chapter-page-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 40px;
+      padding: 0 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      background: #ececec;
+      color: #666;
+      font-weight: 600;
+    }
+
+    .chapter-page-link.active {
+      background: #e58a52;
+      color: #fff;
+    }
+
+    .chapter-page-link:hover {
+      background: #d9d9d9;
+      color: #333;
+    }
+
+    .chapter-page-link.active:hover {
+      background: #e58a52;
+      color: #fff;
+    }
+
+    .chapter-page-link.is-disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 991.98px) {
+      .chapter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .novel-stats {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .novel-stats div {
+      background-color: #f0f0f0;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: 600;
+      color: #555;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .novel-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin: 20px 0;
+      color: #d35400;
+    }
+
+    .novel-summary {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      color: #4a4a4a;
+    }
+
+    .novel-image img {
+      border-radius: 8px !important;
+    }
+
+    body.theme-dark {
+      background: linear-gradient(135deg, #0d1726 0%, #0f2036 55%, #102949 100%);
+      color: #e7efff;
+    }
+
+    body.theme-dark .container {
+      background-color: rgba(22, 34, 50, 0.95);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    body.theme-dark .novel-title,
+    body.theme-dark .novel-genre {
+      color: #ffad6b;
+      border-left-color: #ffad6b;
+    }
+
+    body.theme-dark .novel-summary {
+      color: #dce7fa;
+    }
+
+    body.theme-dark .novel-stats div {
+      background-color: #253346;
+      color: #edf4ff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    body.theme-dark .novel-chapters-list {
+      background-color: #1e2c3f;
+      box-shadow: 0 0 10px rgba(5, 16, 32, 0.55);
+    }
+
+    body.theme-dark .chapter-list a {
+      background-color: #24364b;
+      color: #eaf1ff;
+      box-shadow: 0 2px 6px rgba(2, 10, 20, 0.55);
+    }
+
+    body.theme-dark .chapter-list a:hover {
+      background-color: #2e4560;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include("includes/navbar") %>
+    <div class="container">
+      <div class="novel-content">
+        <div class="novel-title">
+          <%= novel.TieuDe %>
+        </div>
+        <div class="novel-info d-flex flex-row-reverse justify-content-between">
+          <div class="novel-info-left" style="flex: 1; padding-left: 40px;">
+            <div class="novel-genre">
+              Thể loại: <%= novel.TheLoai ? novel.TheLoai.tentheloai : 'Không xác định' %>
+            </div>
+            <div class="novel-summary">
+              Tóm tắt: <%= novel.TomTat %>
+            </div>
+
+            <div class="novel-stats">
+              <div class="views">Lượt xem: <%= novel.LuotXem || 0 %>
+              </div>
+              <div class="chapters">Số chương: <%= chapterTotalCount || 0 %></div>
+            </div>
+          </div>
+          <div class="novel-info-right" style="max-width: 320px;">
+            <div class="novel-image">
+                <img src="<%= novel.HinhAnh && (novel.HinhAnh.startsWith('/') || novel.HinhAnh.startsWith('http://') || novel.HinhAnh.startsWith('https://')) ? novel.HinhAnh : '/images/uploads/' + novel.HinhAnh %>" alt="Ảnh minh họa"
+                style="width: 100%; height: auto; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+
+
+        <div class="novel-chapters-list">
+          <% if (chuong && chuong.length > 0) { %>
+            <div class="chapter-grid">
+              <% chuong.forEach((ch, index) => { %>
+                <div class="chapter-list">
+                  <a href="/chuong/chitiet/<%= ch._id %>">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                    Chương <%= chapterStartIndex + index + 1 %>: <%= ch.TieuDe %>
+                  </a>
+                </div>
+              <% }) %>
+            </div>
+
+            <div class="chapter-pagination">
+              <% for (let i = 1; i <= chapterTotalPages; i++) { %>
+                <a href="/novel/chitiet/<%= novel._id %>?chapPage=<%= i %>" class="chapter-page-link <%= i === chapterPage ? 'active' : '' %>"><%= i %></a>
+              <% } %>
+
+              <% if (chapterPage < chapterTotalPages) { %>
+                <a href="/novel/chitiet/<%= novel._id %>?chapPage=<%= chapterPage + 1 %>" class="chapter-page-link" aria-label="Trang sau">&#8250;</a>
+                <a href="/novel/chitiet/<%= novel._id %>?chapPage=<%= chapterTotalPages %>" class="chapter-page-link">Cuối &raquo;</a>
+              <% } else { %>
+                <span class="chapter-page-link is-disabled" aria-disabled="true">&#8250;</span>
+                <span class="chapter-page-link is-disabled" aria-disabled="true">Cuối &raquo;</span>
+              <% } %>
+            </div>
+          <% } else { %>
+            <p>Chưa có chương nào được duyệt.</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer") %>
+      <%- include("includes/javascript") %>
+</body>
+
+</html>

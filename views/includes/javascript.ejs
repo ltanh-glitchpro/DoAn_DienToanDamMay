@@ -1,0 +1,55 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+	(() => {
+		const storageKey = 'site-theme';
+		const darkClass = 'theme-dark';
+		const toggleId = 'themeToggleInput';
+
+		function getInitialTheme() {
+			const saved = localStorage.getItem(storageKey);
+			if (saved === 'dark' || saved === 'light') {
+				return saved;
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		}
+
+		function applyTheme(theme) {
+			document.body.classList.toggle(darkClass, theme === 'dark');
+			localStorage.setItem(storageKey, theme);
+		}
+
+		function syncSwitch(theme) {
+			const toggle = document.getElementById(toggleId);
+			if (!toggle) return;
+			toggle.checked = theme === 'dark';
+		}
+
+		const initialTheme = getInitialTheme();
+		applyTheme(initialTheme);
+
+		document.addEventListener('DOMContentLoaded', () => {
+			syncSwitch(initialTheme);
+			const toggle = document.getElementById(toggleId);
+			if (!toggle) return;
+
+			toggle.addEventListener('change', (event) => {
+				const nextTheme = event.target.checked ? 'dark' : 'light';
+				applyTheme(nextTheme);
+			});
+		});
+	})();
+
+	(() => {
+		'use strict';
+		const forms = document.querySelectorAll('.needs-validation');
+		Array.from(forms).forEach(form => {
+			form.addEventListener('submit', event => {
+				if (!form.checkValidity()) {
+					event.preventDefault();
+					event.stopPropagation();
+				}
+				form.classList.add('was-validated');
+			}, false);
+		});
+	})();
+</script>

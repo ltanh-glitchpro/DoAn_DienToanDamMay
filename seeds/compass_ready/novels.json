@@ -1,0 +1,842 @@
+[
+  {
+    "_id": {
+      "$oid": "66a300000000000000000001"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Phàm Nhân Tu Tiên",
+    "TomTat": "Phàm Nhân Tu Tiên theo chân Lục Trần, một người giữ thư các ở Lạc Vân Thành, khi một phong ấn cổ trong thư các của sơn môn bất ngờ nứt ra làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/phamnhantu.jpg",
+    "NgayDang": {
+      "$date": "2026-04-06T14:00:00.000Z"
+    },
+    "LuotXem": 8547,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000002"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Đấu Phá Thương Khung",
+    "TomTat": "Đấu Phá Thương Khung theo chân An Nhiên, một người giữ thư các ở Quận 4, khi một thanh kiếm không tên rơi khỏi vách đá lúc nửa đêm làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/daupha.jpg",
+    "NgayDang": {
+      "$date": "2026-04-04T20:00:00.000Z"
+    },
+    "LuotXem": 8374,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000003"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Võ Động Càn Khôn",
+    "TomTat": "Võ Động Càn Khôn theo chân Minh Khang, một người giữ thư các ở khu tập thể An Bình, khi một mảnh ngọc bội dẫn đường đến linh mạch bị quên lãng làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/vudong.jpg",
+    "NgayDang": {
+      "$date": "2026-04-03T02:00:00.000Z"
+    },
+    "LuotXem": 8201,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000004"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Kiếm Tâm Trấn Thư Các",
+    "TomTat": "Kiếm Tâm Trấn Thư Các theo chân Thu Hà, một người giữ thư các ở trạm kiểm soát số 7, khi lệnh ấn của trưởng lão cũ bật sáng ngay trong tay cậu làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/toanchuc.jpg",
+    "NgayDang": {
+      "$date": "2026-04-01T08:00:00.000Z"
+    },
+    "LuotXem": 8028,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000005"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000001"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Vực Sáng Trên Đỉnh Mây",
+    "TomTat": "Vực Sáng Trên Đỉnh Mây theo chân Gia Huy, một người giữ thư các ở Tửu quán ven sông, khi một trận pháp bị bỏ hoang vẫn còn chạy sau mười năm làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/dainietban.jpg",
+    "NgayDang": {
+      "$date": "2026-03-30T14:00:00.000Z"
+    },
+    "LuotXem": 7855,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000006"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Toàn Chức Pháp Sư",
+    "TomTat": "Toàn Chức Pháp Sư theo chân Ngọc Lan, một người giữ khóa ký ức ở bệnh viện Mây Trắng, khi cánh cửa sau căn gác trọ chỉ mở khi có sương làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/thonphe.jpg",
+    "NgayDang": {
+      "$date": "2026-03-28T20:00:00.000Z"
+    },
+    "LuotXem": 7682,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000007"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Nhật Ký Người Gác Đèn",
+    "TomTat": "Nhật Ký Người Gác Đèn theo chân Quang Minh, một người giữ khóa ký ức ở ga tàu cũ, khi những trang nhật ký tự viết lại vào lúc 3 giờ 7 phút làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/119269410.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-27T02:00:00.000Z"
+    },
+    "LuotXem": 7509,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000008"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Hơi Thở Của Dòng Sông",
+    "TomTat": "Hơi Thở Của Dòng Sông theo chân Bảo Trân, một người giữ khóa ký ức ở thư viện tỉnh, khi một con sông đổi màu mỗi lần tên người mất tích bị nhắc tới làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/133886785.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-25T08:00:00.000Z"
+    },
+    "LuotXem": 7336,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000009"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Bức Thư Từ Khu Rừng Cũ",
+    "TomTat": "Bức Thư Từ Khu Rừng Cũ theo chân Hạ Vy, một người giữ khóa ký ức ở chung cư 12B, khi một bức thư đến từ khu rừng mà bản đồ không còn ghi làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/448131569.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-23T14:00:00.000Z"
+    },
+    "LuotXem": 7163,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000a"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000002"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Khi Cánh Cửa Mở Trong Sương",
+    "TomTat": "Khi Cánh Cửa Mở Trong Sương theo chân Tấn Phong, một người giữ khóa ký ức ở làng ven biển, khi bóng đèn dầu trong hành lang thắp sáng một ký ức không thuộc về ai làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/541808158.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-21T20:00:00.000Z"
+    },
+    "LuotXem": 6990,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000b"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Căn Hộ Số 1209",
+    "TomTat": "Căn Hộ Số 1209 theo chân Lục Trần, một biên tập viên ca tối ở Lạc Vân Thành, khi một cuộc gọi nhỡ từ số máy đã khóa suốt bảy năm làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/803474892.png",
+    "NgayDang": {
+      "$date": "2026-03-20T02:00:00.000Z"
+    },
+    "LuotXem": 6817,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000c"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Mùa Mưa Ở An Nhiên",
+    "TomTat": "Mùa Mưa Ở An Nhiên theo chân An Nhiên, một biên tập viên ca tối ở Quận 4, khi hồ sơ thuê căn hộ chứa tên người sống cùng anh trước khi mất tích làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 1,
+    "HinhAnh": "/images/uploads/828846920.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-18T08:00:00.000Z"
+    },
+    "LuotXem": 6644,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000d"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Tháng Năm Ở Quận 4",
+    "TomTat": "Tháng Năm Ở Quận 4 theo chân Minh Khang, một biên tập viên ca tối ở khu tập thể An Bình, khi đường tàu điện ngầm dừng lại ở một ga không có trên sơ đồ làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/phamnhantu.jpg",
+    "NgayDang": {
+      "$date": "2026-03-16T14:00:00.000Z"
+    },
+    "LuotXem": 6471,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000e"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Đường Về Thành Phố Cũ",
+    "TomTat": "Đường Về Thành Phố Cũ theo chân Thu Hà, một biên tập viên ca tối ở trạm kiểm soát số 7, khi mưa kéo dài ba ngày khiến cả khu phố phải sống chậm lại làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/daupha.jpg",
+    "NgayDang": {
+      "$date": "2026-03-14T20:00:00.000Z"
+    },
+    "LuotXem": 6298,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000000f"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000003"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Một Ngày Trên Tuyến Metro",
+    "TomTat": "Một Ngày Trên Tuyến Metro theo chân Gia Huy, một biên tập viên ca tối ở Tửu quán ven sông, khi một bản hợp đồng cũ mở ra câu chuyện chưa kịp kết thúc làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/vudong.jpg",
+    "NgayDang": {
+      "$date": "2026-03-13T02:00:00.000Z"
+    },
+    "LuotXem": 6125,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000010"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Đêm Ở Phố Gió",
+    "TomTat": "Đêm Ở Phố Gió theo chân Ngọc Lan, một kiến trúc sư trẻ ở bệnh viện Mây Trắng, khi một lá thư bị kẹp trong cuốn sổ tay ở ga cuối làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/toanchuc.jpg",
+    "NgayDang": {
+      "$date": "2026-03-11T08:00:00.000Z"
+    },
+    "LuotXem": 5952,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000011"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Đồi Cỏ Và Những Lá Thư",
+    "TomTat": "Đồi Cỏ Và Những Lá Thư theo chân Quang Minh, một kiến trúc sư trẻ ở ga tàu cũ, khi một bản nhạc cũ gợi lại lời hẹn chưa từng trọn làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/dainietban.jpg",
+    "NgayDang": {
+      "$date": "2026-03-09T14:00:00.000Z"
+    },
+    "LuotXem": 5779,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000012"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Con Đường Của Bản Tình Ca",
+    "TomTat": "Con Đường Của Bản Tình Ca theo chân Bảo Trân, một kiến trúc sư trẻ ở thư viện tỉnh, khi một lần gặp lại ở con dốc dẫn lên đồi cỏ làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/thonphe.jpg",
+    "NgayDang": {
+      "$date": "2026-03-07T20:00:00.000Z"
+    },
+    "LuotXem": 5606,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000013"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Định Mệnh Trên Tầng Áp Mái",
+    "TomTat": "Định Mệnh Trên Tầng Áp Mái theo chân Hạ Vy, một kiến trúc sư trẻ ở chung cư 12B, khi ô cửa áp mái nhìn xuống cả một thời thanh xuân làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/119269410.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-06T02:00:00.000Z"
+    },
+    "LuotXem": 5433,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000014"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000004"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Mùa Hè Sau Cơn Mất Tích",
+    "TomTat": "Mùa Hè Sau Cơn Mất Tích theo chân Tấn Phong, một kiến trúc sư trẻ ở làng ven biển, khi mùa hè năm đó biến mất cùng một người chưa kịp nói lời tạm biệt làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/133886785.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-04T08:00:00.000Z"
+    },
+    "LuotXem": 5260,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000015"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Bóng Đêm Trên Phố Cũ",
+    "TomTat": "Bóng Đêm Trên Phố Cũ theo chân Lục Trần, một điều tra viên hồ sơ ở Lạc Vân Thành, khi camera an ninh ghi được một chiếc bóng không có mặt người làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/448131569.jpeg",
+    "NgayDang": {
+      "$date": "2026-03-02T14:00:00.000Z"
+    },
+    "LuotXem": 5087,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000016"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Vụ Án Cây Cầu Sắt",
+    "TomTat": "Vụ Án Cây Cầu Sắt theo chân An Nhiên, một điều tra viên hồ sơ ở Quận 4, khi dấu giày ngoài hành lang không khớp với ai trong danh sách làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/541808158.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-28T20:00:00.000Z"
+    },
+    "LuotXem": 4914,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000017"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Tiếng Chuông Lúc 3 Giờ 7",
+    "TomTat": "Tiếng Chuông Lúc 3 Giờ 7 theo chân Minh Khang, một điều tra viên hồ sơ ở khu tập thể An Bình, khi hồ sơ vụ án bị xé mất đúng trang có chữ ký làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/803474892.png",
+    "NgayDang": {
+      "$date": "2026-02-27T02:00:00.000Z"
+    },
+    "LuotXem": 4741,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000018"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Người Đứng Sau Ô Cửa Sổ",
+    "TomTat": "Người Đứng Sau Ô Cửa Sổ theo chân Thu Hà, một điều tra viên hồ sơ ở trạm kiểm soát số 7, khi một chiếc chuông cũ reo đúng lúc không ai chạm vào làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/828846920.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-25T08:00:00.000Z"
+    },
+    "LuotXem": 4568,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000019"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000005"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Mật Mã Trên Hành Lang",
+    "TomTat": "Mật Mã Trên Hành Lang theo chân Gia Huy, một điều tra viên hồ sơ ở Tửu quán ven sông, khi mật mã trong bức tường hành lang dẫn đến căn phòng khóa trái làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/phamnhantu.jpg",
+    "NgayDang": {
+      "$date": "2026-02-23T14:00:00.000Z"
+    },
+    "LuotXem": 4395,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001a"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Thành Phố Không Đèn",
+    "TomTat": "Thành Phố Không Đèn theo chân Ngọc Lan, một người điều phối sơ tán ở bệnh viện Mây Trắng, khi đèn báo của trạm y tế tắt đúng vào giờ sơ tán làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/daupha.jpg",
+    "NgayDang": {
+      "$date": "2026-02-21T20:00:00.000Z"
+    },
+    "LuotXem": 4222,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001b"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Ngày Cổng Bệnh Viện Đóng Lại",
+    "TomTat": "Ngày Cổng Bệnh Viện Đóng Lại theo chân Quang Minh, một người điều phối sơ tán ở ga tàu cũ, khi thành phố mất điện trong đêm đầu tiên của mùa mưa làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/vudong.jpg",
+    "NgayDang": {
+      "$date": "2026-02-20T02:00:00.000Z"
+    },
+    "LuotXem": 4049,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001c"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Trạm Dừng Cuối Cùng",
+    "TomTat": "Trạm Dừng Cuối Cùng theo chân Bảo Trân, một người điều phối sơ tán ở thư viện tỉnh, khi khu chợ bỏ hoang vẫn còn phát ra tín hiệu radio làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/toanchuc.jpg",
+    "NgayDang": {
+      "$date": "2026-02-18T08:00:00.000Z"
+    },
+    "LuotXem": 3876,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001d"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Dòng Sông Không Trở Lại",
+    "TomTat": "Dòng Sông Không Trở Lại theo chân Hạ Vy, một người điều phối sơ tán ở chung cư 12B, khi dòng sông đổi màu sau sự cố ở nhà máy làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/dainietban.jpg",
+    "NgayDang": {
+      "$date": "2026-02-16T14:00:00.000Z"
+    },
+    "LuotXem": 3703,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001e"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000006"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Đại Niết Bàn",
+    "TomTat": "Đại Niết Bàn theo chân Tấn Phong, một người điều phối sơ tán ở làng ven biển, khi bức tường cách ly cuối cùng sắp bị thủng làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/thonphe.jpg",
+    "NgayDang": {
+      "$date": "2026-02-14T20:00:00.000Z"
+    },
+    "LuotXem": 3530,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a30000000000000000001f"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Hành Tinh Mưa Đỏ",
+    "TomTat": "Hành Tinh Mưa Đỏ theo chân Lục Trần, một kỹ sư tín hiệu ở Lạc Vân Thành, khi tín hiệu ngoài quỹ đạo lặp lại cùng một chu kỳ bất thường làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/119269410.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-13T02:00:00.000Z"
+    },
+    "LuotXem": 3357,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000020"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Sổ Tay Của Người Thu Gom Ký Ức",
+    "TomTat": "Sổ Tay Của Người Thu Gom Ký Ức theo chân An Nhiên, một kỹ sư tín hiệu ở Quận 4, khi hành tinh mưa đỏ phát ra chuỗi dữ liệu không giải mã làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/133886785.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-11T08:00:00.000Z"
+    },
+    "LuotXem": 3184,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000021"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Vùng Đất Chưa Tên",
+    "TomTat": "Vùng Đất Chưa Tên theo chân Minh Khang, một kỹ sư tín hiệu ở khu tập thể An Bình, khi sổ tay nhớ lại những ký ức không thuộc về người viết làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/448131569.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-09T14:00:00.000Z"
+    },
+    "LuotXem": 3011,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000022"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Tàu Đêm Đi Về Phía Nam",
+    "TomTat": "Tàu Đêm Đi Về Phía Nam theo chân Thu Hà, một kỹ sư tín hiệu ở trạm kiểm soát số 7, khi tàu đêm đi qua một vùng đất chưa từng có trên bản đồ làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/541808158.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-07T20:00:00.000Z"
+    },
+    "LuotXem": 2838,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000023"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000007"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000005"
+    },
+    "TieuDe": "Người Canh Giữ Tín Hiệu",
+    "TomTat": "Người Canh Giữ Tín Hiệu theo chân Gia Huy, một kỹ sư tín hiệu ở Tửu quán ven sông, khi bản ghi trung tâm báo lỗi ở mọi đường truyền cùng lúc làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/803474892.png",
+    "NgayDang": {
+      "$date": "2026-02-06T02:00:00.000Z"
+    },
+    "LuotXem": 2665,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000024"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000006"
+    },
+    "TieuDe": "Kiếm Khách Cuối Bến Đò",
+    "TomTat": "Kiếm Khách Cuối Bến Đò theo chân Ngọc Lan, một lữ khách giang hồ ở bệnh viện Mây Trắng, khi một chuôi kiếm cũ được đặt trên bàn rượu thay cho tiền làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/828846920.jpeg",
+    "NgayDang": {
+      "$date": "2026-02-04T08:00:00.000Z"
+    },
+    "LuotXem": 2492,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000025"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000001"
+    },
+    "TieuDe": "Lưỡi Kiếm Trên Tuyết Mỏng",
+    "TomTat": "Lưỡi Kiếm Trên Tuyết Mỏng theo chân Quang Minh, một lữ khách giang hồ ở ga tàu cũ, khi bến đò vắng người nhưng còn in dấu chân của một cao thủ làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/phamnhantu.jpg",
+    "NgayDang": {
+      "$date": "2026-02-02T14:00:00.000Z"
+    },
+    "LuotXem": 2319,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000026"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000002"
+    },
+    "TieuDe": "Mười Năm Ở Tửu Quán",
+    "TomTat": "Mười Năm Ở Tửu Quán theo chân Bảo Trân, một lữ khách giang hồ ở thư viện tỉnh, khi đao phổ thất lạc quay về cùng một kẻ không muốn dính vào giang hồ làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/daupha.jpg",
+    "NgayDang": {
+      "$date": "2026-01-31T20:00:00.000Z"
+    },
+    "LuotXem": 2146,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000027"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000003"
+    },
+    "TieuDe": "Mưa Trên Đường Đao Phổ",
+    "TomTat": "Mưa Trên Đường Đao Phổ theo chân Hạ Vy, một lữ khách giang hồ ở chung cư 12B, khi khách điếm ven núi bỗng có thêm một phòng không ai mở được làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/vudong.jpg",
+    "NgayDang": {
+      "$date": "2026-01-30T02:00:00.000Z"
+    },
+    "LuotXem": 1973,
+    "KiemDuyet": 1
+  },
+  {
+    "_id": {
+      "$oid": "66a300000000000000000028"
+    },
+    "TheLoai": {
+      "$oid": "66a100000000000000000008"
+    },
+    "TaiKhoan": {
+      "$oid": "66a200000000000000000004"
+    },
+    "TieuDe": "Một Lần Ra Tay Ở Giang Hồ",
+    "TomTat": "Một Lần Ra Tay Ở Giang Hồ theo chân Tấn Phong, một lữ khách giang hồ ở làng ven biển, khi tiếng gió trên sườn núi mang theo tin về một cuộc đấu đã hẹn từ lâu làm thay đổi nhịp sống vốn quen thuộc. Câu chuyện đi từ những chi tiết đời thường sang một chuỗi lựa chọn buộc nhân vật phải đối diện với ký ức, trách nhiệm và lời hứa còn dang dở.",
+    "SoChuong": 3,
+    "TrangThai": 0,
+    "HinhAnh": "/images/uploads/toanchuc.jpg",
+    "NgayDang": {
+      "$date": "2026-01-28T08:00:00.000Z"
+    },
+    "LuotXem": 1800,
+    "KiemDuyet": 1
+  }
+]

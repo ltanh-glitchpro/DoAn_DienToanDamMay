@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 fd19543e6deeeb50e8fe876b7d68469556ffbd47 phamvanluong <pham40129@gmail.com> 1748579653 +0700	commit (initial): Upload code lần 3005
+fd19543e6deeeb50e8fe876b7d68469556ffbd47 b2b1b3acbc09b826a00bf712cf6f966bf60899de phamvanluong <pham40129@gmail.com> 1748581896 +0700	commit: Fix: remove node_modules and rebuild lock file
+b2b1b3acbc09b826a00bf712cf6f966bf60899de d2f9b66a9403cefa0a4180a4d2b33bcf2aeec587 phamvanluong <pham40129@gmail.com> 1748582192 +0700	commit: Thay bcrypt bằng bcryptjs để sửa lỗi khi deploy
+d2f9b66a9403cefa0a4180a4d2b33bcf2aeec587 0629f4ff9f391a96e966e3ea3483e4fdd6efaecc phamvanluong <pham40129@gmail.com> 1748583162 +0700	commit: NEW 3005
+0629f4ff9f391a96e966e3ea3483e4fdd6efaecc ca99bf6abc4b04aecb8ca821dc2af715b9353abe phamvanluong <pham40129@gmail.com> 1748584627 +0700	commit: Fix session store with MongoStore
+ca99bf6abc4b04aecb8ca821dc2af715b9353abe 6b7e774f4806bc10d80cbd43929ad9ad6f91e656 phamvanluong <pham40129@gmail.com> 1748586183 +0700	commit: NEW 1 22h
+6b7e774f4806bc10d80cbd43929ad9ad6f91e656 7e6b52f48f0719bd3f3e2223607f7c28a7762b26 phamvanluong <pham40129@gmail.com> 1748587173 +0700	commit: Upload 1h39
+7e6b52f48f0719bd3f3e2223607f7c28a7762b26 3bfb68c5214c5b6e0c88cdc5f75ba19d9f5636a8 phamvanluong <pham40129@gmail.com> 1748589133 +0700	commit: Upload 2h11
+3bfb68c5214c5b6e0c88cdc5f75ba19d9f5636a8 363af020e7dba89f5b04442385c3af1c93e4b1db phamvanluong <pham40129@gmail.com> 1748590625 +0700	commit: Sửa lỗi logo web và thêm ảnh
+363af020e7dba89f5b04442385c3af1c93e4b1db 63b0ced896f0912ff44f044c33c8df41337955de phamvanluong <pham40129@gmail.com> 1748591823 +0700	commit: Sửa lỗi chuong
+63b0ced896f0912ff44f044c33c8df41337955de 3a918e59b3e98efc048b410cbbc635fae989c6c3 phamvanluong <pham40129@gmail.com> 1748592748 +0700	commit: Sửa lỗi màu navbar
+3a918e59b3e98efc048b410cbbc635fae989c6c3 78dc5a56c4d0f2a9abee55857e7c40e904226e09 phamvanluong <pham40129@gmail.com> 1748596996 +0700	commit: Chinh ho so
