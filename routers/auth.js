@@ -35,8 +35,8 @@ router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
     const HinhAnh = req.file ? "/uploads/" + req.file.filename : null;
     let errors = {};
 
-    if (!Email || !Email.match(/^[\w.-]+@gmail\.com$/))
-      errors.Email = "Email phải có định dạng và kết thúc bằng @gmail.com.";
+    if (!Email || !Email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
+      errors.Email = "Email không đúng định dạng.";
     if (!HoVaTen) errors.HoVaTen = "Họ và tên là bắt buộc.";
     if (!TenDangNhap) errors.TenDangNhap = "Tên đăng nhập là bắt buộc.";
     if (!MatKhau) {
