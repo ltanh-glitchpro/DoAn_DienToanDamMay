@@ -107,10 +107,17 @@ router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
   </div>
 `;
 
-    await sendMail(Email, "Thông tin tài khoản đăng nhập", htmlContent);
+    let mailSent = true;
+    try {
+      await sendMail(Email, "Thông tin tài khoản đăng nhập", htmlContent);
+    } catch (mailError) {
+      mailSent = false;
+      console.error("Gửi email đăng ký thất bại:", mailError.message || mailError);
+    }
 
-    req.session.success =
-      "Đã đăng ký tài khoản thành công. Vui lòng kiểm tra email.";
+    req.session.success = mailSent
+      ? "Đã đăng ký tài khoản thành công. Vui lòng kiểm tra email."
+      : "Đăng ký thành công, nhưng hệ thống chưa gửi được email. Vui lòng đăng nhập bằng tài khoản vừa tạo hoặc thử lại tính năng quên mật khẩu.";
     req.session.formData = null; // <-- Dòng thêm
     req.session.error = null; // <-- Dòng thêm
     res.redirect("/auth/dangky");
@@ -156,6 +163,7 @@ router.post("/dangnhap", async (req, res) => {
           req.session.MaNguoiDung = taikhoan._id;
           req.session.HoVaTen = taikhoan.HoVaTen;
           req.session.QuyenHan = taikhoan.QuyenHan;
+          req.session.loginAt = Date.now();
 
           return req.session.save((err) => {
             if (err) {

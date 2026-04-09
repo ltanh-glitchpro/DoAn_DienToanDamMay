@@ -21,6 +21,16 @@ var chuongRouter = require("./routers/chuong");
 
 var uri = 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
 const port = process.env.PORT || 3000;
+const SESSION_IDLE_MINUTES = Math.max(
+  parseInt(process.env.SESSION_IDLE_MINUTES || "30", 10),
+  1
+);
+const SESSION_MAX_HOURS = Math.max(
+  parseInt(process.env.SESSION_MAX_HOURS || "12", 10),
+  1
+);
+const SESSION_IDLE_MS = SESSION_IDLE_MINUTES * 60 * 1000;
+const SESSION_MAX_MS = SESSION_MAX_HOURS * 60 * 60 * 1000;
 
 mongoose.connection.on("error", (err) => {
   console.error("MongoDB connection error:", err);
@@ -44,16 +54,51 @@ app.use(
     secret: "Black cat eat black mouse",
     resave: false,
     saveUninitialized: false,
+    rolling: true,
     store: MongoStore.create({
       mongoUrl: uri,
-      ttl: 30 * 24 * 60 * 60,
+      ttl: Math.floor(SESSION_IDLE_MS / 1000),
     }),
     cookie: {
-      maxAge: 30 * 24 * 60 * 60 * 1000,
+      maxAge: SESSION_IDLE_MS,
       secure: false,
     },
   })
 );
+
+// Tự đăng xuất khi phiên đăng nhập vượt quá thời gian tối đa cho phép.
+app.use((req, res, next) => {
+  if (!req.session || !req.session.MaNguoiDung) {
+    return next();
+  }
+
+  if (!req.session.loginAt) {
+    req.session.loginAt = Date.now();
+    return req.session.save((err) => {
+      if (err) {
+        return next(err);
+      }
+      return next();
+    });
+  }
+
+  const loggedInDuration = Date.now() - req.session.loginAt;
+  if (loggedInDuration > SESSION_MAX_MS) {
+    delete req.session.MaNguoiDung;
+    delete req.session.HoVaTen;
+    delete req.session.QuyenHan;
+    delete req.session.loginAt;
+    req.session.error = "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.";
+    return req.session.save((err) => {
+      if (err) {
+        return next(err);
+      }
+      return res.redirect("/auth/dangnhap");
+    });
+  }
+
+  return next();
+});
 
 app.use((req, res, next) => {
   res.locals.session = req.session;

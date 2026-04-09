@@ -17,16 +17,21 @@ var sendMail = async function(to, subject, html) {
       }
     });
 
-    await transporter.sendMail({
+    var info = await transporter.sendMail({
       from: '"KATEE Admin" <' + adminEmail + '>',
       to: to,
       subject: subject,
       html: html
     });
 
-    console.log('Email sent successfully');
+    console.log('Email sent successfully:', info.messageId, {
+      accepted: info.accepted,
+      rejected: info.rejected
+    });
+    return info;
   } catch (error) {
     console.error('Error sending email:', error);
+    throw error;
   }
 };
 
