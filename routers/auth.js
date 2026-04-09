@@ -85,7 +85,7 @@ router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
     const htmlContent = `
   <div style="font-family: Arial, sans-serif; color: #333;">
     <h3>👋 Xin chào ${HoVaTen},</h3>
-    <p>Bạn đã đăng ký tài khoản thành công trên hệ thống KICKBACK.</p>
+    <p>Bạn đã đăng ký tài khoản thành công trên hệ thống KATEE.</p>
     
     <p>
       <span style="font-size: 16px;"><strong>Tên đăng nhập:</strong> ${TenDangNhap}</span><br/>
