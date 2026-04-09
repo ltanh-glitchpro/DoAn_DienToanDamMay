@@ -132,13 +132,16 @@
             <% if(session.QuyenHan === "admin") { %>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle admin-manage-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i class="bi bi-gear"></i> Quản lý
+                <% if ((pendingReviewCount || 0) > 0) { %>
+                  <span class="admin-alert-dot" aria-label="Có nội dung chờ duyệt"></span>
+                <% } %>
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -153,13 +156,19 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="/novel">
+                  <a class="dropdown-item admin-count-item" href="/novel">
                     <i class="bi bi-file-earmark-richtext"></i> Truyện
+                    <% if ((pendingNovelCount || 0) > 0) { %>
+                      <span class="admin-sub-badge"><%= pendingNovelCount %></span>
+                    <% } %>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/chuong">
+                  <a class="dropdown-item admin-count-item" href="/chuong">
                     <i class="bi bi-file-earmark-richtext"></i> Chương
+                    <% if ((pendingChuongCount || 0) > 0) { %>
+                      <span class="admin-sub-badge"><%= pendingChuongCount %></span>
+                    <% } %>
                   </a>
                 </li>
               </ul>
@@ -296,7 +305,7 @@
 
           list.innerHTML = items
             .map(function (item) {
-              var imgSrc = item.HinhAnh || "/images/logow1.svg";
+              var imgSrc = item.HinhAnh ? (item.HinhAnh.startsWith('/') || item.HinhAnh.startsWith('http://') || item.HinhAnh.startsWith('https://') || item.HinhAnh.startsWith('data:') ? encodeURI(item.HinhAnh) : encodeURI('/images/uploads/' + item.HinhAnh)) : "/images/logow1.svg";
               return (
                 '<li class="search-suggestion-item">' +
                 '<a href="/novel/chitiet/' +
@@ -306,7 +315,7 @@
                 imgSrc +
                 '" alt="' +
                 item.TieuDe +
-                '" class="search-suggestion-thumb" />' +
+                '" class="search-suggestion-thumb" onerror="this.onerror=null;this.src=\'/images/noimage.png\';" />' +
                 '<span class="search-suggestion-title">' +
                 item.TieuDe +
                 '</span>' +

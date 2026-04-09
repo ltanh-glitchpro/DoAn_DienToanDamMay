@@ -13,19 +13,78 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <style>
-      .table {
-        border-radius: 8px;
+      .account-card {
+        border: 1px solid #d9e2ef;
+      }
+
+      .account-card .card-header {
+        background: #f3f6fb !important;
+        color: #0f172a !important;
+        border-bottom: 1px solid #d9e2ef;
+      }
+
+      .account-search {
+        min-width: 220px;
+        max-width: 320px;
+        background: #ffffff;
+        color: #0f172a;
+        border: 1px solid #c8d2e3;
+      }
+
+      .account-search::placeholder {
+        color: #64748b;
+      }
+
+      .account-table {
+        border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+        --bs-table-bg: #ffffff;
+        --bs-table-color: #1f2937;
+        --bs-table-border-color: #d1d9e6;
       }
 
-      .table thead {
-        background-color: #007bff;
-        color: white;
+      .account-table thead th {
+        background: #eef2f8 !important;
+        color: #0f172a !important;
+        font-weight: 700;
       }
 
-      .table tbody tr:hover {
-        background-color: #f8f9fa;
+      .account-table tbody td {
+        color: #1f2937 !important;
+        vertical-align: middle;
+      }
+
+      .account-table tbody tr:hover td {
+        background: #f8fbff;
+      }
+
+      body.theme-dark .account-card .card-header {
+        background: #e6edf8 !important;
+        color: #0f172a !important;
+      }
+
+      body.theme-dark .account-search {
+        background: #ffffff;
+        color: #0f172a;
+        border-color: #c8d2e3;
+      }
+
+      body.theme-dark .account-table,
+      body.theme-dark .account-table tbody,
+      body.theme-dark .account-table tbody td,
+      body.theme-dark .account-table tbody tr,
+      body.theme-dark .account-table thead,
+      body.theme-dark .account-table thead th {
+        color: #1f2937 !important;
+      }
+
+      @media (max-width: 768px) {
+        .account-search {
+          min-width: 0;
+          max-width: none;
+          width: 100% !important;
+        }
       }
     </style>
   </head>
@@ -34,7 +93,7 @@
     <div class="container">
       <%- include('includes/navbar') %>
 
-      <div class="card mt-3 shadow-sm">
+      <div class="card mt-3 shadow-sm account-card">
         <div
           class="card-header fw-bold text-dark"
           style="background-color: #f8f9fa"
@@ -50,13 +109,13 @@
             <input
               type="text"
               id="searchInput"
-              class="form-control w-25"
+              class="form-control w-25 account-search"
               placeholder="Tìm kiếm tài khoản..."
             />
           </div>
 
           <table
-            class="table table-bordered table-hover table-sm mb-0"
+            class="table table-bordered table-hover table-sm mb-0 account-table"
             id="taiKhoanTable"
           >
             <thead class="table-light text-center">
@@ -81,7 +140,7 @@
                 <td class="text-center">
                   <% if (tk.HinhAnh && tk.HinhAnh.trim() !== '') { %>
                   <img
-                    src="/uploads/<%= tk.HinhAnh %>"
+                    src="<%= resolveImageUrl(tk.HinhAnh, '/uploads', '/images/noimage.png') %>"
                     alt="Hình ảnh"
                     style="width: 50px; height: 50px; object-fit: cover"
                   />

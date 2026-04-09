@@ -22,7 +22,7 @@
       padding: 20px 0;
     }
 
-    .container {
+    .novel-detail-container {
       background-color: #ffffffcc;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(211, 84, 0, 0.25);
@@ -174,7 +174,7 @@
       color: #e7efff;
     }
 
-    body.theme-dark .container {
+    body.theme-dark .novel-detail-container {
       background-color: rgba(22, 34, 50, 0.95);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
     }
@@ -215,7 +215,7 @@
 
 <body>
   <%- include("includes/navbar") %>
-    <div class="container">
+    <div class="novel-detail-container">
       <div class="novel-content">
         <div class="novel-title">
           <%= novel.TieuDe %>
@@ -237,7 +237,7 @@
           </div>
           <div class="novel-info-right" style="max-width: 320px;">
             <div class="novel-image">
-                <img src="<%= novel.HinhAnh && (novel.HinhAnh.startsWith('/') || novel.HinhAnh.startsWith('http://') || novel.HinhAnh.startsWith('https://')) ? novel.HinhAnh : '/images/uploads/' + novel.HinhAnh %>" alt="Ảnh minh họa"
+                <img src="<%= resolveImageUrl(novel.HinhAnh, '/images/uploads', '/images/noimage.png') %>" alt="Ảnh minh họa" onerror="this.onerror=null;this.src='/images/noimage.png';"
                 style="width: 100%; height: auto; border-radius: 8px;" />
             </div>
           </div>

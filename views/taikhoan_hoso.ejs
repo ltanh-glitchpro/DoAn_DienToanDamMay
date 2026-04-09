@@ -81,6 +81,41 @@
         border: 3px solid #e4bb8b;
         margin-bottom: 15px;
       }
+
+      body.theme-dark {
+        background: #0f1722;
+      }
+
+      body.theme-dark .cv-container {
+        background: #1a2533;
+        color: #e5edf7;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      }
+
+      body.theme-dark .cv-header,
+      body.theme-dark .cv-section-title {
+        border-bottom-color: #b98a55;
+      }
+
+      body.theme-dark .cv-header h1,
+      body.theme-dark .cv-section-title {
+        color: #f3c792;
+      }
+
+      body.theme-dark .cv-detail,
+      body.theme-dark .text-muted {
+        color: #d8e2ef !important;
+      }
+
+      body.theme-dark .btn-primary {
+        background-color: #cc9b63;
+        border-color: #b88854;
+      }
+
+      body.theme-dark .btn-primary:hover {
+        background-color: #b88854;
+        border-color: #a17546;
+      }
     </style>
   </head>
 
@@ -92,7 +127,7 @@
         <div class="cv-header text-center">
           <% if (taikhoan.HinhAnh) { %>
           <img
-            src="/uploads/<%= taikhoan.HinhAnh %>"
+            src="<%= resolveImageUrl(taikhoan.HinhAnh, '/uploads', '/images/noimage.png') %>"
             alt="Ảnh đại diện"
             class="avatar"
           />
@@ -136,6 +171,6 @@
       <%- include('includes/footer') %>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <%- include('includes/javascript') %>
   </body>
 </html>

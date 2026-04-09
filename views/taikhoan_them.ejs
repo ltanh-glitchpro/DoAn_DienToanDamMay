@@ -16,7 +16,7 @@
 		<div class="card mt-3">
 			<div class="card-header"><%= title %></div>
 			<div class="card-body">
-				<form action="/taikhoan/them" method="post" class="needs-validation" novalidate>
+				<form action="/taikhoan/them" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
 					<div class="mb-3">
 						<label for="HoVaTen" class="form-label">Họ và tên</label>
 						<input type="text" class="form-control" id="HoVaTen" name="HoVaTen" required />
@@ -29,7 +29,7 @@
 					
 					<div class="mb-3">
 						<label for="HinhAnh" class="form-label">Hình ảnh</label>
-						<input type="text" class="form-control" id="HinhAnh" name="HinhAnh" placeholder="Tập tin ảnh đại diện" />
+						<input type="file" class="form-control" id="HinhAnh" name="HinhAnh" accept="image/*" />
 					</div>
 					
 					<div class="mb-3">

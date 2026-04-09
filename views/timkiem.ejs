@@ -68,7 +68,7 @@
             <div class="col-md-4 mb-4">
               <a href="/novel/chitiet/<%= tr._id %>" class="text-decoration-none text-dark">
                 <div class="card h-100 border-0 shadow-sm card-custom">
-                  <img src="<%- tr.HinhAnh %>" class="card-img-top" alt="<%= tr.TieuDe %>">
+                  <img src="<%= resolveImageUrl(tr.HinhAnh, '/images/uploads', '/images/noimage.png') %>" class="card-img-top" alt="<%= tr.TieuDe %>" onerror="this.onerror=null;this.src='/images/noimage.png';">
 
                   <div class="card-body">
                     <strong class="d-inline-block mb-2 text-primary">

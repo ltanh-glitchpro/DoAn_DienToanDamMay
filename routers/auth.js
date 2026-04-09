@@ -32,7 +32,7 @@ router.get("/dangky", (req, res) => {
 router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
   try {
     const { HoVaTen, Email, TenDangNhap, MatKhau, XacNhanMatKhau } = req.body;
-    const HinhAnh = req.file ? req.file.filename : null;
+    const HinhAnh = req.file ? "/uploads/" + req.file.filename : null;
     let errors = {};
 
     if (!Email || !Email.match(/^[\w.-]+@gmail\.com$/))
@@ -96,9 +96,9 @@ router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
 
     <p>
       🌐 Bạn có thể truy cập hệ thống tại: <br/>
-      <a href="https://trangtruyenkickback.onrender.com" target="_blank"
+      <a href="https://truyen-chu-katee.onrender.com" target="_blank"
          style="color: #e2852f; text-decoration: none; font-weight: bold;">
-        👉 https://trangtruyenkickback.onrender.com
+        👉 https://truyen-chu-katee.onrender.com
       </a>
     </p>
 

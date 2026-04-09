@@ -9,6 +9,8 @@ var MongoStore = require("connect-mongo");
 var path = require("path");
 var TheLoai = require("./models/theloai");
 var Novel = require("./models/novel");
+var Chuong = require("./models/chuong");
+var resolveImageUrl = require("./modules/resolveImageUrl");
 
 var indexRouter = require("./routers/index");
 var authRouter = require("./routers/auth");
@@ -55,6 +57,7 @@ app.use(
 
 app.use((req, res, next) => {
   res.locals.session = req.session;
+  res.locals.resolveImageUrl = resolveImageUrl;
   var error = req.session.error;
   var success = req.session.success;
   delete req.session.error;
@@ -74,6 +77,18 @@ app.use(async (req, res, next) => {
       .sort({ NgayDang: -1 })
       .limit(12)
       .lean();
+
+    let pendingNovelCount = 0;
+    let pendingChuongCount = 0;
+
+    if (req.session && req.session.QuyenHan === "admin") {
+      const counts = await Promise.all([
+        Novel.countDocuments({ KiemDuyet: 0 }),
+        Chuong.countDocuments({ KiemDuyet: 0 }),
+      ]);
+      pendingNovelCount = counts[0];
+      pendingChuongCount = counts[1];
+    }
 
     const segmentLabelMap = {
       auth: "Tài khoản",
@@ -119,6 +134,9 @@ app.use(async (req, res, next) => {
     res.locals.navTheLoai = navTheLoai;
     res.locals.navNovels = navNovels;
     res.locals.breadcrumbs = breadcrumbs;
+    res.locals.pendingNovelCount = pendingNovelCount;
+    res.locals.pendingChuongCount = pendingChuongCount;
+    res.locals.pendingReviewCount = pendingNovelCount + pendingChuongCount;
     next();
   } catch (error) {
     next(error);

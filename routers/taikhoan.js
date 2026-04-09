@@ -3,6 +3,7 @@ var router = express.Router();
 var bcrypt = require("bcryptjs");
 var saltRounds = 10;
 var TaiKhoan = require("../models/taikhoan");
+var sendMail = require("../utils/sendMail");
 var multer = require("multer");
 var path = require("path");
 const mongoose = require("mongoose");
@@ -52,15 +53,30 @@ router.get("/them", requireAdmin, async (req, res) => {
 });
 
 // POST: Thêm tài khoản
-router.post("/them", requireAdmin, async (req, res) => {
+router.post("/them", requireAdmin, upload.single("HinhAnh"), async (req, res) => {
+  var plainPassword = req.body.MatKhau;
+  const HinhAnh = req.file ? "/uploads/" + req.file.filename : (req.body.HinhAnh || "");
   var data = {
     HoVaTen: req.body.HoVaTen,
     Email: req.body.Email,
-    HinhAnh: req.body.HinhAnh,
+    HinhAnh: HinhAnh,
     TenDangNhap: req.body.TenDangNhap,
-    MatKhau: bcrypt.hashSync(req.body.MatKhau, saltRounds),
+    MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
   };
   await TaiKhoan.create(data);
+
+  if (data.Email) {
+    var htmlContent = `
+      <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
+      <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
+      <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
+      <p><b>Mật khẩu:</b> ${plainPassword}</p>
+      <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
+    `;
+
+    await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
+  }
+
   res.redirect("/taikhoan");
 });
 
@@ -72,19 +88,34 @@ router.get("/them_admin", requireAdmin, async (req, res) => {
 
 // POST: Thêm tài khoản dạng admin
 router.post("/them_admin", requireAdmin, upload.single("HinhAnh"), async (req, res) => {
+  var plainPassword = req.body.MatKhau;
   var data = {
     HoVaTen: req.body.HoVaTen,
     Email: req.body.Email,
     TenDangNhap: req.body.TenDangNhap,
     QuyenHan: req.body.role,
-    MatKhau: bcrypt.hashSync(req.body.MatKhau, saltRounds),
+    MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
   };
 
   if (req.file) {
-    data.HinhAnh = req.file.filename;
+    data.HinhAnh = "/uploads/" + req.file.filename;
   }
 
   await TaiKhoan.create(data);
+
+  if (data.Email) {
+    var htmlContent = `
+      <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
+      <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
+      <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
+      <p><b>Mật khẩu:</b> ${plainPassword}</p>
+      <p><b>Quyền hạn:</b> ${data.QuyenHan}</p>
+      <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
+    `;
+
+    await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
+  }
+
   res.redirect("/taikhoan");
 });
 
@@ -101,10 +132,11 @@ router.get("/sua/:id", requireAdmin, async (req, res) => {
 // POST: Sửa tài khoản
 router.post("/sua/:id", requireAdmin, async (req, res) => {
   var id = req.params.id;
+  var tk = await TaiKhoan.findById(id).select("HinhAnh").lean();
   var data = {
     HoVaTen: req.body.HoVaTen,
     Email: req.body.Email,
-    HinhAnh: req.body.HinhAnh,
+    HinhAnh: tk ? tk.HinhAnh : "",
     TenDangNhap: req.body.TenDangNhap,
     QuyenHan: req.body.QuyenHan,
     KichHoat: req.body.KichHoat,

@@ -197,7 +197,7 @@
     <% if (topNovels && topNovels.length) { %>
       <% topNovels.forEach(function (novel) { %>
         <a href="/novel/chitiet/<%= novel._id %>" class="novel-item text-decoration-none">
-          <img src="<%- novel.HinhAnh %>" alt="<%= novel.TieuDe %>" class="novel-img" />
+          <img src="<%= resolveImageUrl(novel.HinhAnh, '/images/uploads', '/images/noimage.png') %>" alt="<%= novel.TieuDe %>" class="novel-img" onerror="this.onerror=null;this.src='/images/noimage.png';" />
 
           <div class="novel-content">
             <div class="novel-header">
