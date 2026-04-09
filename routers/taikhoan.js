@@ -6,6 +6,7 @@ var TaiKhoan = require("../models/taikhoan");
 var sendMail = require("../utils/sendMail");
 var multer = require("multer");
 var path = require("path");
+var fs = require("fs");
 const mongoose = require("mongoose");
 
 function requireLogin(req, res, next) {
@@ -25,9 +26,14 @@ function requireAdmin(req, res, next) {
 }
 
 // Cấu hình multer lưu ảnh vào /public/uploads
+const uploadDir = path.join(__dirname, "..", "public", "uploads");
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "public/uploads/");
+    cb(null, uploadDir);
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
@@ -179,28 +185,39 @@ router.get("/sua_user/:id", requireLogin, async (req, res) => {
 router.post("/sua_user/:id", requireLogin, upload.single("HinhAnh"), async (req, res) => {
   var id = req.params.id;
 
-  if (req.session.QuyenHan !== "admin" && String(req.session.MaNguoiDung) !== String(id)) {
-    req.session.error = "Bạn không có quyền chỉnh sửa tài khoản này.";
-    return res.redirect("/error");
+  try {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      req.session.error = "ID tài khoản không hợp lệ.";
+      return res.redirect("/error");
+    }
+
+    if (req.session.QuyenHan !== "admin" && String(req.session.MaNguoiDung) !== String(id)) {
+      req.session.error = "Bạn không có quyền chỉnh sửa tài khoản này.";
+      return res.redirect("/error");
+    }
+
+    var data = {
+      HoVaTen: req.body.HoVaTen,
+      Email: req.body.Email,
+      TenDangNhap: req.body.TenDangNhap,
+    };
+    if (req.body.MatKhau)
+      data["MatKhau"] = bcrypt.hashSync(req.body.MatKhau, saltRounds);
+
+    if (req.file) {
+      data["HinhAnh"] = "/uploads/" + req.file.filename;
+    } else {
+      var tk = await TaiKhoan.findById(id).select("HinhAnh").lean();
+      if (tk) data["HinhAnh"] = tk.HinhAnh;
+    }
+
+    await TaiKhoan.findByIdAndUpdate(id, data);
+    return res.redirect(`/taikhoan/hoso/${id}`);
+  } catch (error) {
+    console.error("Lỗi cập nhật hồ sơ người dùng:", error);
+    req.session.error = "Có lỗi xảy ra khi lưu thông tin. Vui lòng thử lại.";
+    return res.redirect(`/taikhoan/sua_user/${id}`);
   }
-
-  var data = {
-    HoVaTen: req.body.HoVaTen,
-    Email: req.body.Email,
-    TenDangNhap: req.body.TenDangNhap,
-  };
-  if (req.body.MatKhau)
-    data["MatKhau"] = bcrypt.hashSync(req.body.MatKhau, saltRounds);
-
-  if (req.file) {
-    data["HinhAnh"] = req.file.filename; // Chỉ lưu tên file
-  } else {
-    var tk = await TaiKhoan.findById(id);
-    if (tk) data["HinhAnh"] = tk.HinhAnh;
-  }
-
-  await TaiKhoan.findByIdAndUpdate(id, data);
-  res.redirect(`/taikhoan/hoso/${id}`); // Sửa redirect về trang hồ sơ đúng id
 });
 
 // GET: Xóa tài khoản

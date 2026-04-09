@@ -1,3 +1,18 @@
+const fs = require("fs");
+const path = require("path");
+
+function fileExistsInPublic(urlPath) {
+	if (!urlPath || !urlPath.startsWith("/")) return false;
+
+	try {
+		const cleanedPath = decodeURI(urlPath.split("?")[0]);
+		const absolutePath = path.join(__dirname, "..", "public", cleanedPath.replace(/^\//, ""));
+		return fs.existsSync(absolutePath);
+	} catch (error) {
+		return false;
+	}
+}
+
 function resolveImageUrl(value, folderPrefix = "", fallback = "") {
 	if (!value) return fallback;
 
@@ -14,14 +29,15 @@ function resolveImageUrl(value, folderPrefix = "", fallback = "") {
 	}
 
 	if (imageValue.startsWith("/")) {
-		return encodeURI(imageValue);
+		return fileExistsInPublic(imageValue) ? encodeURI(imageValue) : fallback;
 	}
 
 	if (folderPrefix) {
 		const normalizedPrefix = folderPrefix.endsWith("/")
 			? folderPrefix.slice(0, -1)
 			: folderPrefix;
-		return encodeURI(normalizedPrefix + "/" + imageValue);
+		const combinedPath = normalizedPrefix + "/" + imageValue;
+		return fileExistsInPublic(combinedPath) ? encodeURI(combinedPath) : fallback;
 	}
 
 	return fallback;

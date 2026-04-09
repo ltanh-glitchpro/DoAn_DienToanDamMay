@@ -130,6 +130,7 @@
             src="<%= resolveImageUrl(taikhoan.HinhAnh, '/uploads', '/images/noimage.png') %>"
             alt="Ảnh đại diện"
             class="avatar"
+            onerror="this.onerror=null;this.src='/images/noimage.png';"
           />
           <% } else { %>
           <i
