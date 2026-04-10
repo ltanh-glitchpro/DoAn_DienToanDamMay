@@ -10,6 +10,7 @@ var path = require("path");
 var TheLoai = require("./models/theloai");
 var Novel = require("./models/novel");
 var Chuong = require("./models/chuong");
+var ThongBao = require("./models/thongbao");
 var resolveImageUrl = require("./modules/resolveImageUrl");
 
 var indexRouter = require("./routers/index");
@@ -18,6 +19,7 @@ var theloaiRouter = require("./routers/theloai");
 var taikhoanRouter = require("./routers/taikhoan");
 var novelRouter = require("./routers/novel");
 var chuongRouter = require("./routers/chuong");
+var thongbaoRouter = require("./routers/thongbao");
 
 var uri = 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
 const port = process.env.PORT || 3000;
@@ -125,6 +127,7 @@ app.use(async (req, res, next) => {
 
     let pendingNovelCount = 0;
     let pendingChuongCount = 0;
+    let unreadNotificationCount = 0;
 
     if (req.session && req.session.QuyenHan === "admin") {
       const counts = await Promise.all([
@@ -133,6 +136,13 @@ app.use(async (req, res, next) => {
       ]);
       pendingNovelCount = counts[0];
       pendingChuongCount = counts[1];
+    }
+
+    if (req.session && req.session.MaNguoiDung) {
+      unreadNotificationCount = await ThongBao.countDocuments({
+        NguoiNhan: req.session.MaNguoiDung,
+        DaDoc: 0,
+      });
     }
 
     const segmentLabelMap = {
@@ -148,6 +158,12 @@ app.use(async (req, res, next) => {
       timkiem: "Tìm kiếm",
       tinmoinhat: "Tin mới nhất",
       loc: "Lọc truyện",
+      phanloai: "Phân loại",
+      "duoi-100": "Dưới 100 chương",
+      "100-500": "100 - 500 chương",
+      "500-1000": "500 - 1000 chương",
+      "tren-1000": "Trên 1000 chương",
+      thongbao: "Thông báo",
       them: "Thêm mới",
       them_admin: "Thêm tài khoản",
       sua: "Chỉnh sửa",
@@ -182,6 +198,7 @@ app.use(async (req, res, next) => {
     res.locals.pendingNovelCount = pendingNovelCount;
     res.locals.pendingChuongCount = pendingChuongCount;
     res.locals.pendingReviewCount = pendingNovelCount + pendingChuongCount;
+    res.locals.unreadNotificationCount = unreadNotificationCount;
     next();
   } catch (error) {
     next(error);
@@ -195,6 +212,7 @@ app.use("/theloai", theloaiRouter);
 app.use("/taikhoan", taikhoanRouter);
 app.use("/novel", novelRouter);
 app.use("/chuong", chuongRouter);
+app.use("/thongbao", thongbaoRouter);
 
 mongoose
   .connect(uri)

@@ -12,14 +12,183 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --auth-bg: radial-gradient(circle at 15% 15%, rgba(247, 171, 98, 0.25), transparent 38%),
+          radial-gradient(circle at 80% 5%, rgba(63, 123, 197, 0.18), transparent 30%),
+          #eef3fb;
+        --auth-card-bg: rgba(255, 255, 255, 0.88);
+        --auth-card-border: rgba(255, 255, 255, 0.62);
+        --auth-title: #b46d21;
+        --auth-text: #243447;
+        --auth-muted: #65748a;
+        --auth-input-bg: #ffffff;
+        --auth-input-border: #d4deea;
+        --auth-input-focus: #f0a55c;
+        --auth-primary: linear-gradient(120deg, #d39b62 0%, #b57935 100%);
+        --auth-primary-hover: linear-gradient(120deg, #c98b4d 0%, #a86722 100%);
+        --auth-shadow: 0 20px 45px rgba(24, 47, 84, 0.16);
+      }
+
+      body.theme-dark {
+        --auth-bg: radial-gradient(circle at 14% 12%, rgba(216, 148, 83, 0.24), transparent 34%),
+          radial-gradient(circle at 86% 8%, rgba(97, 153, 221, 0.16), transparent 28%),
+          #0f1826;
+        --auth-card-bg: rgba(19, 30, 45, 0.88);
+        --auth-card-border: rgba(72, 98, 130, 0.45);
+        --auth-title: #f3c38f;
+        --auth-text: #eaf1fb;
+        --auth-muted: #a8b6ca;
+        --auth-input-bg: rgba(23, 37, 56, 0.9);
+        --auth-input-border: #365173;
+        --auth-input-focus: #f1b16f;
+        --auth-primary: linear-gradient(120deg, #d09c6a 0%, #bc7f42 100%);
+        --auth-primary-hover: linear-gradient(120deg, #d9a672 0%, #c0874a 100%);
+        --auth-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+      }
+
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        background: var(--auth-bg);
+        color: var(--auth-text);
+        margin: 0;
+      }
+
+      .register-wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 22px 0;
+      }
+
+      .register-card {
+        width: 100%;
+        max-width: 560px;
+        border: 1px solid var(--auth-card-border);
+        border-radius: 20px;
+        box-shadow: var(--auth-shadow);
+        backdrop-filter: blur(8px);
+        background: var(--auth-card-bg);
+        overflow: hidden;
+      }
+
+      .register-header {
+        font-size: 2.15rem;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        color: var(--auth-title);
+        text-align: center;
+        padding: 28px 0 8px;
+      }
+
+      .card-body {
+        padding: 18px 24px 24px;
+      }
+
+      .form-label {
+        font-weight: 600;
+      }
+
+      .form-control {
+        min-height: 48px;
+        border-radius: 12px;
+        border: 1px solid var(--auth-input-border);
+        background: var(--auth-input-bg);
+        color: var(--auth-text);
+      }
+
+      .form-control::placeholder {
+        color: var(--auth-muted);
+      }
+
+      .form-control:focus {
+        border-color: var(--auth-input-focus);
+        box-shadow: 0 0 0 0.2rem rgba(232, 162, 95, 0.25);
+        background: var(--auth-input-bg);
+        color: var(--auth-text);
+      }
+
+      .avatar-input {
+        display: block;
+        width: 100%;
+        border: 1px dashed var(--auth-input-border);
+        border-radius: 12px;
+        padding: 11px 12px;
+        background: var(--auth-input-bg);
+        color: var(--auth-muted);
+      }
+
+      .password-toggle-btn {
+        background-color: var(--auth-input-bg);
+        border-color: var(--auth-input-border);
+        color: var(--auth-muted);
+        border-radius: 0 12px 12px 0;
+      }
+
+      .password-toggle-btn:hover,
+      .password-toggle-btn:focus,
+      .password-toggle-btn:active {
+        background-color: var(--auth-input-bg);
+        border-color: var(--auth-input-border);
+        color: var(--auth-text);
+        box-shadow: none;
+      }
+
+      .btn-register {
+        background: var(--auth-primary);
+        border: none;
+        border-radius: 12px;
+        min-height: 48px;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .btn-register:hover {
+        background: var(--auth-primary-hover);
+        transform: translateY(-1px);
+        box-shadow: 0 12px 22px rgba(177, 117, 51, 0.28);
+      }
+
+      .alert {
+        border-radius: 12px;
+      }
+
+      @media (max-width: 576px) {
+        .register-wrapper {
+          padding: 10px 0;
+          min-height: auto;
+        }
+
+        .register-card {
+          max-width: 100%;
+          border-radius: 16px;
+        }
+
+        .register-header {
+          font-size: 1.9rem;
+          padding-top: 22px;
+        }
+
+        .card-body {
+          padding: 16px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
       <%- include('includes/navbar') %>
 
-      <div class="card mt-3">
-        <div class="card-header"><%= title %></div>
+      <div class="register-wrapper">
+      <div class="card register-card">
+        <div class="register-header"><%= title %></div>
         <div class="card-body">
           <% if (successMsg) { %>
           <div class="alert alert-success"><%= successMsg %></div>
@@ -30,6 +199,8 @@
             action="/auth/dangky"
             method="POST"
             enctype="multipart/form-data"
+            class="needs-validation"
+            novalidate
           >
             <div class="mb-3">
               <label for="HoVaTen" class="form-label">Họ và tên</label>
@@ -56,8 +227,8 @@
             </div>
 
             <div class="mb-3">
-              <label for="HinhAnh">Ảnh đại diện:</label>
-              <input type="file" name="HinhAnh" accept="image/*" />
+              <label for="HinhAnh" class="form-label">Ảnh đại diện</label>
+              <input class="avatar-input" id="HinhAnh" type="file" name="HinhAnh" accept="image/*" />
             </div>
 
             <div class="mb-3">
@@ -75,14 +246,25 @@
 
             <div class="mb-3">
               <label for="MatKhau" class="form-label">Mật khẩu</label>
-              <input
-                type="password"
-                class="form-control"
-                id="MatKhau"
-                name="MatKhau"
-                required
-                autocomplete="new-password"
-              />
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="MatKhau"
+                  name="MatKhau"
+                  required
+                  autocomplete="new-password"
+                />
+                <button
+                  class="btn password-toggle-btn"
+                  type="button"
+                  data-toggle-password
+                  data-target="MatKhau"
+                  aria-label="Hiện mật khẩu"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
               <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
             </div>
 
@@ -90,23 +272,35 @@
               <label for="XacNhanMatKhau" class="form-label"
                 >Xác nhận mật khẩu</label
               >
-              <input
-                type="password"
-                class="form-control"
-                id="XacNhanMatKhau"
-                name="XacNhanMatKhau"
-                required
-                autocomplete="new-password"
-              />
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="XacNhanMatKhau"
+                  name="XacNhanMatKhau"
+                  required
+                  autocomplete="new-password"
+                />
+                <button
+                  class="btn password-toggle-btn"
+                  type="button"
+                  data-toggle-password
+                  data-target="XacNhanMatKhau"
+                  aria-label="Hiện mật khẩu"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
               <div class="invalid-feedback">Vui lòng xác nhận mật khẩu.</div>
             </div>
 
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-register w-100 text-white fw-bold">
               <i class="bi bi-person-plus-fill"></i> Đăng ký tài khoản
             </button>
           </form>
           <% } %>
         </div>
+      </div>
       </div>
 
       <%- include('includes/footer') %>
@@ -115,6 +309,23 @@
     <%- include('includes/javascript') %>
 
     <script>
+      document.querySelectorAll("[data-toggle-password]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const input = document.getElementById(button.getAttribute("data-target"));
+          if (!input) return;
+
+          const icon = button.querySelector("i");
+          const isHidden = input.type === "password";
+          input.type = isHidden ? "text" : "password";
+
+          if (icon) {
+            icon.className = isHidden ? "bi bi-eye-slash" : "bi bi-eye";
+          }
+
+          button.setAttribute("aria-label", isHidden ? "Ẩn mật khẩu" : "Hiện mật khẩu");
+        });
+      });
+
       // Bootstrap form validation
       (() => {
         "use strict";

@@ -120,6 +120,110 @@ router.get('/loc/:id', async (req, res) => {
     }
 });
 
+router.get('/phanloai/chuong/:range', async (req, res) => {
+    try {
+        var range = (req.params.range || '').toLowerCase();
+        var rangeConfig = {
+            'duoi-100': {
+                title: 'Phân loại theo chương: Dưới 100 chương',
+                match: { $lt: 100 },
+                emptyMessage: 'Hiện chưa có truyện nào dưới 100 chương.'
+            },
+            '100-500': {
+                title: 'Phân loại theo chương: 100 - 500 chương',
+                match: { $gte: 100, $lte: 500 },
+                emptyMessage: 'Hiện chưa có truyện nào trong khoảng 100 - 500 chương.'
+            },
+            '500-1000': {
+                title: 'Phân loại theo chương: 500 - 1000 chương',
+                match: { $gte: 500, $lte: 1000 },
+                emptyMessage: 'Hiện chưa có truyện nào trong khoảng 500 - 1000 chương.'
+            },
+            'tren-1000': {
+                title: 'Phân loại theo chương: Trên 1000 chương',
+                match: { $gt: 1000 },
+                emptyMessage: 'Hiện chưa có truyện nào trên 1000 chương.'
+            }
+        };
+
+        var config = rangeConfig[range];
+        if (!config) {
+            req.session.error = 'Khoảng chương không hợp lệ.';
+            return res.redirect('/error');
+        }
+
+        var tl = await TheLoai.find();
+
+        var tr = await Novel.aggregate([
+            { $match: { KiemDuyet: 1 } },
+            {
+                $lookup: {
+                    from: 'chuongs',
+                    let: { novelId: '$_id' },
+                    pipeline: [
+                        {
+                            $match: {
+                                $expr: {
+                                    $and: [
+                                        { $eq: ['$Novel', '$$novelId'] },
+                                        { $eq: ['$KiemDuyet', 1] }
+                                    ]
+                                }
+                            }
+                        },
+                        { $count: 'count' }
+                    ],
+                    as: 'approvedChuongMeta'
+                }
+            },
+            {
+                $addFields: {
+                    SoChuong: {
+                        $ifNull: [{ $arrayElemAt: ['$approvedChuongMeta.count', 0] }, 0]
+                    }
+                }
+            },
+            { $match: { SoChuong: config.match } },
+            {
+                $lookup: {
+                    from: 'theloais',
+                    localField: 'TheLoai',
+                    foreignField: '_id',
+                    as: 'TheLoai'
+                }
+            },
+            {
+                $lookup: {
+                    from: 'taikhoans',
+                    localField: 'TaiKhoan',
+                    foreignField: '_id',
+                    as: 'TaiKhoan'
+                }
+            },
+            {
+                $addFields: {
+                    TheLoai: { $arrayElemAt: ['$TheLoai', 0] },
+                    TaiKhoan: { $arrayElemAt: ['$TaiKhoan', 0] }
+                }
+            },
+            { $sort: { SoChuong: -1, NgayDang: -1 } }
+        ]);
+
+        res.render('phanloai_chuong', {
+            title: config.title,
+            theloai: tl,
+            novel: tr,
+            firstImage: firstImage,
+            emptyMessage: config.emptyMessage,
+            rangeLabel: config.title.replace('Phân loại theo chương: ', '')
+        });
+    } catch (error) {
+        console.error('Lỗi phân loại theo chương:', error);
+        req.session.error = 'Không thể tải danh sách phân loại theo chương.';
+        return res.redirect('/error');
+    }
+});
+
 
 router.get('/novel/chitiet/:id', async function(req, res){
     var id = req.params.id;

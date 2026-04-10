@@ -59,15 +59,13 @@
                 <td class="align-middle small"><%= ch.TieuDe %></td>
                 <td class="align-middle small"><%= new Date(ch.NgayDang).toLocaleString("vi-VN") %></td>
                 <td class="align-middle text-center">
-                  <% if (ch.KiemDuyet === 1) { %>
-                    <a href="javascript:void(0);" onclick="thayDoiTrangThaiDuyet('<%= ch._id %>', 'reject')" title="Bỏ duyệt">
-                      <i class="bi bi-check-circle text-success"></i>
-                    </a>
-                  <% } else { %>
-                    <a href="javascript:void(0);" onclick="thayDoiTrangThaiDuyet('<%= ch._id %>', 'approve')" title="Duyệt">
-                      <i class="bi bi-x-circle text-danger"></i>
-                    </a>
-                  <% } %>
+                  <a href="/chuong/duyet/<%= ch._id %>" class="btn btn-sm <%= ch.KiemDuyet === 1 ? 'btn-outline-success' : 'btn-outline-warning' %>">
+                    <% if (ch.KiemDuyet === 1) { %>
+                      <i class="bi bi-check-circle"></i> Đã duyệt
+                    <% } else { %>
+                      <i class="bi bi-hourglass-split"></i> Chờ duyệt
+                    <% } %>
+                  </a>
                 </td>
                 <td class="align-middle text-center">
                   <a href="/chuong/sua/<%= ch._id %>"><i class="bi bi-pencil-square"></i></a>
@@ -91,25 +89,6 @@
   </div>
 
   <%- include('includes/javascript') %>
-
-  <!-- JavaScript duyệt chương -->
-  <script>
-    function thayDoiTrangThaiDuyet(id, hanhDong) {
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = `/chuong/duyet-chuong/${id}`;
-
-      const actionInput = document.createElement('input');
-      actionInput.type = 'hidden';
-      actionInput.name = 'action';
-      actionInput.value = hanhDong;
-      form.appendChild(actionInput);
-
-      document.body.appendChild(form);
-      form.submit();
-    }
-  </script>
-
   <!-- JavaScript tìm kiếm không phân biệt dấu, chữ hoa/thường -->
   <script>
     function removeVietnameseTones(str) {

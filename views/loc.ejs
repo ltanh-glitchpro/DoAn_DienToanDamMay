@@ -60,7 +60,7 @@
 
 			<% if (!novel || novel.length === 0) { %>
 				<div class="alert alert-warning text-center" role="alert">
-					<i class="bi bi-exclamation-triangle-fill me-2"></i>Không tìm thấy truyện nào.
+					<i class="bi bi-exclamation-triangle-fill me-2"></i><%= emptyMessage || 'Không tìm thấy truyện nào.' %>
 				</div>
 			<% } else { %>
 				<div class="row">

@@ -65,20 +65,21 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-card-list"></i> Danh sách truyện
+                <i class="bi bi-card-list"></i> Phân loại theo Chương
               </a>
               <ul class="dropdown-menu dropdown-scroll">
-                <% if (navNovels && navNovels.length) { %>
-                  <% navNovels.forEach(function(item) { %>
-                    <li>
-                      <a class="dropdown-item text-truncate" href="/novel/chitiet/<%= item._id %>">
-                        <%= item.TieuDe %>
-                      </a>
-                    </li>
-                  <% }); %>
-                <% } else { %>
-                  <li><span class="dropdown-item-text text-muted">Chưa có truyện</span></li>
-                <% } %>
+                <li>
+                  <a class="dropdown-item" href="/phanloai/chuong/duoi-100">Dưới 100 chương</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/phanloai/chuong/100-500">100 - 500 chương</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/phanloai/chuong/500-1000">500 - 1000 chương</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/phanloai/chuong/tren-1000">Trên 1000 chương</a>
+                </li>
               </ul>
             </li>
 
@@ -191,6 +192,15 @@
               </button>
               <ul id="searchSuggestionList" class="search-suggestion-list d-none"></ul>
             </form>
+
+            <% if(typeof session !== "undefined" && session.MaNguoiDung) { %>
+            <a class="nav-link bell-link" href="/thongbao/cuatoi" title="Thông báo" aria-label="Thông báo">
+              <i class="bi bi-bell-fill"></i>
+              <% if ((unreadNotificationCount || 0) > 0) { %>
+                <span class="bell-badge"><%= unreadNotificationCount %></span>
+              <% } %>
+            </a>
+            <% } %>
 
             <% if(typeof session === "undefined" || !session.MaNguoiDung) { %>
             <div class="d-flex align-items-center gap-2 auth-links">

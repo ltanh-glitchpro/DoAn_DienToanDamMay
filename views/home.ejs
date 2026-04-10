@@ -607,9 +607,32 @@
 
 				<div class="left-pagination-wrap">
 					<div class="top-pagination">
-						<% for (let i = 1; i <= Math.min(novelTotalPages, 3); i++) { %>
-							<a href="/?page=<%= i %>" class="top-page-link <%= i === novelPage ? 'active' : '' %>"><%= i %></a>
-						<% } %>
+					<%
+						const maxVisiblePages = 3;
+						let startPage = 1;
+						let endPage = Math.min(novelTotalPages, maxVisiblePages);
+
+						if (novelPage > maxVisiblePages) {
+							startPage = novelPage - 1;
+							endPage = Math.min(novelTotalPages, novelPage + 1);
+							if (endPage - startPage + 1 < maxVisiblePages) {
+								startPage = Math.max(1, endPage - maxVisiblePages + 1);
+							}
+						}
+
+						const visiblePages = [];
+						for (let i = startPage; i <= endPage; i++) {
+							visiblePages.push(i);
+						}
+					%>
+
+					<% if (novelPage > maxVisiblePages) { %>
+						<a href="/?page=1" class="top-page-link">Đầu</a>
+					<% } %>
+
+					<% visiblePages.forEach(function (i) { %>
+						<a href="/?page=<%= i %>" class="top-page-link <%= i === novelPage ? 'active' : '' %>"><%= i %></a>
+					<% }); %>
 
 						<% if (novelPage < novelTotalPages) { %>
 							<a href="/?page=<%= novelPage + 1 %>" class="top-page-link" aria-label="Trang sau">&#8250;</a>

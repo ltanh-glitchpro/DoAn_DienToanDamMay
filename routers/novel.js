@@ -7,6 +7,7 @@ const path = require("path");
 var TheLoai = require("../models/theloai");
 var Novel = require("../models/novel");
 var Chuong = require("../models/chuong"); // thêm model chương
+var ThongBao = require("../models/thongbao");
 
 function requireLogin(req, res, next) {
   if (req.session && req.session.MaNguoiDung) {
@@ -116,16 +117,14 @@ router.get("/them", requireLogin, async function (req, res) {
 
 // POST: Đăng bài viết
 router.post("/them", requireLogin, upload.single("HinhAnh"), async function (req, res, next) {
-  var kd = 0;
+  var isAdmin = req.session.QuyenHan === "admin";
+  var kd = isAdmin ? 1 : 0;
   if (req.session.MaNguoiDung) {
     const file = req.file;
     if (!file) {
       const error = new Error("Hãy upload hình ảnh");
       res.redirect("/error");
       return;
-    }
-    if (req.session.QuyenHan === "admin") {
-      kd = 1;
     }
     const picURL = "/images/uploads/" + file.filename;
     var data = {
@@ -138,7 +137,9 @@ router.post("/them", requireLogin, upload.single("HinhAnh"), async function (req
       HinhAnh: picURL,
     };
     await Novel.create(data);
-    req.session.success = "Đã đăng bài viết thành công và đang chờ kiểm duyệt.";
+    req.session.success = isAdmin
+      ? "Đã đăng truyện thành công và hiển thị ngay."
+      : "Đã đăng truyện thành công và đang chờ admin kiểm duyệt.";
     res.redirect("/success");
   }
 });
@@ -163,6 +164,7 @@ router.post(
   upload.single("HinhAnh"),
   async function (req, res, next) {
     var id = req.params.id;
+    var isAdmin = req.session.QuyenHan === "admin";
     const file = req.file;
     const existingNovel = await Novel.findById(id).select("HinhAnh").lean();
     const picURL = file ? "/images/uploads/" + file.filename : (existingNovel ? existingNovel.HinhAnh : "");
@@ -171,21 +173,84 @@ router.post(
       TieuDe: req.body.TieuDe,
       TomTat: req.body.TomTat,
       TrangThai: req.body.TrangThai || 0,
+      KiemDuyet: isAdmin ? 1 : 0,
       HinhAnh: picURL,
     };
     await Novel.findByIdAndUpdate(id, data);
-    req.session.success =
-      "Đã cập nhật bài viết thành công và đang chờ kiểm duyệt.";
+    req.session.success = isAdmin
+      ? "Đã cập nhật truyện thành công và hiển thị ngay."
+      : "Đã cập nhật truyện thành công và đang chờ admin kiểm duyệt lại.";
     res.redirect("/success");
   }
 );
 
-// GET: Duyệt bài viết
+// GET: Trang duyệt truyện
 router.get("/duyet/:id", requireAdmin, async function (req, res) {
-  var id = req.params.id;
-  var tr = await Novel.findById(id);
-  await Novel.findByIdAndUpdate(id, { KiemDuyet: 1 - tr.KiemDuyet });
-  res.redirect("back");
+  try {
+    var tr = await Novel.findById(req.params.id)
+      .populate("TheLoai", "tentheloai")
+      .populate("TaiKhoan", "HoVaTen")
+      .lean();
+
+    if (!tr) {
+      req.session.error = "Không tìm thấy truyện để duyệt.";
+      return res.redirect("/error");
+    }
+
+    return res.render("novel_duyet", {
+      title: "Duyệt truyện",
+      novel: tr,
+    });
+  } catch (error) {
+    console.error(error);
+    req.session.error = "Không thể tải trang duyệt truyện.";
+    return res.redirect("/error");
+  }
+});
+
+// POST: Duyệt hoặc từ chối truyện
+router.post("/duyet/:id", requireAdmin, async function (req, res) {
+  try {
+    var tr = await Novel.findById(req.params.id).lean();
+    if (!tr) {
+      req.session.error = "Không tìm thấy truyện để duyệt.";
+      return res.redirect("/error");
+    }
+
+    var action = req.body.action;
+    var lyDo = String(req.body.lyDo || "").trim();
+    if (!["approve", "reject"].includes(action)) {
+      req.session.error = "Hành động duyệt truyện không hợp lệ.";
+      return res.redirect("/error");
+    }
+
+    var newStatus = action === "approve" ? 1 : 0;
+    await Novel.findByIdAndUpdate(req.params.id, { KiemDuyet: newStatus });
+
+    var notificationText =
+      action === "approve"
+        ? `Truyện \"${tr.TieuDe}\" của bạn đã được admin duyệt.`
+        : `Truyện \"${tr.TieuDe}\" của bạn chưa được duyệt.${lyDo ? ` Lý do: ${lyDo}` : ""}`;
+
+    await ThongBao.create({
+      NguoiNhan: tr.TaiKhoan,
+      Loai: "novel",
+      MucTieuId: tr._id,
+      TieuDe: action === "approve" ? "Truyện đã được duyệt" : "Truyện chưa được duyệt",
+      NoiDung: notificationText,
+      TrangThai: action === "approve" ? "approved" : "rejected",
+    });
+
+    req.session.success =
+      action === "approve"
+        ? "Đã duyệt truyện thành công."
+        : "Đã từ chối truyện và gửi thông báo cho tác giả.";
+    return res.redirect("/novel");
+  } catch (error) {
+    console.error(error);
+    req.session.error = "Không thể xử lý duyệt truyện.";
+    return res.redirect("/error");
+  }
 });
 
 // GET: Xóa bài viết

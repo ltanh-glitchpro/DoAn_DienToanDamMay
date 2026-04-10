@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    .notify-wrap {
+      margin-top: 16px;
+      background: #fff;
+      border: 1px solid #e7edf6;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+    }
+
+    .notify-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid #edf2f8;
+      background: #f7faff;
+    }
+
+    .notify-title {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #1f365c;
+    }
+
+    .notify-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid #edf2f8;
+      transition: background-color 0.2s ease;
+    }
+
+    .notify-item:last-child {
+      border-bottom: none;
+    }
+
+    .notify-item.unread {
+      background: #f8fcff;
+    }
+
+    .notify-main {
+      min-width: 0;
+    }
+
+    .notify-item-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1f3555;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notify-item-text {
+      margin: 0;
+      color: #4f627a;
+      line-height: 1.45;
+    }
+
+    .notify-meta {
+      margin-top: 6px;
+      color: #77879d;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .notify-status {
+      font-size: 0.76rem;
+      border-radius: 999px;
+      padding: 2px 8px;
+      border: 1px solid;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+    }
+
+    .notify-status.approved {
+      color: #18794e;
+      border-color: #9ad5b8;
+      background: #eef9f2;
+    }
+
+    .notify-status.rejected {
+      color: #b42318;
+      border-color: #fecdd3;
+      background: #fff1f2;
+    }
+
+    .notify-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .notify-empty {
+      padding: 28px 16px;
+      text-align: center;
+      color: #6d7d91;
+    }
+
+    .notify-footer {
+      padding: 12px 16px;
+      border-top: 1px solid #edf2f8;
+      background: #fbfdff;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .notify-item {
+        grid-template-columns: 1fr;
+      }
+
+      .notify-actions {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <%- include('includes/navbar') %>
+
+    <section class="notify-wrap">
+      <div class="notify-header">
+        <h1 class="notify-title"><i class="bi bi-bell-fill"></i> Thông báo của tôi</h1>
+        <form action="/thongbao/dadoc-tatca" method="post">
+          <button class="btn btn-sm btn-outline-primary" type="submit">
+            Đánh dấu đã đọc tất cả
+          </button>
+        </form>
+      </div>
+
+      <% if (thongbaos && thongbaos.length) { %>
+        <% thongbaos.forEach(function (tb) { %>
+          <article class="notify-item <%= tb.DaDoc === 1 ? '' : 'unread' %>">
+            <div class="notify-main">
+              <div class="notify-item-title">
+                <i class="bi <%= tb.Loai === 'novel' ? 'bi-journal-bookmark-fill' : 'bi-file-earmark-text-fill' %>"></i>
+                <span><%= tb.TieuDe %></span>
+              </div>
+              <p class="notify-item-text"><%= tb.NoiDung %></p>
+              <div class="notify-meta">
+                <span><i class="bi bi-clock"></i> <%= new Date(tb.NgayTao).toLocaleString('vi-VN') %></span>
+                <span class="notify-status <%= tb.TrangThai %>">
+                  <%= tb.TrangThai === 'approved' ? 'Đã duyệt' : 'Chưa duyệt' %>
+                </span>
+                <% if (tb.DaDoc !== 1) { %>
+                  <span class="badge text-bg-warning">Mới</span>
+                <% } %>
+              </div>
+            </div>
+            <div class="notify-actions">
+              <a class="btn btn-sm btn-primary" href="/thongbao/chuyen/<%= tb._id %>">Xem nội dung</a>
+              <% if (tb.DaDoc !== 1) { %>
+                <form action="/thongbao/dadoc/<%= tb._id %>" method="post">
+                  <button class="btn btn-sm btn-outline-secondary" type="submit">Đánh dấu đã đọc</button>
+                </form>
+              <% } %>
+            </div>
+          </article>
+        <% }); %>
+      <% } else { %>
+        <div class="notify-empty">
+          <i class="bi bi-inbox fs-4"></i>
+          <p class="mb-0 mt-2">Bạn chưa có thông báo nào.</p>
+        </div>
+      <% } %>
+
+      <% if (totalPages > 1) { %>
+        <div class="notify-footer">
+          <nav>
+            <ul class="pagination pagination-sm mb-0">
+              <% for (let i = 1; i <= totalPages; i++) { %>
+                <li class="page-item <%= i === page ? 'active' : '' %>">
+                  <a class="page-link" href="/thongbao/cuatoi?page=<%= i %>"><%= i %></a>
+                </li>
+              <% } %>
+            </ul>
+          </nav>
+        </div>
+      <% } %>
+    </section>
+
+    <%- include('includes/footer') %>
+  </div>
+
+  <%- include('includes/javascript') %>
+</body>
+</html>
