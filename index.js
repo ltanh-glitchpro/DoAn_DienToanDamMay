@@ -12,6 +12,7 @@ var Novel = require("./models/novel");
 var Chuong = require("./models/chuong");
 var ThongBao = require("./models/thongbao");
 var resolveImageUrl = require("./modules/resolveImageUrl");
+var uploadPaths = require("./utils/uploadPaths");
 
 var indexRouter = require("./routers/index");
 var authRouter = require("./routers/auth");
@@ -47,8 +48,11 @@ app.set("view engine", "ejs");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+uploadPaths.ensureUploadDirectories();
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
+app.use("/uploads", express.static(uploadPaths.avatarUploadDir));
+app.use("/images/uploads", express.static(uploadPaths.novelUploadDir));
 
 app.use(
   session({

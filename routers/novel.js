@@ -8,6 +8,7 @@ var TheLoai = require("../models/theloai");
 var Novel = require("../models/novel");
 var Chuong = require("../models/chuong"); // thêm model chương
 var ThongBao = require("../models/thongbao");
+var uploadPaths = require("../utils/uploadPaths");
 
 function requireLogin(req, res, next) {
   if (req.session && req.session.MaNguoiDung) {
@@ -50,10 +51,8 @@ async function requireNovelOwnerOrAdmin(req, res, next) {
 }
 
 // Tạo thư mục nếu chưa tồn tại
-const uploadDir = path.join(__dirname, "..", "public", "images", "uploads");
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
+const uploadDir = uploadPaths.novelUploadDir;
+uploadPaths.ensureUploadDirectories();
 
 // Hàm tạo số random đơn giản, đảm bảo là số nguyên và khác nhau mỗi lần gọi
 function generateRandomNumber() {

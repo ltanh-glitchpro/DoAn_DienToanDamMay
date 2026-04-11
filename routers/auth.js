@@ -7,11 +7,13 @@ var sendMail = require("../utils/sendMail");
 const crypto = require("crypto"); // thêm import crypto
 var multer = require("multer");
 var path = require("path");
+var uploadPaths = require("../utils/uploadPaths");
 
 // Cấu hình lưu ảnh
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "public/uploads/"); // <-- sửa thành thư mục bạn mong muốn
+    uploadPaths.ensureUploadDirectories();
+    cb(null, uploadPaths.avatarUploadDir);
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);

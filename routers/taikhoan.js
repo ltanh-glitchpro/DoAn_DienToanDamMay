@@ -8,6 +8,7 @@ var multer = require("multer");
 var path = require("path");
 var fs = require("fs");
 const mongoose = require("mongoose");
+var uploadPaths = require("../utils/uploadPaths");
 
 function requireLogin(req, res, next) {
   if (req.session && req.session.MaNguoiDung) {
@@ -25,11 +26,9 @@ function requireAdmin(req, res, next) {
   return res.redirect("/error");
 }
 
-// Cấu hình multer lưu ảnh vào /public/uploads
-const uploadDir = path.join(__dirname, "..", "public", "uploads");
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
+// Cấu hình multer lưu ảnh đại diện
+const uploadDir = uploadPaths.avatarUploadDir;
+uploadPaths.ensureUploadDirectories();
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
