@@ -52,10 +52,6 @@ router.get('/chuyen/:id', requireLogin, async function (req, res) {
       return res.redirect('/error');
     }
 
-    if (thongBao.DaDoc !== 1) {
-      await ThongBao.updateOne({ _id: thongBao._id }, { $set: { DaDoc: 1 } });
-    }
-
     if (thongBao.Loai === 'novel') {
       return res.redirect('/novel/chitiet/' + thongBao.MucTieuId);
     }
