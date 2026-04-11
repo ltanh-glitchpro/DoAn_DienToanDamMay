@@ -50,7 +50,7 @@ router.post("/dangky", upload.single("HinhAnh"), async (req, res) => {
     if (Object.keys(errors).length > 0) {
       req.session.error = JSON.stringify(errors);
       req.session.formData = req.body;
-      return res.redirect("/dangky");
+      return res.redirect("/auth/dangky");
     }
 
     // Kiểm tra tên đăng nhập tồn tại
@@ -147,8 +147,8 @@ router.get("/dangnhap", async (req, res) => {
 // POST: Đăng nhập
 router.post("/dangnhap", async (req, res) => {
   if (req.session.MaNguoiDung) {
-    req.session.error = "Người dùng đã đăng nhập rồi.";
-    return res.redirect("/error");
+    req.session.success = "Bạn đã đăng nhập sẵn.";
+    return res.redirect("/");
   } else {
     var taikhoan = await TaiKhoan.findOne({
       TenDangNhap: req.body.TenDangNhap,
@@ -169,18 +169,18 @@ router.post("/dangnhap", async (req, res) => {
             if (err) {
               console.error("Lỗi lưu session khi đăng nhập:", err);
               req.session.error = "Có lỗi xảy ra khi đăng nhập.";
-              return res.redirect("/error");
+              return res.redirect("/auth/dangnhap");
             }
             return res.redirect("/");
           });
         }
       } else {
         req.session.error = "Mật khẩu không đúng.";
-        return res.redirect("/error");
+        return res.redirect("/auth/dangnhap");
       }
     } else {
       req.session.error = "Tên đăng nhập không tồn tại.";
-      return res.redirect("/error");
+      return res.redirect("/auth/dangnhap");
     }
   }
 });
@@ -224,16 +224,13 @@ router.post("/quenmatkhau", async (req, res) => {
 
     await sendMail(email, "Mật khẩu mới từ hệ thống", htmlContent);
 
-    return res.render("quenmatkhau", {
-      title: "Quên Mật Khẩu",
-      success: "Mật khẩu mới đã được gửi vào email của bạn.",
-      error: null,
-    });
+    req.session.success = "Mật khẩu mới đã được gửi vào email của bạn. Vui lòng đăng nhập lại.";
+    return res.redirect("/auth/dangnhap");
   } catch (err) {
     console.error("Lỗi gửi mail:", err);
     return res.render("quenmatkhau", {
       title: "Quên Mật Khẩu",
-      error: "Có lỗi xảy ra khi gửi email. Vui lòng thử lại.",
+      error: "Có lỗi xảy ra khi gửi email. Vui lòng kiểm tra cấu hình email hệ thống và thử lại.",
       success: null,
     });
   }

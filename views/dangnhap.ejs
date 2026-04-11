@@ -222,9 +222,11 @@
       <div class="card login-card">
         <div class="login-header"><%= title %></div>
         <div class="card-body">
-          <!-- Hiển thị lỗi nếu có -->
-          <% if (typeof error !== 'undefined') { %>
-          <div class="alert alert-danger" role="alert"><%= error %></div>
+          <% if (successMsg) { %>
+          <div class="alert alert-success" role="alert"><%= successMsg %></div>
+          <% } %>
+          <% if (errorMsg) { %>
+          <div class="alert alert-danger" role="alert"><%= errorMsg %></div>
           <% } %>
 
           <form

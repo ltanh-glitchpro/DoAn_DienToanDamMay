@@ -192,6 +192,14 @@
         <div class="card-body">
           <% if (successMsg) { %>
           <div class="alert alert-success"><%= successMsg %></div>
+          <div class="d-grid gap-2 mt-3">
+            <a href="/auth/dangnhap" class="btn btn-register text-white fw-bold">
+              <i class="bi bi-box-arrow-in-right"></i> Đi đến đăng nhập
+            </a>
+            <a href="/auth/quenmatkhau" class="btn btn-outline-secondary fw-semibold">
+              <i class="bi bi-envelope"></i> Chưa nhận được email? Khôi phục mật khẩu
+            </a>
+          </div>
           <% } %> <% if (errorMsg) { %>
           <div class="alert alert-danger"><%= errorMsg %></div>
           <% } %> <% if (!successMsg) { %>
