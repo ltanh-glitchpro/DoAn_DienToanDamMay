@@ -60,30 +60,44 @@ router.get("/them", requireAdmin, async (req, res) => {
 
 // POST: Thêm tài khoản
 router.post("/them", requireAdmin, upload.single("HinhAnh"), async (req, res) => {
-  var plainPassword = req.body.MatKhau;
-  const HinhAnh = req.file ? "/uploads/" + req.file.filename : (req.body.HinhAnh || "");
-  var data = {
-    HoVaTen: req.body.HoVaTen,
-    Email: req.body.Email,
-    HinhAnh: HinhAnh,
-    TenDangNhap: req.body.TenDangNhap,
-    MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
-  };
-  await TaiKhoan.create(data);
+  try {
+    var plainPassword = req.body.MatKhau;
+    const HinhAnh = req.file ? "/uploads/" + req.file.filename : (req.body.HinhAnh || "");
+    var data = {
+      HoVaTen: req.body.HoVaTen,
+      Email: req.body.Email,
+      HinhAnh: HinhAnh,
+      TenDangNhap: req.body.TenDangNhap,
+      MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
+    };
+    await TaiKhoan.create(data);
 
-  if (data.Email) {
-    var htmlContent = `
-      <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
-      <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
-      <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
-      <p><b>Mật khẩu:</b> ${plainPassword}</p>
-      <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
-    `;
+    if (data.Email) {
+      var htmlContent = `
+        <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
+        <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
+        <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
+        <p><b>Mật khẩu:</b> ${plainPassword}</p>
+        <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
+      `;
 
-    await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
+      try {
+        await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
+        req.session.success = "Đã thêm tài khoản và gửi email thành công.";
+      } catch (mailError) {
+        console.error("Gửi email tạo tài khoản thất bại:", mailError.message || mailError);
+        req.session.success = "Đã thêm tài khoản thành công, nhưng chưa gửi được email.";
+      }
+    } else {
+      req.session.success = "Đã thêm tài khoản thành công.";
+    }
+
+    return res.redirect("/taikhoan");
+  } catch (error) {
+    console.error("Lỗi thêm tài khoản:", error);
+    req.session.error = "Không thể thêm tài khoản. Vui lòng kiểm tra dữ liệu và thử lại.";
+    return res.redirect("/error");
   }
-
-  res.redirect("/taikhoan");
 });
 
 router.get("/them_admin", requireAdmin, async (req, res) => {
@@ -94,35 +108,49 @@ router.get("/them_admin", requireAdmin, async (req, res) => {
 
 // POST: Thêm tài khoản dạng admin
 router.post("/them_admin", requireAdmin, upload.single("HinhAnh"), async (req, res) => {
-  var plainPassword = req.body.MatKhau;
-  var data = {
-    HoVaTen: req.body.HoVaTen,
-    Email: req.body.Email,
-    TenDangNhap: req.body.TenDangNhap,
-    QuyenHan: req.body.role,
-    MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
-  };
+  try {
+    var plainPassword = req.body.MatKhau;
+    var data = {
+      HoVaTen: req.body.HoVaTen,
+      Email: req.body.Email,
+      TenDangNhap: req.body.TenDangNhap,
+      QuyenHan: req.body.role,
+      MatKhau: bcrypt.hashSync(plainPassword, saltRounds),
+    };
 
-  if (req.file) {
-    data.HinhAnh = "/uploads/" + req.file.filename;
+    if (req.file) {
+      data.HinhAnh = "/uploads/" + req.file.filename;
+    }
+
+    await TaiKhoan.create(data);
+
+    if (data.Email) {
+      var htmlContent = `
+        <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
+        <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
+        <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
+        <p><b>Mật khẩu:</b> ${plainPassword}</p>
+        <p><b>Quyền hạn:</b> ${data.QuyenHan}</p>
+        <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
+      `;
+
+      try {
+        await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
+        req.session.success = "Đã thêm tài khoản và gửi email thành công.";
+      } catch (mailError) {
+        console.error("Gửi email tạo tài khoản admin thất bại:", mailError.message || mailError);
+        req.session.success = "Đã thêm tài khoản thành công, nhưng chưa gửi được email.";
+      }
+    } else {
+      req.session.success = "Đã thêm tài khoản thành công.";
+    }
+
+    return res.redirect("/taikhoan");
+  } catch (error) {
+    console.error("Lỗi thêm tài khoản admin:", error);
+    req.session.error = "Không thể thêm tài khoản. Vui lòng kiểm tra dữ liệu và thử lại.";
+    return res.redirect("/error");
   }
-
-  await TaiKhoan.create(data);
-
-  if (data.Email) {
-    var htmlContent = `
-      <h3>Xin chào ${data.HoVaTen || "bạn"},</h3>
-      <p>Tài khoản của bạn đã được quản trị viên tạo trên hệ thống.</p>
-      <p><b>Tên đăng nhập:</b> ${data.TenDangNhap}</p>
-      <p><b>Mật khẩu:</b> ${plainPassword}</p>
-      <p><b>Quyền hạn:</b> ${data.QuyenHan}</p>
-      <p>Vui lòng đăng nhập và đổi mật khẩu để đảm bảo an toàn.</p>
-    `;
-
-    await sendMail(data.Email, "Thông tin tài khoản đăng nhập", htmlContent);
-  }
-
-  res.redirect("/taikhoan");
 });
 
 // GET: Sửa tài khoản
