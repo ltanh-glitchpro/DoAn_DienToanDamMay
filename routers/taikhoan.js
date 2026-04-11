@@ -164,13 +164,13 @@ router.get("/sua/:id", requireAdmin, async (req, res) => {
 });
 
 // POST: Sửa tài khoản
-router.post("/sua/:id", requireAdmin, async (req, res) => {
+router.post("/sua/:id", requireAdmin, upload.single("HinhAnh"), async (req, res) => {
   var id = req.params.id;
   var tk = await TaiKhoan.findById(id).select("HinhAnh").lean();
   var data = {
     HoVaTen: req.body.HoVaTen,
     Email: req.body.Email,
-    HinhAnh: tk ? tk.HinhAnh : "",
+    HinhAnh: req.file ? "/uploads/" + req.file.filename : (tk ? tk.HinhAnh : ""),
     TenDangNhap: req.body.TenDangNhap,
     QuyenHan: req.body.QuyenHan,
     KichHoat: req.body.KichHoat,

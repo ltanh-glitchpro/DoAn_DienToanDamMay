@@ -16,7 +16,26 @@
 		<div class="card mt-3">
 			<div class="card-header"><%= title %></div>
 			<div class="card-body">
-				<form action="/taikhoan/sua/<%= taikhoan._id %>" method="post" class="needs-validation" novalidate>
+				<form action="/taikhoan/sua/<%= taikhoan._id %>" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+					<div class="mb-3">
+						<label class="form-label d-block">Ảnh đại diện hiện tại</label>
+						<% if (taikhoan.HinhAnh && taikhoan.HinhAnh.trim() !== '') { %>
+						<img
+							src="<%= resolveImageUrl(taikhoan.HinhAnh, '/uploads', '/images/noimage.png') %>"
+							alt="Ảnh đại diện"
+							style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 1px solid #dee2e6;"
+						/>
+						<% } else { %>
+						<span class="text-muted">Chưa có ảnh đại diện</span>
+						<% } %>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label" for="HinhAnh">Cập nhật ảnh đại diện</label>
+						<input type="file" class="form-control" id="HinhAnh" name="HinhAnh" accept="image/*" />
+						<span class="d-block small text-primary">Bỏ trống nếu muốn giữ nguyên ảnh cũ.</span>
+					</div>
+
 					<div class="mb-3">
 						<label for="HoVaTen" class="form-label">Họ và tên</label>
 						<input type="text" class="form-control" id="HoVaTen" name="HoVaTen" value="<%= taikhoan.HoVaTen %>" readonly  />
