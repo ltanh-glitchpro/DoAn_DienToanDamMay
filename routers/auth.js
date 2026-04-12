@@ -223,9 +223,16 @@ router.post("/quenmatkhau", async (req, res) => {
       <p>Vui lòng đăng nhập và thay đổi mật khẩu sau khi đăng nhập.</p>
     `;
 
-    await sendMail(email, "Mật khẩu mới từ hệ thống", htmlContent);
+    // Gửi mail nền để trang phản hồi ngay, tránh chờ SMTP làm xoay lâu.
+    setImmediate(async function () {
+      try {
+        await sendMail(email, "Mật khẩu mới từ hệ thống", htmlContent);
+      } catch (mailErr) {
+        console.error("Gửi email quên mật khẩu thất bại:", mailErr.message || mailErr);
+      }
+    });
 
-    req.session.success = "Mật khẩu mới đã được gửi vào email của bạn. Vui lòng đăng nhập lại.";
+    req.session.success = "Mật khẩu mới đang được gửi vào email của bạn. Vui lòng kiểm tra hộp thư trong ít phút.";
     return res.redirect("/auth/dangnhap");
   } catch (err) {
     console.error("Lỗi gửi mail:", err);
