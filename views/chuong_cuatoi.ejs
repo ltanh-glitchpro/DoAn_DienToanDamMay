@@ -53,12 +53,11 @@
 								<td class="align-middle small"><%= new Date(ch.NgayDang.toISOString()).toLocaleString("vi-VN") %></td>
 								<td class="align-middle text-center">
 									<% if(ch.KiemDuyet == 1) { %>
-										<i class="bi bi-check-circle"></i>
+										<span class="text-success"><i class="bi bi-check-circle"></i> Đã duyệt</span>
 									<% } else { %>
-										<i class="bi bi-x-circle text-danger"></i>
+										<span class="text-warning"><i class="bi bi-hourglass-split"></i> Chờ duyệt / Từ chối</span>
 									<% } %>
 								</td>
-								<% if(ch.KiemDuyet == 1) { %>
 									<td class="align-middle text-center">
 										<a href="/chuong/sua/<%= ch._id %>">
 											<i class="bi bi-pencil-square"></i>
@@ -71,10 +70,6 @@
 											</button>
 										</form>
 									</td>
-								<% } else { %>
-									<td></td>
-									<td></td>
-								<% } %>
 							</tr>
 							<% } %>
 						<% }); %>

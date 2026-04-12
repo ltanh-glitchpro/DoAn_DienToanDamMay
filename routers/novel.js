@@ -148,10 +148,28 @@ router.get("/sua/:id", requireLogin, requireNovelOwnerOrAdmin, async function (r
   var id = req.params.id;
   var tl = await TheLoai.find();
   var tr = await Novel.findById(id);
+
+  let lyDoTuChoi = null;
+  if (tr && tr.KiemDuyet === 0) {
+    const thongBao = await ThongBao.findOne({
+      NguoiNhan: req.session.MaNguoiDung,
+      MucTieuId: tr._id,
+      Loai: "novel",
+      TrangThai: "rejected",
+    })
+      .sort({ NgayTao: -1 })
+      .lean();
+
+    if (thongBao) {
+      lyDoTuChoi = thongBao.NoiDung;
+    }
+  }
+
   res.render("novel_sua", {
     title: "Chỉnh sửa truyện",
     theloai: tl,
     novel: tr,
+    lyDoTuChoi,
   });
 });
 
@@ -176,6 +194,21 @@ router.post(
       HinhAnh: picURL,
     };
     await Novel.findByIdAndUpdate(id, data);
+
+    if (!isAdmin) {
+      // Sau khi tác giả chỉnh sửa gửi duyệt lại, các thông báo từ chối cũ được đánh dấu đã đọc.
+      await ThongBao.updateMany(
+        {
+          NguoiNhan: req.session.MaNguoiDung,
+          Loai: "novel",
+          MucTieuId: id,
+          TrangThai: "rejected",
+          DaDoc: 0,
+        },
+        { $set: { DaDoc: 1 } }
+      );
+    }
+
     req.session.success = isAdmin
       ? "Đã cập nhật truyện thành công và hiển thị ngay."
       : "Đã cập nhật truyện thành công và đang chờ admin kiểm duyệt lại.";
@@ -257,6 +290,18 @@ router.get("/xoa/:id", requireAdmin, async function (req, res) {
   var id = req.params.id;
   await Novel.findByIdAndDelete(id);
   res.redirect("back");
+});
+
+// POST: Xóa bài viết (chủ truyện hoặc admin)
+router.post("/xoa/:id", requireLogin, requireNovelOwnerOrAdmin, async function (req, res) {
+  var id = req.params.id;
+  await Novel.findByIdAndDelete(id);
+
+  if (req.session.QuyenHan === "admin") {
+    return res.redirect("/novel");
+  }
+
+  return res.redirect("/novel/cuatoi");
 });
 
 // GET: Danh sách bài viết của tôi

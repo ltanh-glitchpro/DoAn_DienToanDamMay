@@ -47,10 +47,15 @@ function requireLogin(req, res, next) {
 
 // Middleware kiểm tra quyền admin
 function isAdmin(req, res, next) {
-  if (req.session.MaNguoiDung && req.session.QuyenHan === "admin") {
+  if (req.session && req.session.MaNguoiDung && req.session.QuyenHan === "admin") {
     return next();
   }
-  return res.redirect("/error?message=Bạn không có quyền truy cập");
+  if (!req.session || !req.session.MaNguoiDung) {
+    req.session.error = "Bạn cần đăng nhập để tiếp tục.";
+    return res.redirect("/auth/dangnhap");
+  }
+  req.session.error = "Bạn không có quyền truy cập chức năng này.";
+  return res.redirect("/error");
 }
 
 async function requireChapterOwnerOrAdmin(req, res, next) {
@@ -256,6 +261,21 @@ router.post("/sua/:id", requireLogin, requireChapterOwnerOrAdmin, upload.single(
     chuong.NoiDung = NoiDung;
     chuong.KiemDuyet = isAdmin ? 1 : 0;
     await chuong.save();
+
+    if (!isAdmin) {
+      // Sau khi tác giả chỉnh sửa gửi duyệt lại, các thông báo từ chối cũ được đánh dấu đã đọc.
+      await ThongBao.updateMany(
+        {
+          NguoiNhan: req.session.MaNguoiDung,
+          Loai: "chuong",
+          MucTieuId: chuong._id,
+          TrangThai: "rejected",
+          DaDoc: 0,
+        },
+        { $set: { DaDoc: 1 } }
+      );
+    }
+
     req.session.success = isAdmin
       ? "Đã cập nhật chương thành công và hiển thị ngay."
       : "Đã cập nhật chương thành công và đang chờ admin kiểm duyệt lại.";

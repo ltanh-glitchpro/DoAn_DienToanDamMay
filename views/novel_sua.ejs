@@ -16,6 +16,14 @@
 		<div class="card mt-3">
 			<div class="card-header"><%= title %></div>
 			<div class="card-body">
+				<% if (lyDoTuChoi) { %>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<i class="bi bi-exclamation-triangle-fill"></i>
+						<strong>Lý do từ chối:</strong>
+						<div class="mt-2"><%- lyDoTuChoi %></div>
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				<% } %>
 				<form action="/novel/sua/<%= novel._id %>" method="post" class="needs-validation" novalidate  enctype="multipart/form-data"> 
 					<div class="mb-3">
 						<label for="MaChuDe" class="form-label">Chủ đề</label>

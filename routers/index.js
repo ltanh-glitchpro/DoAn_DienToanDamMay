@@ -256,6 +256,15 @@ router.get('/novel/chitiet/:id', async function(req, res){
         return res.redirect('/error');
     }
 
+    var isLoggedIn = !!(req.session && req.session.MaNguoiDung);
+    var isAdmin = isLoggedIn && req.session.QuyenHan === 'admin';
+    var isOwner = isLoggedIn && String(tr.TaiKhoan && tr.TaiKhoan._id) === String(req.session.MaNguoiDung);
+
+    if (tr.KiemDuyet !== 1 && !isAdmin && !isOwner) {
+        req.session.error = 'Truyện này chưa được duyệt hoặc bạn không có quyền truy cập.';
+        return res.redirect('/error');
+    }
+
     var approvedChapterCount = await Chuong.countDocuments({ Novel: id, KiemDuyet: 1 });
     var chapterTotalPages = Math.max(1, Math.ceil(approvedChapterCount / chaptersPerPage));
     var chapterPage = Math.min(Math.max(requestedChapterPage, 1), chapterTotalPages);
@@ -283,6 +292,21 @@ router.get('/chuong/chitiet/:id', async function(req, res){
 	var ch = await Chuong.findById(id)
 		.populate('Novel')
 		.populate('TaiKhoan').exec();
+
+    if (!ch) {
+        req.session.error = 'Không tìm thấy chương.';
+        return res.redirect('/error');
+    }
+
+    var isLoggedIn = !!(req.session && req.session.MaNguoiDung);
+    var isAdmin = isLoggedIn && req.session.QuyenHan === 'admin';
+    var isOwner = isLoggedIn && String(ch.TaiKhoan && ch.TaiKhoan._id) === String(req.session.MaNguoiDung);
+
+    if (ch.KiemDuyet !== 1 && !isAdmin && !isOwner) {
+        req.session.error = 'Chương này chưa được duyệt hoặc bạn không có quyền truy cập.';
+        return res.redirect('/error');
+    }
+
 	var prevChapter = await Chuong.findOne({ Novel: ch.Novel, _id: { $lt: ch._id }, KiemDuyet: 1 })
 		.sort({ _id: -1 })
 		.exec();

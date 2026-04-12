@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var ThongBao = require('../models/thongbao');
+var Novel = require('../models/novel');
+var Chuong = require('../models/chuong');
 
 function requireLogin(req, res, next) {
   if (req.session && req.session.MaNguoiDung) {
@@ -45,15 +47,40 @@ router.get('/chuyen/:id', requireLogin, async function (req, res) {
     var thongBao = await ThongBao.findOne({
       _id: req.params.id,
       NguoiNhan: req.session.MaNguoiDung
-    }).lean();
+    });
 
     if (!thongBao) {
       req.session.error = 'Thông báo không tồn tại hoặc bạn không có quyền truy cập.';
       return res.redirect('/error');
     }
 
+    if (thongBao.DaDoc !== 1) {
+      thongBao.DaDoc = 1;
+      await thongBao.save();
+    }
+
     if (thongBao.Loai === 'novel') {
+      var tr = await Novel.findById(thongBao.MucTieuId).select('_id').lean();
+      if (!tr) {
+        req.session.error = 'Truyện liên kết với thông báo không còn tồn tại.';
+        return res.redirect('/error');
+      }
+
+      if (thongBao.TrangThai === 'rejected') {
+        return res.redirect('/novel/sua/' + thongBao.MucTieuId);
+      }
+
       return res.redirect('/novel/chitiet/' + thongBao.MucTieuId);
+    }
+
+    var ch = await Chuong.findById(thongBao.MucTieuId).select('_id').lean();
+    if (!ch) {
+      req.session.error = 'Chương liên kết với thông báo không còn tồn tại.';
+      return res.redirect('/error');
+    }
+
+    if (thongBao.TrangThai === 'approved') {
+      return res.redirect('/chuong/chitiet/' + thongBao.MucTieuId);
     }
 
     return res.redirect('/chuong/sua/' + thongBao.MucTieuId);
