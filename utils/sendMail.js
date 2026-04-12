@@ -16,15 +16,17 @@ function parseSecure(value, fallback) {
 
 function buildTransporter() {
   var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
-  var adminPass = process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS;
+  var rawPass = process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS;
+  var adminPass = rawPass ? String(rawPass).replace(/\s+/g, '') : '';
 
   if (!adminPass) {
     throw new Error('Thieu MAIL_APP_PASSWORD (hoac MAIL_PASS). Tren Render, vui long cai bien moi truong nay.');
   }
 
   var smtpHost = process.env.MAIL_HOST;
-  var smtpPort = parsePort(process.env.MAIL_PORT, smtpHost ? 465 : 587);
-  var smtpSecure = parseSecure(process.env.MAIL_SECURE, smtpHost ? smtpPort === 465 : false);
+  var hasCustomSmtp = Boolean(smtpHost);
+  var smtpPort = parsePort(process.env.MAIL_PORT, hasCustomSmtp ? 465 : 465);
+  var smtpSecure = parseSecure(process.env.MAIL_SECURE, hasCustomSmtp ? smtpPort === 465 : true);
 
   if (smtpHost) {
     return nodemailer.createTransport({
