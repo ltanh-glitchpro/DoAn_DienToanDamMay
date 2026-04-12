@@ -22,7 +22,7 @@ var novelRouter = require("./routers/novel");
 var chuongRouter = require("./routers/chuong");
 var thongbaoRouter = require("./routers/thongbao");
 
-var uri = 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
+var uri = process.env.MONGODB_URI || 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
 const port = process.env.PORT || 3000;
 const SESSION_IDLE_MINUTES = Math.max(
   parseInt(process.env.SESSION_IDLE_MINUTES || "30", 10),
@@ -49,6 +49,10 @@ app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 uploadPaths.ensureUploadDirectories();
+console.log(`[Uploads] Root directory: ${uploadPaths.uploadRoot}`);
+if (!process.env.UPLOAD_ROOT) {
+  console.warn("[Uploads] UPLOAD_ROOT is not set. On Render, files may be lost after restart/redeploy.");
+}
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
 app.use("/uploads", express.static(uploadPaths.avatarUploadDir));
