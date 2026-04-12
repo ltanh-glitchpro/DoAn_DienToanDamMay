@@ -2,50 +2,45 @@ var nodemailer = require('nodemailer');
 
 var transporter = null;
 
-function parsePort(value, fallback) {
-  var parsed = parseInt(value, 10);
-  return Number.isNaN(parsed) ? fallback : parsed;
-}
-
-function parseSecure(value, fallback) {
-  if (typeof value === 'string') {
-    return value.toLowerCase() === 'true';
-  }
-  return fallback;
-}
-
-function buildTransporter() {
-  var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
+function getEmailCredentials() {
+  var adminEmail = process.env.EMAIL_USER || process.env.MAIL_USER || 'anhgoodboy100@gmail.com';
   var rawPass = process.env.MAIL_APP_PASSWORD || process.env.EMAIL_PASS || process.env.MAIL_PASS;
   var adminPass = rawPass ? String(rawPass).replace(/\s+/g, '') : '';
 
-  if (!adminPass) {
-    throw new Error('Thieu Mat khau ung dung (App Password).');
+  if (!adminEmail) {
+    throw new Error('Thieu EMAIL_USER hoac MAIL_USER.');
   }
 
-  var smtpHost = process.env.MAIL_HOST || 'smtp.gmail.com';
-  var smtpPort = parsePort(process.env.MAIL_PORT, 587);
-  var smtpSecure = parseSecure(process.env.MAIL_SECURE, smtpPort === 465);
+  if (!adminPass) {
+    throw new Error('Thieu MAIL_APP_PASSWORD hoac EMAIL_PASS.');
+  }
 
+  return {
+    adminEmail: adminEmail,
+    adminPass: adminPass,
+  };
+}
+
+function createTransporter(port, secure) {
+  var creds = getEmailCredentials();
   return nodemailer.createTransport({
-    host: smtpHost,
-    port: smtpPort,
-    secure: smtpSecure,
+    host: 'smtp.gmail.com',
+    port: port,
+    secure: secure,
     auth: {
-      user: adminEmail,
-      pass: adminPass
+      user: creds.adminEmail,
+      pass: creds.adminPass
     },
     authMethod: 'LOGIN',
     connectionTimeout: 20000,
     greetingTimeout: 20000,
-    socketTimeout: 30000
+    socketTimeout: 30000,
+    requireTLS: !secure
   });
 }
 
 async function buildWorkingTransporter() {
-  var primaryPort = parsePort(process.env.MAIL_PORT, 587);
-  var alternatePort = primaryPort === 465 ? 587 : 465;
-  var primaryTransporter = buildTransporter();
+  var primaryTransporter = createTransporter(587, false);
 
   try {
     await primaryTransporter.verify();
@@ -53,46 +48,25 @@ async function buildWorkingTransporter() {
   } catch (primaryError) {
     console.error('SMTP verify failed on primary config:', primaryError.message || primaryError);
 
-    var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
-    var rawPass = process.env.MAIL_APP_PASSWORD || process.env.EMAIL_PASS || process.env.MAIL_PASS;
-    var adminPass = rawPass ? String(rawPass).replace(/\s+/g, '') : '';
+    var fallbackTransporter = createTransporter(465, true);
 
-    var fallbackPort = alternatePort;
-    var fallbackTransporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: fallbackPort,
-      secure: fallbackPort === 465,
-      auth: {
-        user: adminEmail,
-        pass: adminPass
-      },
-      authMethod: 'LOGIN',
-      connectionTimeout: 20000,
-      greetingTimeout: 20000,
-      socketTimeout: 30000
-    });
-
-    try {
-      await fallbackTransporter.verify();
-      return fallbackTransporter;
-    } catch (fallbackError) {
-      console.error('SMTP verify failed on fallback config:', fallbackError.message || fallbackError);
-      throw fallbackError;
-    }
+    await fallbackTransporter.verify();
+    return fallbackTransporter;
   }
 }
 
 var sendMail = async function(to, subject, html) {
   try {
-    var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
     if (!transporter) {
       transporter = await buildWorkingTransporter();
     }
 
+    var creds = getEmailCredentials();
+
     var fromName = process.env.MAIL_FROM_NAME || 'KATEE Admin';
 
     var info = await transporter.sendMail({
-      from: '"' + fromName + '" <' + adminEmail + '>',
+      from: '"' + fromName + '" <' + creds.adminEmail + '>',
       to: to,
       subject: subject,
       html: html
