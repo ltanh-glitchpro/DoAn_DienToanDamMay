@@ -16,29 +16,39 @@
 		<div class="card mt-3">
 			<div class="card-header"><%= title %></div>
 			<div class="card-body">
-				<form action="/chuong/them" method="post" class="needs-validation" novalidate>
-					<div class="mb-3">
-						<label for="MaTruyen" class="form-label">Truyện</label>
-						<select class="form-select" id="MaTruyen" name="MaTruyen" required>
-							<option value="">-- Chọn --</option>
-							<% novel.forEach(tr => { %>
-								<option value="<%= tr._id %>"><%= tr.TieuDe %></option>
-							<% }); %>
-						</select>
+				<% if (!novel || novel.length === 0) { %>
+					<div class="alert alert-warning mb-0" role="alert">
+						Bạn chưa có truyện đã duyệt để đăng chương. Vui lòng đăng truyện và chờ duyệt trước.
 					</div>
-					
-					<div class="mb-3">
-						<label for="TieuDe" class="form-label">Tiêu đề</label>
-						<input type="text" class="form-control" id="TieuDe" name="TieuDe" value="" required />
+					<div class="mt-3 d-flex gap-2">
+						<a href="/novel/them" class="btn btn-primary"><i class="bi bi-file-earmark-plus"></i> Đăng truyện mới</a>
+						<a href="/novel/cuatoi" class="btn btn-outline-secondary"><i class="bi bi-journal-bookmark"></i> Xem truyện của tôi</a>
 					</div>
-					
-					<div class="mb-3">
-						<label for="NoiDung" class="form-label">Nội dung bài viết</label>
-						<textarea class="form-control ckeditor" id="NoiDung" name="NoiDung" required></textarea>
-					</div>
-					
-					<button type="submit" class="btn btn-primary"><i class="bi bi-cloud-arrow-up"></i> Đăng chương</button>
-				</form>
+				<% } else { %>
+					<form action="/chuong/them" method="post" class="needs-validation" novalidate>
+						<div class="mb-3">
+							<label for="MaTruyen" class="form-label">Truyện</label>
+							<select class="form-select" id="MaTruyen" name="MaTruyen" required>
+								<option value="">-- Chọn --</option>
+								<% novel.forEach(tr => { %>
+									<option value="<%= tr._id %>"><%= tr.TieuDe %></option>
+								<% }); %>
+							</select>
+						</div>
+						
+						<div class="mb-3">
+							<label for="TieuDe" class="form-label">Tiêu đề</label>
+							<input type="text" class="form-control" id="TieuDe" name="TieuDe" value="" required />
+						</div>
+						
+						<div class="mb-3">
+							<label for="NoiDung" class="form-label">Nội dung bài viết</label>
+							<textarea class="form-control ckeditor" id="NoiDung" name="NoiDung" required></textarea>
+						</div>
+						
+						<button type="submit" class="btn btn-primary"><i class="bi bi-cloud-arrow-up"></i> Đăng chương</button>
+					</form>
+				<% } %>
 			</div>
 		</div>
 		
@@ -48,9 +58,11 @@
 	<%- include('includes/javascript') %>
 	<script src="https://cdn.ckeditor.com/4.18.0/full/ckeditor.js"></script>
 	<script>
-		CKEDITOR.replace('NoiDung', {
-			customConfig: '/js/config.js'
-		});
+		if (document.getElementById('NoiDung')) {
+			CKEDITOR.replace('NoiDung', {
+				customConfig: '/js/config.js'
+			});
+		}
 	</script>
 </body>
 

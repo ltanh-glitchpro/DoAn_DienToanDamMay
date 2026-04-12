@@ -64,8 +64,10 @@
                 <td class="align-middle text-center">
                   <% if(tr.KiemDuyet == 1) { %>
                   <span class="text-success"><i class="bi bi-check-circle"></i> Đã duyệt</span>
+                  <% } else if (tr.KiemDuyet == -1) { %>
+                  <span class="text-danger"><i class="bi bi-x-octagon"></i> Đã từ chối</span>
                   <% } else { %>
-                  <span class="text-warning"><i class="bi bi-hourglass-split"></i> Chờ duyệt / Từ chối</span>
+                  <span class="text-warning"><i class="bi bi-hourglass-split"></i> Chờ duyệt</span>
                   <% } %>
                 </td>
                 <td class="align-middle text-center">

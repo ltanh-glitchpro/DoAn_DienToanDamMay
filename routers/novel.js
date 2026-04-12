@@ -59,6 +59,39 @@ function generateRandomNumber() {
   return Math.floor(Math.random() * 1e9); // số nguyên từ 0 đến gần 1 tỷ
 }
 
+function hasUsableCoverImage(imagePath) {
+  if (!imagePath) return false;
+
+  const value = String(imagePath).trim();
+  if (!value) return false;
+
+  if (
+    value.startsWith("http://") ||
+    value.startsWith("https://") ||
+    value.startsWith("//") ||
+    value.startsWith("data:")
+  ) {
+    return true;
+  }
+
+  try {
+    const cleanedPath = decodeURI(value.split("?")[0]);
+
+    if (cleanedPath.startsWith("/images/uploads/")) {
+      const relativePath = cleanedPath.replace("/images/uploads/", "");
+      return fs.existsSync(path.join(uploadPaths.novelUploadDir, relativePath));
+    }
+
+    if (cleanedPath.startsWith("/")) {
+      return fs.existsSync(path.join(__dirname, "..", "public", cleanedPath.replace(/^\//, "")));
+    }
+
+    return fs.existsSync(path.join(uploadPaths.novelUploadDir, cleanedPath));
+  } catch (error) {
+    return false;
+  }
+}
+
 // Cấu hình lưu trữ ảnh bằng multer
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -94,9 +127,13 @@ router.get("/", requireAdmin, async function (req, res) {
     item.SoChuong = soChuong;
   }
 
-  // Sắp xếp: truyện chưa duyệt (KiemDuyet != 1) lên đầu
+  // Ưu tiên hiển thị: chờ duyệt (0) -> từ chối (-1) -> đã duyệt (1)
+  var rank = { 0: 0, '-1': 1, 1: 2 };
   tr.sort((a, b) => {
-    return (a.KiemDuyet === 1 ? 1 : 0) - (b.KiemDuyet === 1 ? 1 : 0);
+    var rankA = rank[String(a.KiemDuyet)] != null ? rank[String(a.KiemDuyet)] : 3;
+    var rankB = rank[String(b.KiemDuyet)] != null ? rank[String(b.KiemDuyet)] : 3;
+    if (rankA !== rankB) return rankA - rankB;
+    return new Date(b.NgayDang) - new Date(a.NgayDang);
   });
 
   res.render("novel", {
@@ -150,7 +187,7 @@ router.get("/sua/:id", requireLogin, requireNovelOwnerOrAdmin, async function (r
   var tr = await Novel.findById(id);
 
   let lyDoTuChoi = null;
-  if (tr && tr.KiemDuyet === 0) {
+  if (tr && tr.KiemDuyet !== 1) {
     const thongBao = await ThongBao.findOne({
       NguoiNhan: req.session.MaNguoiDung,
       MucTieuId: tr._id,
@@ -184,7 +221,19 @@ router.post(
     var isAdmin = req.session.QuyenHan === "admin";
     const file = req.file;
     const existingNovel = await Novel.findById(id).select("HinhAnh").lean();
-    const picURL = file ? "/images/uploads/" + file.filename : (existingNovel ? existingNovel.HinhAnh : "");
+    const currentCover = existingNovel && existingNovel.HinhAnh ? String(existingNovel.HinhAnh).trim() : "";
+    const picURL = file ? "/images/uploads/" + file.filename : currentCover;
+
+    if (!picURL) {
+      req.session.error = "Truyện phải có ảnh bìa. Vui lòng chọn ảnh trước khi lưu.";
+      return res.redirect(`/novel/sua/${id}`);
+    }
+
+    if (!file && !hasUsableCoverImage(picURL)) {
+      req.session.error = "Ảnh bìa hiện tại không còn tồn tại trên server. Vui lòng tải ảnh mới rồi gửi duyệt lại.";
+      return res.redirect(`/novel/sua/${id}`);
+    }
+
     var data = {
       TheLoai: req.body.MaTheLoai,
       TieuDe: req.body.TieuDe,
@@ -256,7 +305,12 @@ router.post("/duyet/:id", requireAdmin, async function (req, res) {
       return res.redirect("/error");
     }
 
-    var newStatus = action === "approve" ? 1 : 0;
+    if (action === "approve" && !hasUsableCoverImage(tr.HinhAnh)) {
+      req.session.error = "Không thể duyệt vì ảnh bìa không tồn tại trên server. Vui lòng yêu cầu tác giả cập nhật lại ảnh bìa.";
+      return res.redirect(`/novel/duyet/${req.params.id}`);
+    }
+
+    var newStatus = action === "approve" ? 1 : -1;
     await Novel.findByIdAndUpdate(req.params.id, { KiemDuyet: newStatus });
 
     var notificationText =

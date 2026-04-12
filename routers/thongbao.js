@@ -14,6 +14,11 @@ function requireLogin(req, res, next) {
 
 router.get('/cuatoi', requireLogin, async function (req, res) {
   try {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
+    res.set('Surrogate-Control', 'no-store');
+
     var page = Math.max(parseInt(req.query.page, 10) || 1, 1);
     var perPage = 12;
     var filter = { NguoiNhan: req.session.MaNguoiDung };
@@ -44,6 +49,11 @@ router.get('/cuatoi', requireLogin, async function (req, res) {
 
 router.get('/chuyen/:id', requireLogin, async function (req, res) {
   try {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
+    res.set('Surrogate-Control', 'no-store');
+
     var thongBao = await ThongBao.findOne({
       _id: req.params.id,
       NguoiNhan: req.session.MaNguoiDung

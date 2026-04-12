@@ -86,13 +86,19 @@ async function requireChapterOwnerOrAdmin(req, res, next) {
 // GET: Danh sách tất cả chương, ưu tiên chương chưa duyệt lên đầu
 router.get("/", isAdmin, async (req, res) => {
   try {
-    // Sắp xếp theo KiemDuyet tăng dần: 0 (chưa duyệt) sẽ lên trước 1 (đã duyệt)
-    // Có thể thêm thứ tự theo thời gian để mới nhất lên trên
+    // Ưu tiên: chờ duyệt (0) -> từ chối (-1) -> đã duyệt (1).
     const ch = await Chuong.find()
       .populate("Novel")
       .populate("TaiKhoan")
-      .sort({ KiemDuyet: 1, createdAt: -1 }) 
       .exec();
+
+    var rank = { 0: 0, '-1': 1, 1: 2 };
+    ch.sort((a, b) => {
+      var rankA = rank[String(a.KiemDuyet)] != null ? rank[String(a.KiemDuyet)] : 3;
+      var rankB = rank[String(b.KiemDuyet)] != null ? rank[String(b.KiemDuyet)] : 3;
+      if (rankA !== rankB) return rankA - rankB;
+      return new Date(b.NgayDang) - new Date(a.NgayDang);
+    });
 
     const theloai = await TheLoai.find();
     res.render("chuong", {
@@ -143,7 +149,7 @@ router.post("/them", upload.single("HinhAnh"), async (req, res) => {
     const selectedNovel = await Novel.findOne(novelFilter).select("_id").lean();
     if (!selectedNovel) {
       req.session.error = "Bạn chỉ có thể đăng chương vào truyện đã duyệt thuộc quyền quản lý của bạn.";
-      return res.redirect("/error");
+      return res.redirect("/chuong/them");
     }
 
     const newChuong = new Chuong({
@@ -216,8 +222,9 @@ router.get("/sua/:id", requireLogin, requireChapterOwnerOrAdmin, async (req, res
 
     // Lấy lý do từ chối gần nhất nếu chương chưa được duyệt
     let lyDoTuChoi = null;
-    if (chuong.KiemDuyet === 0) {
+    if (chuong.KiemDuyet !== 1) {
       const thongBao = await ThongBao.findOne({
+        NguoiNhan: req.session.MaNguoiDung,
         MucTieuId: chuong._id,
         Loai: "chuong",
         TrangThai: "rejected"
@@ -333,7 +340,7 @@ router.post("/duyet/:id", isAdmin, async (req, res) => {
     if (action === "approve") {
       chuong.KiemDuyet = 1;
     } else if (action === "reject") {
-      chuong.KiemDuyet = 0;
+      chuong.KiemDuyet = -1;
     } else {
       return res.redirect("/chuong?error=Hành động không hợp lệ");
     }

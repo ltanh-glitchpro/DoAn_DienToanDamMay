@@ -28,3 +28,33 @@ CKEDITOR.editorConfig = function( config ) {
 	];
 	config.removeButtons = 'Save,Print,ExportPdf,Paste,PasteFromWord,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Subscript,Superscript,Language,Anchor,Flash,SpecialChar,PageBreak';
 };
+
+// Hide only the insecure-version warning before it renders.
+CKEDITOR.on('instanceCreated', function(evt) {
+	evt.editor.on('notificationShow', function(notificationEvt) {
+		var message = notificationEvt.data && notificationEvt.data.message;
+		if (typeof message === 'string' &&
+			message.indexOf('CKEditor') !== -1 &&
+			message.indexOf('version is not secure') !== -1) {
+			notificationEvt.cancel();
+		}
+	});
+});
+
+if (!window.__ckEditorWarningObserverAttached) {
+	window.__ckEditorWarningObserverAttached = true;
+	var observer = new MutationObserver(function() {
+		var notifications = document.querySelectorAll('.cke_notification');
+		for (var i = 0; i < notifications.length; i++) {
+			var content = notifications[i].textContent || '';
+			if (content.indexOf('CKEditor') !== -1 && content.indexOf('version is not secure') !== -1) {
+				notifications[i].remove();
+			}
+		}
+	});
+
+	observer.observe(document.body, {
+		childList: true,
+		subtree: true
+	});
+}

@@ -67,9 +67,11 @@
                 <td class="align-middle text-center"><%= tr.SoChuong %></td>
                 <td class="align-middle small"><%= new Date(tr.NgayDang).toLocaleString("vi-VN") %></td>
                 <td class="align-middle text-center">
-                  <a href="/novel/duyet/<%= tr._id %>" class="btn btn-sm <%= tr.KiemDuyet == 1 ? 'btn-outline-success' : 'btn-outline-warning' %>">
+                  <a href="/novel/duyet/<%= tr._id %>" class="btn btn-sm <%= tr.KiemDuyet == 1 ? 'btn-outline-success' : (tr.KiemDuyet == -1 ? 'btn-outline-danger' : 'btn-outline-warning') %>">
                     <% if (tr.KiemDuyet == 1) { %>
                       <i class="bi bi-check-circle"></i> Đã duyệt
+                    <% } else if (tr.KiemDuyet == -1) { %>
+                      <i class="bi bi-x-octagon"></i> Đã từ chối
                     <% } else { %>
                       <i class="bi bi-hourglass-split"></i> Chờ duyệt
                     <% } %>
