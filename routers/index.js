@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var firstImage = require('../modules/firstimage');
+var resolveImageUrl = require('../modules/resolveImageUrl');
 var TheLoai = require('../models/theloai');
 var Novel = require('../models/novel');
 var Chuong = require('../models/chuong');
@@ -409,6 +410,94 @@ router.get('/success', async (req, res) => {
 	res.render('success', {
 		title: 'Hoàn thành'
 	});
+});
+
+// API: Lấy "Mới cập nhật" phân trang
+router.get('/api/latest-updates', async (req, res) => {
+	try {
+		const page = Math.max(1, parseInt(req.query.page, 10) || 1);
+		const itemsPerPage = 6;
+		const skip = (page - 1) * itemsPerPage;
+
+		const latestUpdates = await Chuong.find({ KiemDuyet: 1 })
+			.populate({
+				path: 'Novel',
+				populate: [
+					{ path: 'TheLoai' },
+					{ path: 'TaiKhoan', select: 'HoVaTen' }
+				]
+			})
+			.populate({ path: 'TaiKhoan', select: 'HoVaTen' })
+			.sort({ NgayDang: -1 })
+			.skip(skip)
+			.limit(itemsPerPage)
+			.lean();
+
+		const totalCount = await Chuong.countDocuments({ KiemDuyet: 1 });
+		const totalPages = Math.ceil(totalCount / itemsPerPage);
+
+		res.json({
+			success: true,
+			data: latestUpdates,
+			currentPage: page,
+			totalPages: totalPages,
+			hasMore: page < totalPages
+		});
+	} catch (error) {
+		console.error('Lỗi API latest-updates:', error);
+		res.json({
+			success: false,
+			message: 'Lỗi khi tải dữ liệu',
+			error: error.message
+		});
+	}
+});
+
+// API: Lấy "Truyện đã hoàn thành" phân trang
+router.get('/api/completed-novels', async (req, res) => {
+	try {
+		const page = Math.max(1, parseInt(req.query.page, 10) || 1);
+		const itemsPerPage = 8;
+		const skip = (page - 1) * itemsPerPage;
+
+		const completedNovels = await Novel.find({
+			KiemDuyet: 1,
+			TrangThai: 1
+		})
+			.populate('TheLoai')
+			.populate('TaiKhoan')
+			.sort({ SoChuong: -1, LuotXem: -1, NgayDang: -1 })
+			.skip(skip)
+			.limit(itemsPerPage)
+			.lean();
+
+		// Thêm resolvedImageUrl cho mỗi item
+		const enhancedNovels = completedNovels.map(item => ({
+			...item,
+			resolvedImageUrl: resolveImageUrl(item.HinhAnh, '/images/uploads', '/images/noimage.png')
+		}));
+
+		const totalCount = await Novel.countDocuments({
+			KiemDuyet: 1,
+			TrangThai: 1
+		});
+		const totalPages = Math.ceil(totalCount / itemsPerPage);
+
+		res.json({
+			success: true,
+			data: enhancedNovels,
+			currentPage: page,
+			totalPages: totalPages,
+			hasMore: page < totalPages
+		});
+	} catch (error) {
+		console.error('Lỗi API completed-novels:', error);
+		res.json({
+			success: false,
+			message: 'Lỗi khi tải dữ liệu',
+			error: error.message
+		});
+	}
 });
 
 module.exports = router;

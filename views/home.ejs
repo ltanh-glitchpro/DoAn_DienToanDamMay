@@ -681,20 +681,29 @@
 			</div>
 
 			<% if (latestUpdates && latestUpdates.length) { %>
-				<% latestUpdates.forEach(function (chapter) { %>
-					<a href="/chuong/chitiet/<%= chapter._id %>" class="update-item">
-						<div class="update-main">
-							<div class="update-novel-title"><%= chapter.Novel ? chapter.Novel.TieuDe : 'Không xác định' %></div>
-							<div class="update-chapter-title"><%= chapter.TieuDe %></div>
-							<div class="update-meta">
-								<span><i class="bi bi-tag"></i> <%= chapter.Novel && chapter.Novel.TheLoai ? chapter.Novel.TheLoai.tentheloai : 'Không xác định' %></span>
-								<span><i class="bi bi-person"></i> <%= chapter.TaiKhoan ? chapter.TaiKhoan.HoVaTen : (chapter.Novel && chapter.Novel.TaiKhoan ? chapter.Novel.TaiKhoan.HoVaTen : 'Không xác định') %></span>
-								<span><i class="bi bi-clock"></i> <%= new Date(chapter.NgayDang).toLocaleString('vi-VN') %></span>
+				<div id="latest-updates-container">
+					<% latestUpdates.slice(0, 6).forEach(function (chapter) { %>
+						<a href="/chuong/chitiet/<%= chapter._id %>" class="update-item">
+							<div class="update-main">
+								<div class="update-novel-title"><%= chapter.Novel ? chapter.Novel.TieuDe : 'Không xác định' %></div>
+								<div class="update-chapter-title"><%= chapter.TieuDe %></div>
+								<div class="update-meta">
+									<span><i class="bi bi-tag"></i> <%= chapter.Novel && chapter.Novel.TheLoai ? chapter.Novel.TheLoai.tentheloai : 'Không xác định' %></span>
+									<span><i class="bi bi-person"></i> <%= chapter.TaiKhoan ? chapter.TaiKhoan.HoVaTen : (chapter.Novel && chapter.Novel.TaiKhoan ? chapter.Novel.TaiKhoan.HoVaTen : 'Không xác định') %></span>
+									<span><i class="bi bi-clock"></i> <%= new Date(chapter.NgayDang).toLocaleString('vi-VN') %></span>
+								</div>
 							</div>
-						</div>
-						<span class="update-action">Đọc ngay</span>
-					</a>
-				<% }); %>
+							<span class="update-action">Đọc ngay</span>
+						</a>
+					<% }); %>
+				</div>
+				<% if (latestUpdates.length > 6) { %>
+					<div style="display: flex; justify-content: center; padding: 16px;">
+						<button id="load-more-updates" class="btn btn-outline-primary" style="width: 200px;">
+							<i class="bi bi-plus-circle"></i> Xem thêm
+						</button>
+					</div>
+				<% } %>
 			<% } else { %>
 				<div class="p-3 text-muted">Chưa có chương mới được cập nhật.</div>
 			<% } %>
@@ -707,21 +716,28 @@
 			</div>
 
 			<% if (completedNovels && completedNovels.length) { %>
-				<div class="completed-grid">
-					<% completedNovels.forEach(function (item) { %>
+				<div class="completed-grid" id="completed-novels-container">
+					<% completedNovels.slice(0, 8).forEach(function (item) { %>
 										<a href="/novel/chitiet/<%= item._id %>" class="completed-item">
 												<img src="<%= resolveImageUrl(item.HinhAnh, '/images/uploads', '/images/noimage.png') %>" alt="<%= item.TieuDe %>" class="completed-cover" onerror="this.onerror=null;this.src='/images/noimage.png';" />
-							<div class="completed-body">
-								<div class="completed-novel-title"><%= item.TieuDe %></div>
-								<div class="completed-meta">
-									<span class="done-badge"><i class="bi bi-check2-circle"></i> Hoàn thành</span>
-									<span><i class="bi bi-tag"></i> <%= item.TheLoai ? item.TheLoai.tentheloai : 'Không xác định' %></span>
-									<span><i class="bi bi-journal-text"></i> <%= item.SoChuong || 0 %> chương</span>
+								<div class="completed-body">
+									<div class="completed-novel-title"><%= item.TieuDe %></div>
+									<div class="completed-meta">
+										<span class="done-badge"><i class="bi bi-check2-circle"></i> Hoàn thành</span>
+										<span><i class="bi bi-tag"></i> <%= item.TheLoai ? item.TheLoai.tentheloai : 'Không xác định' %></span>
+										<span><i class="bi bi-journal-text"></i> <%= item.SoChuong || 0 %> chương</span>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
 					<% }); %>
 				</div>
+				<% if (completedNovels.length > 8) { %>
+					<div style="display: flex; justify-content: center; padding: 16px;">
+						<button id="load-more-completed" class="btn btn-outline-success" style="width: 200px;">
+							<i class="bi bi-plus-circle"></i> Xem thêm
+						</button>
+					</div>
+				<% } %>
 			<% } else { %>
 				<div class="p-3 text-muted">Chưa có truyện hoàn thành để hiển thị.</div>
 			<% } %>
@@ -731,5 +747,172 @@
 	</div>
 
 	<%- include('includes/javascript') %>
+
+	<script>
+		// Xử lý "Xem thêm" / "Thu lại" cho "Mới cập nhật"
+		let latestUpdatesPage = 2;
+		let isLoadingLatest = false;
+		let latestUpdatesExpanded = false;
+
+		const loadMoreUpdatesBtn = document.getElementById('load-more-updates');
+		if (loadMoreUpdatesBtn) {
+			loadMoreUpdatesBtn.addEventListener('click', async function() {
+				// Nếu đã mở rộng, click để thu lại
+				if (latestUpdatesExpanded) {
+					const container = document.getElementById('latest-updates-container');
+					// Ẩn tất cả items sau item thứ 6
+					const items = container.querySelectorAll('.update-item');
+					for (let i = 6; i < items.length; i++) {
+						items[i].style.display = 'none';
+					}
+					latestUpdatesExpanded = false;
+					this.innerHTML = '<i class="bi bi-plus-circle"></i> Xem thêm';
+					return;
+				}
+
+				// Nếu chưa mở rộng, click để tải thêm
+				if (isLoadingLatest) return;
+
+				// Nếu chưa load page 2 lần nào, tải từ API
+				if (latestUpdatesPage === 2) {
+					isLoadingLatest = true;
+					
+					const originalHTML = this.innerHTML;
+					this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Đang tải...';
+					this.disabled = true;
+
+					try {
+						const response = await fetch(`/api/latest-updates?page=${latestUpdatesPage}`);
+						const result = await response.json();
+
+						if (result.success && result.data.length > 0) {
+							const container = document.getElementById('latest-updates-container');
+							
+							// Thêm các item mới từ API
+							result.data.forEach(chapter => {
+								const itemHTML = `
+									<a href="/chuong/chitiet/${chapter._id}" class="update-item">
+										<div class="update-main">
+											<div class="update-novel-title">${chapter.Novel ? chapter.Novel.TieuDe : 'Không xác định'}</div>
+											<div class="update-chapter-title">${chapter.TieuDe}</div>
+											<div class="update-meta">
+												<span><i class="bi bi-tag"></i> ${chapter.Novel && chapter.Novel.TheLoai ? chapter.Novel.TheLoai.tentheloai : 'Không xác định'}</span>
+												<span><i class="bi bi-person"></i> ${chapter.TaiKhoan ? chapter.TaiKhoan.HoVaTen : (chapter.Novel && chapter.Novel.TaiKhoan ? chapter.Novel.TaiKhoan.HoVaTen : 'Không xác định')}</span>
+												<span><i class="bi bi-clock"></i> ${new Date(chapter.NgayDang).toLocaleString('vi-VN')}</span>
+											</div>
+										</div>
+										<span class="update-action">Đọc ngay</span>
+									</a>
+								`;
+								container.innerHTML += itemHTML;
+							});
+
+							latestUpdatesPage++;
+						}
+					} catch (error) {
+						console.error('Lỗi tải dữ liệu:', error);
+						this.innerHTML = 'Lỗi! Thử lại';
+						this.disabled = false;
+						isLoadingLatest = false;
+						return;
+					} finally {
+						isLoadingLatest = false;
+					}
+				}
+
+				// Hiển thị tất cả items
+				const container = document.getElementById('latest-updates-container');
+				const items = container.querySelectorAll('.update-item');
+				for (let i = 6; i < items.length; i++) {
+					items[i].style.display = 'block';
+				}
+				latestUpdatesExpanded = true;
+				this.innerHTML = '<i class="bi bi-dash-circle"></i> Thu lại';
+				this.disabled = false;
+			});
+		}
+
+		// Xử lý "Xem thêm" / "Thu lại" cho "Truyện đã hoàn thành"
+		let completedNovelsPage = 2;
+		let isLoadingCompleted = false;
+		let completedNovelsExpanded = false;
+
+		const loadMoreCompletedBtn = document.getElementById('load-more-completed');
+		if (loadMoreCompletedBtn) {
+			loadMoreCompletedBtn.addEventListener('click', async function() {
+				// Nếu đã mở rộng, click để thu lại
+				if (completedNovelsExpanded) {
+					const container = document.getElementById('completed-novels-container');
+					// Ẩn tất cả items sau item thứ 8
+					const items = container.querySelectorAll('.completed-item');
+					for (let i = 8; i < items.length; i++) {
+						items[i].style.display = 'none';
+					}
+					completedNovelsExpanded = false;
+					this.innerHTML = '<i class="bi bi-plus-circle"></i> Xem thêm';
+					return;
+				}
+
+				// Nếu chưa mở rộng, click để tải thêm
+				if (isLoadingCompleted) return;
+
+				// Nếu chưa load page 2 lần nào, tải từ API
+				if (completedNovelsPage === 2) {
+					isLoadingCompleted = true;
+					
+					const originalHTML = this.innerHTML;
+					this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Đang tải...';
+					this.disabled = true;
+
+					try {
+						const response = await fetch(`/api/completed-novels?page=${completedNovelsPage}`);
+						const result = await response.json();
+
+						if (result.success && result.data.length > 0) {
+							const container = document.getElementById('completed-novels-container');
+							
+							// Thêm các item mới từ API
+							result.data.forEach(item => {
+								const itemHTML = `
+									<a href="/novel/chitiet/${item._id}" class="completed-item">
+										<img src="${item.resolvedImageUrl || '/images/noimage.png'}" alt="${item.TieuDe}" class="completed-cover" onerror="this.onerror=null;this.src='/images/noimage.png';" />
+										<div class="completed-body">
+											<div class="completed-novel-title">${item.TieuDe}</div>
+											<div class="completed-meta">
+												<span class="done-badge"><i class="bi bi-check2-circle"></i> Hoàn thành</span>
+												<span><i class="bi bi-tag"></i> ${item.TheLoai ? item.TheLoai.tentheloai : 'Không xác định'}</span>
+												<span><i class="bi bi-journal-text"></i> ${item.SoChuong || 0} chương</span>
+											</div>
+										</div>
+									</a>
+								`;
+								container.innerHTML += itemHTML;
+							});
+
+							completedNovelsPage++;
+						}
+					} catch (error) {
+						console.error('Lỗi tải dữ liệu:', error);
+						this.innerHTML = 'Lỗi! Thử lại';
+						this.disabled = false;
+						isLoadingCompleted = false;
+						return;
+					} finally {
+						isLoadingCompleted = false;
+					}
+				}
+
+				// Hiển thị tất cả items
+				const container = document.getElementById('completed-novels-container');
+				const items = container.querySelectorAll('.completed-item');
+				for (let i = 8; i < items.length; i++) {
+					items[i].style.display = 'block';
+				}
+				completedNovelsExpanded = true;
+				this.innerHTML = '<i class="bi bi-dash-circle"></i> Thu lại';
+				this.disabled = false;
+			});
+		}
+	</script>
 </body>
 </html>

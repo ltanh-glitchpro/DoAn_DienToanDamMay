@@ -301,6 +301,7 @@
       (function () {
         var input = document.getElementById("searchNovelInput");
         var list = document.getElementById("searchSuggestionList");
+        var searchForm = document.querySelector(".search-form");
         if (!input || !list) return;
 
         var debounceTimer;
@@ -380,9 +381,27 @@
         }
 
         input.addEventListener("input", function () {
+          if (input.validationMessage) {
+            input.setCustomValidity("");
+          }
           clearTimeout(debounceTimer);
           debounceTimer = setTimeout(loadSuggestions, 200);
         });
+
+        if (searchForm) {
+          searchForm.addEventListener("submit", function (event) {
+            var keyword = input.value.trim();
+            if (!keyword) {
+              event.preventDefault();
+              input.setCustomValidity("Vui lòng nhập từ khóa tìm kiếm.");
+              input.reportValidity();
+              input.focus();
+              return;
+            }
+
+            input.setCustomValidity("");
+          });
+        }
 
         input.addEventListener("keydown", function (event) {
           if (list.classList.contains("d-none")) return;
