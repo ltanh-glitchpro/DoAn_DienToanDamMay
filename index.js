@@ -22,7 +22,7 @@ var novelRouter = require("./routers/novel");
 var chuongRouter = require("./routers/chuong");
 var thongbaoRouter = require("./routers/thongbao");
 
-var uri = process.env.MONGODB_URI || 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
+var uri = process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://admin:admin123@ac-exoafeo-shard-00-02.dmubves.mongodb.net:27017/trangtruyenchu?ssl=true&authSource=admin';
 const port = process.env.PORT || 3000;
 const SESSION_IDLE_MINUTES = Math.max(
   parseInt(process.env.SESSION_IDLE_MINUTES || "30", 10),
@@ -52,6 +52,9 @@ uploadPaths.ensureUploadDirectories();
 console.log(`[Uploads] Root directory: ${uploadPaths.uploadRoot}`);
 if (!process.env.UPLOAD_ROOT) {
   console.warn("[Uploads] UPLOAD_ROOT is not set. On Render, files may be lost after restart/redeploy.");
+}
+if (!(process.env.MAIL_USER || process.env.EMAIL_USER) || !(process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS)) {
+  console.warn("[Mail] Mail env vars are not fully configured. Supported keys: MAIL_USER/EMAIL_USER and MAIL_APP_PASSWORD/MAIL_PASS/EMAIL_PASS.");
 }
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));

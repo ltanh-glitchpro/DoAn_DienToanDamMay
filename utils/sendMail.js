@@ -15,16 +15,16 @@ function parseSecure(value, fallback) {
 }
 
 function buildTransporter() {
-  var adminEmail = process.env.MAIL_USER || 'anhgoodboy100@gmail.com';
-  var adminPass = process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS;
+  var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
+  var adminPass = process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS;
 
   if (!adminPass) {
-    throw new Error('Thieu MAIL_APP_PASSWORD (hoac MAIL_PASS) trong bien moi truong.');
+    throw new Error('Thieu MAIL_APP_PASSWORD (hoac MAIL_PASS). Tren Render, vui long cai bien moi truong nay.');
   }
 
   var smtpHost = process.env.MAIL_HOST;
-  var smtpPort = parsePort(process.env.MAIL_PORT, 465);
-  var smtpSecure = parseSecure(process.env.MAIL_SECURE, smtpPort === 465);
+  var smtpPort = parsePort(process.env.MAIL_PORT, smtpHost ? 465 : 587);
+  var smtpSecure = parseSecure(process.env.MAIL_SECURE, smtpHost ? smtpPort === 465 : false);
 
   if (smtpHost) {
     return nodemailer.createTransport({
@@ -41,8 +41,11 @@ function buildTransporter() {
     });
   }
 
+  // Fallback Gmail SMTP configuration for environments where service autodetection is unstable.
   return nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: smtpPort,
+    secure: smtpSecure,
     auth: {
       user: adminEmail,
       pass: adminPass
@@ -55,7 +58,7 @@ function buildTransporter() {
 
 var sendMail = async function(to, subject, html) {
   try {
-    var adminEmail = process.env.MAIL_USER || 'anhgoodboy100@gmail.com';
+    var adminEmail = process.env.MAIL_USER || process.env.EMAIL_USER || 'anhgoodboy100@gmail.com';
     if (!transporter) {
       transporter = buildTransporter();
     }
