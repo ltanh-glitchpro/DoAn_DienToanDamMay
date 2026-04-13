@@ -53,8 +53,14 @@ console.log(`[Uploads] Root directory: ${uploadPaths.uploadRoot}`);
 if (!process.env.UPLOAD_ROOT) {
   console.warn("[Uploads] UPLOAD_ROOT is not set. On Render, files may be lost after restart/redeploy.");
 }
-if (!(process.env.MAIL_USER || process.env.EMAIL_USER) || !(process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS)) {
-  console.warn("[Mail] Mail env vars are not fully configured. Supported keys: MAIL_USER/EMAIL_USER and MAIL_APP_PASSWORD/MAIL_PASS/EMAIL_PASS.");
+const hasSendGrid = !!process.env.SENDGRID_API_KEY;
+const hasSmtp =
+  !!(process.env.SMTP_USER || process.env.MAIL_USER || process.env.EMAIL_USER) &&
+  !!(process.env.SMTP_PASS || process.env.MAIL_APP_PASSWORD || process.env.MAIL_PASS || process.env.EMAIL_PASS);
+if (!hasSendGrid && !hasSmtp) {
+  console.warn(
+    "[Mail] Mail transport is not configured. Use SENDGRID_API_KEY or SMTP_USER+SMTP_PASS (or MAIL_USER/MAIL_APP_PASSWORD)."
+  );
 }
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
