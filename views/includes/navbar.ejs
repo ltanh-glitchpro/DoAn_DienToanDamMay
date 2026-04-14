@@ -193,7 +193,7 @@
               <ul id="searchSuggestionList" class="search-suggestion-list d-none"></ul>
             </form>
 
-            <% if(typeof session !== "undefined" && session.MaNguoiDung) { %>
+            <% if(typeof session !== "undefined" && session.MaNguoiDung && session.QuyenHan !== "admin") { %>
             <a class="nav-link bell-link" href="/thongbao/cuatoi" title="Thông báo" aria-label="Thông báo">
               <i class="bi bi-bell-fill"></i>
               <% if ((unreadNotificationCount || 0) > 0) { %>
